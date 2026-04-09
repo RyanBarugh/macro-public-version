@@ -1,0 +1,310 @@
+[
+  {
+    "_comment": "═══ INFLATION ══════════════════════════════════════════",
+    "id": "gbp_cpi_headline_nsa",
+    "provider": "ons",
+    "currency": "GBP",
+    "indicator": "cpi",
+    "required": true,
+    "description": "UK CPI All Items, index, NSA, monthly. ONS MM23. CDID D7BT.",
+    "sa_status": "nsa",
+    "cdid": "D7BT",
+    "dataset": "mm23",
+    "topic": "economy/inflationandpriceindices",
+    "backfill": {
+      "start": "1988-01"
+    },
+    "fred_pit_id": "GBRCPIALLMINMEI",
+    "fred_pit_note": "OECD MEI CPI total. NSA. 1-3 week lag vs ONS."
+  },
+  {
+    "id": "gbp_cpi_core_nsa",
+    "provider": "ons",
+    "currency": "GBP",
+    "indicator": "cpi",
+    "required": true,
+    "description": "UK CPI All Items excl. energy, food, alcohol & tobacco (core), index, NSA, monthly. ONS MM23. CDID DKC6.",
+    "sa_status": "nsa",
+    "cdid": "DKC6",
+    "dataset": "mm23",
+    "topic": "economy/inflationandpriceindices",
+    "backfill": {
+      "start": "1997-01"
+    },
+    "fred_pit_id": "GBRCPICORMINMEI",
+    "fred_pit_note": "OECD MEI CPI core. NSA."
+  },
+  {
+    "id": "gbp_cpi_services_nsa",
+    "provider": "ons",
+    "currency": "GBP",
+    "indicator": "cpi",
+    "required": true,
+    "description": "UK CPI Services, index, NSA, monthly. ONS MM23. CDID D7F5.",
+    "sa_status": "nsa",
+    "cdid": "D7F5",
+    "dataset": "mm23",
+    "topic": "economy/inflationandpriceindices",
+    "backfill": {
+      "start": "1997-01"
+    },
+    "fred_pit_id": "GBRCPIALLMINMEI",
+    "fred_pit_note": "Same CPI release. Services not separately on FRED."
+  },
+  {
+    "id": "gbp_ppi_total_nsa",
+    "provider": "ons",
+    "currency": "GBP",
+    "indicator": "ppi",
+    "required": true,
+    "description": "UK PPI Output (factory gate) prices, total manufactured products, NSA, monthly. ONS PPI. CDID GD73.",
+    "sa_status": "nsa",
+    "cdid": "GD73",
+    "dataset": "ppi",
+    "topic": "economy/inflationandpriceindices",
+    "backfill": {
+      "start": "1996-01"
+    },
+    "fred_pit_id": "GBRCPIALLMINMEI",
+    "fred_pit_note": "Proxy — GBP PPI on FRED is growth rate only. Use CPI release date as proxy (same ONS release day)."
+  },
+  {
+    "id": "gbp_ppi_core_nsa",
+    "provider": "ons",
+    "currency": "GBP",
+    "indicator": "ppi",
+    "required": true,
+    "description": "UK PPI Output core (excl. food, beverages, tobacco, petroleum), NSA, monthly. ONS MM22. CDID GBBV.",
+    "sa_status": "nsa",
+    "cdid": "GBBV",
+    "dataset": "ppi",
+    "topic": "economy/inflationandpriceindices",
+    "backfill": {
+      "start": "1996-01"
+    },
+    "fred_pit_id": "GBRCPIALLMINMEI",
+    "fred_pit_note": "Same ONS inflation release."
+  },
+  {
+    "_comment": "═══ GROWTH ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "gbp_gdp_real",
+    "provider": "ons",
+    "currency": "GBP",
+    "indicator": "gdp",
+    "required": true,
+    "description": "UK Real GDP, chained volume, SA, quarterly. ONS PN2. CDID ABMI. Growth Factor 1 + deflator denominator.",
+    "sa_status": "sa",
+    "cdid": "ABMI",
+    "dataset": "pn2",
+    "topic": "economy/grossdomesticproductgdp",
+    "backfill": {
+      "start": "1955-Q1"
+    },
+    "fred_pit_id": "NGDPRSAXDCGBQ",
+    "fred_pit_note": "IMF IFS real GDP. SA. Local currency."
+  },
+  {
+    "id": "gbp_gdp_nominal",
+    "provider": "ons",
+    "currency": "GBP",
+    "indicator": "gdp",
+    "required": true,
+    "description": "UK Nominal GDP at market prices, current prices, SA, quarterly, £m. ONS PN2. CDID YBHA. Deflator numerator (nominal/real × 100).",
+    "sa_status": "sa",
+    "cdid": "YBHA",
+    "dataset": "pn2",
+    "topic": "economy/grossdomesticproductgdp",
+    "backfill": {
+      "start": "1955-Q1"
+    },
+    "fred_pit_id": "NGDPSAXDCGBQ",
+    "fred_pit_note": "IMF IFS nominal GDP. SA. Local currency. Pattern-inferred — verify NGDPSAXDCGBQ exists."
+  },
+  {
+    "id": "gbp_ip_total_ons_sa",
+    "provider": "ons",
+    "currency": "GBP",
+    "indicator": "growth",
+    "required": true,
+    "description": "UK Industrial Production, total (B-E), chained volume, SA, monthly. ONS DIOP. CDID K222.",
+    "sa_status": "sa",
+    "cdid": "K222",
+    "dataset": "diop",
+    "topic": "economy/economicoutputandproductivity/output",
+    "backfill": {
+      "start": "1968-01"
+    },
+    "fred_pit_id": "GBRPROINDMISMEI",
+    "fred_pit_note": "OECD MEI IP total. SA index."
+  },
+  {
+    "id": "gbp_ip_manufacturing_ons_sa",
+    "provider": "ons",
+    "currency": "GBP",
+    "indicator": "growth",
+    "required": true,
+    "description": "UK Industrial Production, manufacturing (C), chained volume, SA, monthly. ONS DIOP. CDID K22A.",
+    "sa_status": "sa",
+    "cdid": "K22A",
+    "dataset": "diop",
+    "topic": "economy/economicoutputandproductivity/output",
+    "backfill": {
+      "start": "1968-01"
+    },
+    "fred_pit_id": "GBRPROMANMISMEI",
+    "fred_pit_note": "OECD MEI IP manufacturing. SA index."
+  },
+  {
+    "id": "gbp_retail_total_vol_sa",
+    "provider": "ons",
+    "currency": "GBP",
+    "indicator": "growth",
+    "required": true,
+    "description": "UK Retail Sales, total, volume, SA, monthly. ONS DRSI. CDID J5EK.",
+    "sa_status": "sa",
+    "cdid": "J5EK",
+    "dataset": "drsi",
+    "topic": "businessindustryandtrade/retailindustry",
+    "backfill": {
+      "start": "1988-01"
+    },
+    "fred_pit_id": "GBRSARTMISMEI",
+    "fred_pit_note": "OECD MEI retail volume. SA index."
+  },
+  {
+    "id": "gbp_retail_exfuel_vol_sa",
+    "provider": "ons",
+    "currency": "GBP",
+    "indicator": "growth",
+    "required": true,
+    "description": "UK Retail Sales, excl. fuel, volume, SA, monthly. ONS DRSI. CDID J467.",
+    "sa_status": "sa",
+    "cdid": "J467",
+    "dataset": "drsi",
+    "topic": "businessindustryandtrade/retailindustry",
+    "backfill": {
+      "start": "1988-01"
+    },
+    "fred_pit_id": "GBRSARTMISMEI",
+    "fred_pit_note": "Same retail release."
+  },
+  {
+    "id": "gbp_retail_food_vol_sa",
+    "provider": "ons",
+    "currency": "GBP",
+    "indicator": "growth",
+    "required": true,
+    "description": "UK Retail Sales, predominantly food stores, volume, SA, monthly. ONS DRSI. CDID EAPT.",
+    "sa_status": "sa",
+    "cdid": "EAPT",
+    "dataset": "drsi",
+    "topic": "businessindustryandtrade/retailindustry",
+    "backfill": {
+      "start": "1988-01"
+    },
+    "fred_pit_id": "GBRSARTMISMEI",
+    "fred_pit_note": "Same retail release."
+  },
+  {
+    "id": "gbp_retail_nonfood_vol_sa",
+    "provider": "ons",
+    "currency": "GBP",
+    "indicator": "growth",
+    "required": true,
+    "description": "UK Retail Sales, predominantly non-food stores, volume, SA, monthly. ONS DRSI. CDID EAPV.",
+    "sa_status": "sa",
+    "cdid": "EAPV",
+    "dataset": "drsi",
+    "topic": "businessindustryandtrade/retailindustry",
+    "backfill": {
+      "start": "1988-01"
+    },
+    "fred_pit_id": "GBRSARTMISMEI",
+    "fred_pit_note": "Same retail release."
+  },
+  {
+    "id": "gbp_bci_sa",
+    "provider": "oecd",
+    "currency": "GBP",
+    "indicator": "growth",
+    "required": true,
+    "description": "UK Business Confidence Indicator, amplitude adjusted, index, monthly. OECD STES BCI.",
+    "sa_status": "sa",
+    "dataflow": "OECD.SDD.STES,DSD_STES@DF_CLI,",
+    "data_key": "GBR.M.BCICP...AA.IX..H",
+    "backfill": {
+      "start": "1990-01"
+    },
+    "fred_pit_id": "BSCICP03GBM665S",
+    "fred_pit_note": "OECD BCI amplitude adjusted. Pattern-inferred — verify."
+  },
+  {
+    "_comment": "═══ LABOUR ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "gbp_unemployment_rate_sa",
+    "provider": "ons",
+    "currency": "GBP",
+    "indicator": "labour",
+    "required": true,
+    "description": "UK Unemployment Rate, SA, monthly (3-month rolling). ONS LMS. CDID MGSX.",
+    "sa_status": "sa",
+    "cdid": "MGSX",
+    "dataset": "lms",
+    "topic": "employmentandlabourmarket/peoplenotinwork/unemployment",
+    "backfill": {
+      "start": "1971-01"
+    },
+    "fred_pit_id": "LRHUTTTTGBM156S",
+    "fred_pit_note": "OECD harmonised unemployment. SA. Monthly."
+  },
+  {
+    "id": "gbp_employment_level_sa",
+    "provider": "ons",
+    "currency": "GBP",
+    "indicator": "labour",
+    "required": true,
+    "description": "UK Employment Level, SA, monthly (3-month rolling), thousands. ONS LMS. CDID MGRZ.",
+    "sa_status": "sa",
+    "cdid": "MGRZ",
+    "dataset": "lms",
+    "topic": "employmentandlabourmarket/peopleinwork/employmentandemployeetypes",
+    "backfill": {
+      "start": "1971-01"
+    },
+    "fred_pit_id": "LFEMTTTTGBQ647S",
+    "fred_pit_note": "OECD employment total. SA. Quarterly."
+  },
+  {
+    "id": "gbp_wages_regular_sa",
+    "provider": "ons",
+    "currency": "GBP",
+    "indicator": "labour",
+    "required": true,
+    "description": "UK Average Weekly Earnings, regular pay (excl. bonuses), whole economy, %YoY, SA, monthly. ONS LMS AWE. CDID KAC3.",
+    "sa_status": "sa",
+    "cdid": "KAC3",
+    "dataset": "lms",
+    "topic": "employmentandlabourmarket/peopleinwork/earningsandworkinghours",
+    "backfill": {
+      "start": "2000-01"
+    },
+    "fred_pit_id": "LCEATT02GBM661N",
+    "fred_pit_note": "OECD earnings weekly. NSA index. Monthly."
+  },
+  {
+    "id": "gbp_participation_rate_sa",
+    "provider": "ons",
+    "currency": "GBP",
+    "indicator": "labour",
+    "required": false,
+    "description": "UK Economic Inactivity Rate (inverse of participation), SA, monthly. ONS LMS. CDID LF2S. Derive participation as 100 - value.",
+    "sa_status": "sa",
+    "cdid": "LF2S",
+    "dataset": "lms",
+    "topic": "employmentandlabourmarket/peoplenotinwork/economicinactivity",
+    "backfill": {
+      "start": "1971-01"
+    },
+    "fred_pit_id": "LRHUTTTTGBM156S",
+    "fred_pit_note": "Proxy — participation not separately on FRED. Same ONS LMS release."
+  }
+]

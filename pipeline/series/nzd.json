@@ -1,0 +1,264 @@
+[
+  {
+    "_comment": "═══ INFLATION ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "nzd_cpi_headline_sa",
+    "provider": "statsnz_csv",
+    "currency": "NZD",
+    "required": false,
+    "description": "New Zealand CPI All Groups, seasonally adjusted, index. Quarterly. Source: Stats NZ CSV bulk download.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "url_template": "https://www.stats.govt.nz/assets/Uploads/Consumers-price-index/Consumers-price-index-{Month}-{year}-quarter/Download-data/consumers-price-index-{month}-{year}-quarter-seasonally-adjusted.csv",
+    "series_ref": "CPIQ.SE9SA",
+    "backfill": {
+      "start": "1925-09"
+    },
+    "indicator": "cpi",
+    "fred_pit_id": "NZLCPIALLQINMEI",
+    "fred_pit_note": "OECD MEI CPI total. Quarterly NSA."
+  },
+  {
+    "id": "nzd_cpi_nontradable_sa",
+    "provider": "statsnz_csv",
+    "currency": "NZD",
+    "required": false,
+    "description": "New Zealand CPI Non-Tradable All Groups, seasonally adjusted, index. Quarterly. Core CPI proxy. Source: Stats NZ CSV.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "url_template": "https://www.stats.govt.nz/assets/Uploads/Consumers-price-index/Consumers-price-index-{Month}-{year}-quarter/Download-data/consumers-price-index-{month}-{year}-quarter-seasonally-adjusted.csv",
+    "series_ref": "CPIQ.SE9SNS6500",
+    "backfill": {
+      "start": "2006-06"
+    },
+    "indicator": "cpi",
+    "fred_pit_id": "NZLCPIALLQINMEI",
+    "fred_pit_note": "Same CPI release. Non-tradable not separately on FRED."
+  },
+  {
+    "id": "nzd_ppi_outputs_nsa",
+    "provider": "statsnz_csv",
+    "currency": "NZD",
+    "required": false,
+    "description": "New Zealand PPI Outputs All Industries, index (base Dec 2010=1000), NSA. Quarterly. Source: Stats NZ Business Price Indexes CSV.",
+    "sa_status": "nsa",
+    "freq": "Q",
+    "url_template": "https://www.stats.govt.nz/assets/Uploads/Business-price-indexes/Business-price-indexes-{Month}-{year}-quarter/Download-data/business-price-indexes-{month}-{year}-quarter.zip",
+    "series_ref": "PPIQ.SQU900000",
+    "backfill": {
+      "start": "1977-12"
+    },
+    "indicator": "ppi",
+    "fred_pit_id": "PIEAMP01NZQ661N",
+    "fred_pit_note": "OECD MEI PPI manufacturing. Quarterly NSA. May be stale (last Q3 2022)."
+  },
+  {
+    "_comment": "═══ GROWTH ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "nzd_gdp_nominal_sa",
+    "provider": "statsnz_csv",
+    "currency": "NZD",
+    "indicator": "gdp",
+    "required": true,
+    "description": "New Zealand Nominal GDP, SA, dollars. Quarterly. SNEQ.SG02NSC00B15. Source: Stats NZ GDP CSV. Deflator numerator (nominal/real x 100).",
+    "sa_status": "sa",
+    "freq": "Q",
+    "url_template": "https://www.stats.govt.nz/assets/Uploads/Gross-domestic-product/Gross-domestic-product-{Month}-{year}-quarter/Download-data/gross-domestic-product-{month}-{year}-quarter.csv",
+    "series_ref": "SNEQ.SG02NSC00B15",
+    "backfill": {
+      "start": "1987-06"
+    },
+    "fred_pit_id": "NZLGDPNQDSMEI",
+    "fred_pit_note": "OECD MEI nominal GDP. SA."
+  },
+  {
+    "id": "nzd_gdp_real_sa",
+    "provider": "statsnz_csv",
+    "currency": "NZD",
+    "indicator": "gdp",
+    "required": true,
+    "description": "New Zealand Real GDP, SA, chain volume dollars. Quarterly. SNEQ.SG02RSC00B15. Source: Stats NZ GDP CSV. Growth Factor 1 + deflator denominator.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "url_template": "https://www.stats.govt.nz/assets/Uploads/Gross-domestic-product/Gross-domestic-product-{Month}-{year}-quarter/Download-data/gross-domestic-product-{month}-{year}-quarter.csv",
+    "series_ref": "SNEQ.SG02RSC00B15",
+    "backfill": {
+      "start": "1987-06"
+    },
+    "fred_pit_id": "NAEXKP01NZQ189S",
+    "fred_pit_note": "OECD MEI real GDP. SA."
+  },
+  {
+    "id": "nzd_ip_mining_sa",
+    "provider": "statsnz_csv",
+    "currency": "NZD",
+    "indicator": "growth",
+    "required": true,
+    "description": "New Zealand IP proxy: Mining GVA, SA, chain volume dollars. Quarterly. SNEQ.SG01RSC02B01A02. Source: Stats NZ GDP CSV. IP composite (1/3).",
+    "sa_status": "sa",
+    "freq": "Q",
+    "url_template": "https://www.stats.govt.nz/assets/Uploads/Gross-domestic-product/Gross-domestic-product-{Month}-{year}-quarter/Download-data/gross-domestic-product-{month}-{year}-quarter.csv",
+    "series_ref": "SNEQ.SG01RSC02B01A02",
+    "backfill": {
+      "start": "1987-06"
+    },
+    "fred_pit_id": "NZLPROINDQISMEI",
+    "fred_pit_note": "OECD MEI IP total proxy. Quarterly SA. NZ IP = sum of mining+mfg+utilities GVA."
+  },
+  {
+    "id": "nzd_ip_manufacturing_sa",
+    "provider": "statsnz_csv",
+    "currency": "NZD",
+    "indicator": "growth",
+    "required": true,
+    "description": "New Zealand IP proxy: Manufacturing GVA, SA, chain volume dollars. Quarterly. SNEQ.SG01RSC02B01B01. Source: Stats NZ GDP CSV. IP composite (1/3) + Manufacturing factor.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "url_template": "https://www.stats.govt.nz/assets/Uploads/Gross-domestic-product/Gross-domestic-product-{Month}-{year}-quarter/Download-data/gross-domestic-product-{month}-{year}-quarter.csv",
+    "series_ref": "SNEQ.SG01RSC02B01B01",
+    "backfill": {
+      "start": "1987-06"
+    },
+    "fred_pit_id": "PRMNTO01NZQ661N",
+    "fred_pit_note": "OECD MEI IP manufacturing. Quarterly NSA."
+  },
+  {
+    "id": "nzd_ip_utilities_sa",
+    "provider": "statsnz_csv",
+    "currency": "NZD",
+    "indicator": "growth",
+    "required": true,
+    "description": "New Zealand IP proxy: Electricity/Gas/Water GVA, SA, chain volume dollars. Quarterly. SNEQ.SG01RSC02B01B02. Source: Stats NZ GDP CSV. IP composite (1/3).",
+    "sa_status": "sa",
+    "freq": "Q",
+    "url_template": "https://www.stats.govt.nz/assets/Uploads/Gross-domestic-product/Gross-domestic-product-{Month}-{year}-quarter/Download-data/gross-domestic-product-{month}-{year}-quarter.csv",
+    "series_ref": "SNEQ.SG01RSC02B01B02",
+    "backfill": {
+      "start": "1987-06"
+    },
+    "fred_pit_id": "NZLPROINDQISMEI",
+    "fred_pit_note": "Same IP release."
+  },
+  {
+    "id": "nzd_retail_total_deflated_sa",
+    "provider": "statsnz_csv",
+    "currency": "NZD",
+    "indicator": "growth",
+    "required": true,
+    "description": "New Zealand Retail Sales, deflated (real), SA, dollars. Quarterly. RTTQ.SF91KS. Source: Stats NZ Retail Trade Survey CSV. Growth Factor 3.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "url_template": "https://www.stats.govt.nz/assets/Uploads/Retail-trade-survey/Retail-trade-survey-{Month}-{year}-quarter/Download-data/retail-trade-survey-{Month}-{year}-quarter.zip",
+    "series_ref": "RTTQ.SF91KS",
+    "backfill": {
+      "start": "1995-09"
+    },
+    "fred_pit_id": "SLRTTO01NZQ189N",
+    "fred_pit_note": "OECD MEI retail volume. Quarterly NSA."
+  },
+  {
+    "id": "nzd_bci_sa",
+    "provider": "oecd",
+    "currency": "NZD",
+    "indicator": "growth",
+    "required": true,
+    "description": "New Zealand Business Confidence Indicator, amplitude adjusted, index, monthly. OECD STES BCI.",
+    "sa_status": "sa",
+    "dataflow": "OECD.SDD.STES,DSD_STES@DF_CLI,",
+    "data_key": "NZL.M.BCICP...AA.IX..H",
+    "backfill": {
+      "start": "1966-01"
+    },
+    "fred_pit_id": "BSCICP02NZQ460S",
+    "fred_pit_note": "OECD BCI national indicator. Quarterly SA."
+  },
+  {
+    "_comment": "═══ LABOUR ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "nzd_unemployment_rate_sa",
+    "provider": "statsnz_csv",
+    "currency": "NZD",
+    "required": true,
+    "description": "New Zealand Unemployment Rate, SA, Both Sexes, percent. Quarterly. Source: Stats NZ HLFS.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "url_template": "https://www.stats.govt.nz/assets/Uploads/Labour-market-statistics/Labour-market-statistics-{Month}-{year}-quarter/Download-data/labour-market-statistics-{month}-{year}-quarter.zip",
+    "series_ref": "HLFQ.S1F3S",
+    "zip_filename": "hlfs",
+    "backfill": {
+      "start": "1986-03"
+    },
+    "indicator": "labour",
+    "fred_pit_id": "LRUNTTTTNZQ156S",
+    "fred_pit_note": "OECD unemployment. Quarterly SA."
+  },
+  {
+    "id": "nzd_employment_level_sa",
+    "provider": "statsnz_csv",
+    "currency": "NZD",
+    "required": true,
+    "description": "New Zealand Employment Level (Persons Employed in Labour Force), SA, Both Sexes, thousands. Quarterly. Source: Stats NZ HLFS.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "url_template": "https://www.stats.govt.nz/assets/Uploads/Labour-market-statistics/Labour-market-statistics-{Month}-{year}-quarter/Download-data/labour-market-statistics-{month}-{year}-quarter.zip",
+    "series_ref": "HLFQ.S1A3S",
+    "zip_filename": "hlfs",
+    "backfill": {
+      "start": "1986-03"
+    },
+    "indicator": "labour",
+    "fred_pit_id": "LFEMTTTTNZQ647S",
+    "fred_pit_note": "OECD employment. Quarterly SA. Pattern-inferred — verify exists."
+  },
+  {
+    "id": "nzd_avg_hourly_earnings_nsa",
+    "provider": "statsnz_csv",
+    "currency": "NZD",
+    "required": true,
+    "description": "New Zealand Average Hourly Earnings, All Industries, Both Sexes, Ordinary Time, NSA, dollars. Quarterly. Source: Stats NZ QES.",
+    "sa_status": "nsa",
+    "freq": "Q",
+    "url_template": "https://www.stats.govt.nz/assets/Uploads/Labour-market-statistics/Labour-market-statistics-{Month}-{year}-quarter/Download-data/labour-market-statistics-{month}-{year}-quarter.zip",
+    "series_ref": "QEMQ.SAAZ9Z",
+    "zip_filename": "qes",
+    "backfill": {
+      "start": "1989-09"
+    },
+    "indicator": "labour",
+    "fred_pit_id": "LCEATT01NZQ661N",
+    "fred_pit_note": "OECD earnings hourly. Quarterly NSA."
+  },
+  {
+    "id": "nzd_hours_worked_sa",
+    "provider": "statsnz_csv",
+    "currency": "NZD",
+    "required": true,
+    "description": "New Zealand Total Actual Hours Worked Each Week, SA, number. Quarterly. Source: Stats NZ HLFS.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "url_template": "https://www.stats.govt.nz/assets/Uploads/Labour-market-statistics/Labour-market-statistics-{Month}-{year}-quarter/Download-data/labour-market-statistics-{month}-{year}-quarter.zip",
+    "series_ref": "HLFQ.SHC",
+    "zip_filename": "hlfs",
+    "backfill": {
+      "start": "1986-03"
+    },
+    "indicator": "labour",
+    "fred_pit_id": "LRUNTTTTNZQ156S",
+    "fred_pit_note": "Proxy — same HLFS release."
+  },
+  {
+    "id": "nzd_participation_rate_sa",
+    "provider": "statsnz_csv",
+    "currency": "NZD",
+    "required": false,
+    "description": "New Zealand Labour Force Participation Rate, SA, Both Sexes, percent. Quarterly. Source: Stats NZ HLFS. Reference only.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "url_template": "https://www.stats.govt.nz/assets/Uploads/Labour-market-statistics/Labour-market-statistics-{Month}-{year}-quarter/Download-data/labour-market-statistics-{month}-{year}-quarter.zip",
+    "series_ref": "HLFQ.S1E3S",
+    "zip_filename": "hlfs",
+    "backfill": {
+      "start": "1986-03"
+    },
+    "indicator": "labour",
+    "fred_pit_id": "LRUNTTTTNZQ156S",
+    "fred_pit_note": "Same HLFS release."
+  }
+]

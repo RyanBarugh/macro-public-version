@@ -1,0 +1,578 @@
+[
+  {
+    "_comment": "═══ INFLATION ═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "eur_hicp_headline_nsa",
+    "provider": "ecb",
+    "currency": "EUR",
+    "indicator": "cpi",
+    "required": true,
+    "description": "Euro area HICP Overall index, NSA (2015=100). Eurostat via ECB HICP dataset. STS_INSTITUTION=4F0. YoY removes seasonality so SA not required.",
+    "sa_status": "nsa",
+    "freq": "M",
+    "ecb_dataset": "HICP",
+    "data_key": "M.U2.Y.000000.4F0.INX",
+    "backfill": {
+      "start": "1996-01"
+    },
+    "fred_pit_id": "CP0000EZ19M086NEST",
+    "fred_pit_note": "OECD MEI via FRED. NSA. 1-3 week lag vs Eurostat flash."
+  },
+  {
+    "id": "eur_hicp_core_nsa",
+    "provider": "ecb",
+    "currency": "EUR",
+    "indicator": "cpi",
+    "required": true,
+    "description": "Euro area HICP All Items excl. energy and food (core), NSA (2015=100). Eurostat via ECB HICP dataset. ICP_ITEM=XEF000.",
+    "sa_status": "nsa",
+    "freq": "M",
+    "ecb_dataset": "HICP",
+    "data_key": "M.U2.Y.XEF000.4F0.INX",
+    "backfill": {
+      "start": "1996-01"
+    },
+    "fred_pit_id": "CP0000EZ19M086NEST",
+    "fred_pit_note": "Same HICP release. Use headline for date lookup."
+  },
+  {
+    "id": "eur_hicp_services_nsa",
+    "provider": "ecb",
+    "currency": "EUR",
+    "indicator": "cpi",
+    "required": true,
+    "description": "Euro area HICP Services, NSA (2015=100). Eurostat via ECB HICP dataset. ICP_ITEM=SERV00. Key sticky inflation component watched by ECB Governing Council.",
+    "sa_status": "nsa",
+    "freq": "M",
+    "ecb_dataset": "HICP",
+    "data_key": "M.U2.Y.SERV00.4F0.INX",
+    "backfill": {
+      "start": "1996-01"
+    },
+    "fred_pit_id": "CP0000EZ19M086NEST",
+    "fred_pit_note": "Same HICP release. Use headline for date lookup."
+  },
+  {
+    "id": "eur_ppi_total_sts_nsa",
+    "provider": "eurostat",
+    "currency": "EUR",
+    "indicator": "ppi",
+    "required": true,
+    "description": "Euro area PPI total industry (B-E36, excl. construction/sewerage/waste), NSA, Index 2021=100. EA20. Eurostat does not produce SA PPI; YoY removes seasonality.",
+    "sa_status": "nsa",
+    "dataset": "sts_inpp_m",
+    "backfill": {
+      "start": "2000-01"
+    },
+    "params": {
+      "indic_bt": "PRC_PRR",
+      "s_adj": "NSA",
+      "nace_r2": "B-E36",
+      "unit": "I21",
+      "geo": "EA20"
+    },
+    "fred_pit_id": "PIEATI01EZM661N",
+    "fred_pit_note": "OECD MEI PPI. NSA index. 1-3 week lag."
+  },
+  {
+    "id": "eur_ppi_ex_energy_sts_nsa",
+    "provider": "eurostat",
+    "currency": "EUR",
+    "indicator": "ppi",
+    "required": true,
+    "description": "Euro area PPI mining and manufacturing excl. MIG energy (B_C_X_MIG_NRG), NSA, Index 2021=100. EA20. Core PPI proxy — strips energy price volatility.",
+    "sa_status": "nsa",
+    "dataset": "sts_inpp_m",
+    "backfill": {
+      "start": "2000-01"
+    },
+    "params": {
+      "indic_bt": "PRC_PRR",
+      "s_adj": "NSA",
+      "nace_r2": "B_C_X_MIG_NRG",
+      "unit": "I21",
+      "geo": "EA20"
+    },
+    "fred_pit_id": "PIEATI01EZM661N",
+    "fred_pit_note": "Same PPI release."
+  },
+  {
+    "id": "eur_ppi_ex_energy_food_sts_nsa",
+    "provider": "eurostat",
+    "currency": "EUR",
+    "indicator": "ppi",
+    "required": true,
+    "description": "Euro area PPI mining and manufacturing excl. MIG energy and food/beverages/tobacco (B_C_X_FD_MIG_NRG), NSA, Index 2021=100. EA20. Super-core PPI proxy.",
+    "sa_status": "nsa",
+    "dataset": "sts_inpp_m",
+    "backfill": {
+      "start": "2000-01"
+    },
+    "params": {
+      "indic_bt": "PRC_PRR",
+      "s_adj": "NSA",
+      "nace_r2": "B_C_X_FD_MIG_NRG",
+      "unit": "I21",
+      "geo": "EA20"
+    },
+    "fred_pit_id": "PIEATI01EZM661N",
+    "fred_pit_note": "Same PPI release."
+  },
+  {
+    "_comment": "═══ GROWTH ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "eur_ip_total_sts_sa",
+    "provider": "eurostat",
+    "currency": "EUR",
+    "indicator": "growth",
+    "required": true,
+    "description": "Euro area IP: total industry (B-D, mining+manufacturing+energy), seasonally and calendar adjusted, Index 2021=100. EA20.",
+    "sa_status": "sa",
+    "dataset": "sts_inpr_m",
+    "backfill": {
+      "start": "1990-01"
+    },
+    "params": {
+      "indic_bt": "PRD",
+      "s_adj": "SCA",
+      "nace_r2": "B-D",
+      "unit": "I21",
+      "geo": "EA20"
+    },
+    "fred_pit_id": "EA19PRINTO01IXNBSAM",
+    "fred_pit_note": "OECD MEI IP total. SA index."
+  },
+  {
+    "id": "eur_ip_manufacturing_sts_sa",
+    "provider": "eurostat",
+    "currency": "EUR",
+    "indicator": "growth",
+    "required": true,
+    "description": "Euro area IP: manufacturing (NACE C), seasonally and calendar adjusted, Index 2021=100. EA20.",
+    "sa_status": "sa",
+    "dataset": "sts_inpr_m",
+    "backfill": {
+      "start": "1990-01"
+    },
+    "params": {
+      "indic_bt": "PRD",
+      "s_adj": "SCA",
+      "nace_r2": "C",
+      "unit": "I21",
+      "geo": "EA20"
+    },
+    "fred_pit_id": "EA19PRMNTO01IXNBSAM",
+    "fred_pit_note": "OECD MEI IP manufacturing. SA. Pattern-inferred — verify."
+  },
+  {
+    "id": "eur_retail_total_sts_sa",
+    "provider": "eurostat",
+    "currency": "EUR",
+    "indicator": "growth",
+    "required": true,
+    "description": "Euro area retail trade volume index, total (G47), seasonally and calendar adjusted (2021=100).",
+    "dataset": "sts_trtu_m",
+    "backfill": {
+      "start": "2000-01"
+    },
+    "params": {
+      "indic_bt": "VOL_SLS",
+      "s_adj": "SCA",
+      "nace_r2": "G47",
+      "unit": "I21",
+      "geo": "EA20"
+    },
+    "fred_pit_id": "EA19SLRTTO01IXOBSAM",
+    "fred_pit_note": "OECD MEI retail volume. SA index."
+  },
+
+  {
+    "id": "eur_gdp_nominal",
+    "provider": "eurostat",
+    "currency": "EUR",
+    "indicator": "gdp",
+    "required": true,
+    "description": "Euro area Nominal GDP, current prices, million EUR, SCA, quarterly. Eurostat namq_10_gdp. Deflator numerator (nominal/real × 100).",
+    "sa_status": "sa",
+    "freq": "Q",
+    "dataset": "namq_10_gdp",
+    "params": {
+      "na_item": "B1GQ",
+      "unit": "CP_MEUR",
+      "s_adj": "SCA",
+      "geo": "EA20"
+    },
+    "backfill": {
+      "start": "1999-01"
+    },
+    "fred_pit_id": "EUNNGDP",
+    "fred_pit_note": "OECD MEI nominal GDP. SA. 1-3 week lag."
+  },
+  {
+    "id": "eur_gdp_real",
+    "provider": "eurostat",
+    "currency": "EUR",
+    "indicator": "gdp",
+    "required": true,
+    "description": "Euro area Real GDP, chain linked volumes (2010), million EUR, SCA, quarterly. Eurostat namq_10_gdp. Growth Factor 1 + deflator denominator.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "backfill": {
+      "start": "1999-01"
+    },
+    "dataset": "namq_10_gdp",
+    "params": {
+      "na_item": "B1GQ",
+      "unit": "CLV10_MEUR",
+      "s_adj": "SCA",
+      "geo": "EA20"
+    },
+    "fred_pit_id": "CLVMNACSCAB1GQEA19",
+    "fred_pit_note": "OECD MEI real GDP. SA. Chain-linked volumes."
+  },
+  {
+    "id": "eur_current_account_sa",
+    "provider": "eurostat",
+    "currency": "EUR",
+    "indicator": "growth",
+    "required": true,
+    "description": "Euro area current account balance vs rest of world (EXT_EA20), all sectors, SA+CA, EUR millions. Monthly from 1999. Eurostat bop_eu6_m.",
+    "sa_status": "sa",
+    "api_version": "v3",
+    "dataset": "bop_eu6_m",
+    "sdmx_key": "*.*.*.*.*.*.*.*.*",
+    "backfill": {
+      "start": "2013-01"
+    },
+    "filters": {
+      "freq": "M",
+      "currency": "MIO_EUR",
+      "bop_item": "CA",
+      "sector10": "S1",
+      "s_adj": "SCA",
+      "sectpart": "S1",
+      "stk_flow": "BAL",
+      "partner": "EXT_EA20",
+      "geo": "EA20"
+    }
+  },
+  {
+    "id": "eur_bank_loans_nfc_yoy",
+    "provider": "ecb",
+    "currency": "EUR",
+    "indicator": "growth",
+    "required": true,
+    "description": "Adjusted loans to euro area non-financial corporations by MFIs, annual growth rate %, SA. Monthly from Jan 2004. ECB BSI dataset. Published as YoY directly — no transformation needed.",
+    "sa_status": "sa",
+    "freq": "M",
+    "ecb_dataset": "BSI",
+    "data_key": "M.U2.Y.U.A20T.A.I.U2.2240.Z01.A",
+    "backfill": {
+      "start": "2004-01"
+    }
+  },
+  {
+    "id": "eur_esi",
+    "provider": "ecbcs",
+    "currency": "EUR",
+    "indicator": "growth",
+    "required": true,
+    "description": "Euro area Economic Sentiment Indicator (ESI), SA. Composite of industry, services, retail, construction and consumer surveys. Long-run mean=100, SD=10. Monthly from 1985. EC DG ECFIN BCS.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bcs_zip": "main_indicators_sa_nace2",
+    "bcs_series_key": "EA.ESI",
+    "backfill": {
+      "start": "1985-01"
+    }
+  },
+  {
+    "id": "eur_eei",
+    "provider": "ecbcs",
+    "currency": "EUR",
+    "indicator": "growth",
+    "required": true,
+    "description": "Euro area Employment Expectations Indicator (EEI), SA. Weighted average of employment plans across industry, services, retail and construction. Long-run mean=100, SD=10. EC DG ECFIN BCS.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bcs_zip": "main_indicators_sa_nace2",
+    "bcs_series_key": "EA.EEI",
+    "backfill": {
+      "start": "2003-01"
+    }
+  },
+  {
+    "id": "eur_consumer_confidence",
+    "provider": "ecbcs",
+    "currency": "EUR",
+    "indicator": "growth",
+    "required": true,
+    "description": "Euro area Consumer Confidence Indicator, SA. Balance statistic (difference between positive and negative responses). Monthly from 1985. EC DG ECFIN BCS.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bcs_zip": "main_indicators_sa_nace2",
+    "bcs_series_key": "EA.CONS",
+    "backfill": {
+      "start": "1985-01"
+    }
+  },
+  {
+    "id": "eur_bci_sa",
+    "provider": "oecd",
+    "currency": "EUR",
+    "indicator": "growth",
+    "required": true,
+    "description": "Euro area Business Confidence Indicator, amplitude adjusted, index, monthly. OECD STES BCI.",
+    "sa_status": "sa",
+    "dataflow": "OECD.SDD.STES,DSD_STES@DF_CLI,",
+    "data_key": "EA20.M.BCICP...AA.IX..H",
+    "backfill": {
+      "start": "1985-01"
+    },
+    "fred_pit_id": "BSCICP03EZM665S",
+    "fred_pit_note": "OECD BCI amplitude adjusted."
+  },
+  {
+    "_comment": "═══ LABOUR ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "eur_negotiated_wages_qoq",
+    "provider": "ecb",
+    "currency": "EUR",
+    "indicator": "labour",
+    "required": true,
+    "description": "Euro area 20 negotiated wages, growth rate % over 1 year, quarterly. ECB Indicator of Negotiated Wage Rates. Published as YoY growth rate directly — no transformation needed. Key ECB Governing Council input for services inflation outlook. Forward-fill to monthly in derived layer.",
+    "sa_status": "nsa",
+    "freq": "Q",
+    "ecb_dataset": "INW",
+    "data_key": "Q.I9.N.INWR.000000.4F0.GY.IX",
+    "backfill": {
+      "start": "1992-01"
+    },
+    "fred_pit_id": "LCEAPR01EZQ661S",
+    "fred_pit_note": "OECD earnings proxy. Different concept (private hourly vs negotiated). Same ballpark timing."
+  },
+  {
+    "id": "eur_emp_level_lfs_sa",
+    "provider": "eurostat",
+    "currency": "EUR",
+    "indicator": "labour",
+    "required": true,
+    "description": "Euro area employment level, 15-64, total, thousands of persons, SA. LFS quarterly. Eurostat lfsi_emp_q.",
+    "sa_status": "sa",
+    "api_version": "v3",
+    "dataset": "lfsi_emp_q",
+    "sdmx_key": "*.*.*.*.*.*.*",
+    "backfill": {
+      "start": "2009-01"
+    },
+    "filters": {
+      "freq": "Q",
+      "indic_em": "EMP_LFS",
+      "s_adj": "SA",
+      "sex": "T",
+      "age": "Y15-64",
+      "unit": "THS_PER",
+      "geo": "EA20"
+    },
+    "fred_pit_id": "LFEMTTTTEZQ647S",
+    "fred_pit_note": "OECD employment total. SA. Quarterly. May be growth rate — verify."
+  },
+  {
+    "id": "eur_hours_weekly_avg",
+    "provider": "eurostat",
+    "currency": "EUR",
+    "indicator": "labour",
+    "required": true,
+    "description": "Euro area average actual weekly hours worked in main job, all NACE, employees, total worktime, age 15-64, total sex, hours, EA21. NSA — no SA available. Eurostat lfsq_ewhan2. Use YoY in derived layer to neutralise seasonality.",
+    "sa_status": "nsa",
+    "api_version": "v3",
+    "dataset": "lfsq_ewhan2",
+    "sdmx_key": "*.*.*.*.*.*.*.*",
+    "backfill": {
+      "start": "2008-01"
+    },
+    "filters": {
+      "freq": "Q",
+      "nace_r2": "TOTAL",
+      "wstatus": "EMP",
+      "worktime": "TOTAL",
+      "age": "Y15-64",
+      "sex": "T",
+      "unit": "HR",
+      "geo": "EA21"
+    }
+  },
+  {
+    "id": "eur_unemployment_rate_sa",
+    "provider": "eurostat",
+    "currency": "EUR",
+    "indicator": "labour",
+    "required": true,
+    "description": "Euro area unemployment rate, total, % of active population, SA. Monthly. Eurostat une_rt_m. History from 1983.",
+    "sa_status": "sa",
+    "api_version": "v3",
+    "dataset": "une_rt_m",
+    "sdmx_key": "*.*.*.*.*.*",
+    "backfill": {
+      "start": "2000-01"
+    },
+    "filters": {
+      "freq": "M",
+      "s_adj": "SA",
+      "age": "TOTAL",
+      "unit": "PC_ACT",
+      "sex": "T",
+      "geo": "EA20"
+    },
+    "fred_pit_id": "LRHUTTTTEZM156S",
+    "fred_pit_note": "OECD harmonised unemployment. SA. Monthly."
+  },
+  {
+    "id": "eur_participation_rate_sa",
+    "provider": "eurostat",
+    "currency": "EUR",
+    "indicator": "labour",
+    "required": true,
+    "description": "Euro area activity rate (participation), age 15-64, total, % of population, SA. LFS quarterly. Eurostat lfsi_emp_q.",
+    "sa_status": "sa",
+    "api_version": "v3",
+    "dataset": "lfsi_emp_q",
+    "sdmx_key": "*.*.*.*.*.*.*",
+    "backfill": {
+      "start": "2009-01"
+    },
+    "filters": {
+      "freq": "Q",
+      "indic_em": "ACT",
+      "s_adj": "SA",
+      "sex": "T",
+      "age": "Y15-64",
+      "unit": "PC_POP",
+      "geo": "EA20"
+    }
+  },
+  {
+    "id": "eur_job_vacancy_rate_sa",
+    "provider": "eurostat",
+    "currency": "EUR",
+    "indicator": "labour",
+    "required": true,
+    "description": "Euro area job vacancy rate, B-S all industries, total size class, SA. Quarterly. % of total posts (filled + vacant). Eurostat jvs_q_nace2.",
+    "sa_status": "sa",
+    "api_version": "v3",
+    "dataset": "jvs_q_nace2",
+    "sdmx_key": "*.*.*.*.*.*",
+    "backfill": {
+      "start": "2006-01"
+    },
+    "filters": {
+      "freq": "Q",
+      "s_adj": "SA",
+      "nace_r2": "B-S",
+      "sizeclas": "TOTAL",
+      "indic_em": "JVR",
+      "geo": "EA20"
+    }
+  },
+  {
+    "id": "eur_ltu_rate_sa",
+    "provider": "eurostat",
+    "currency": "EUR",
+    "indicator": "labour",
+    "required": true,
+    "description": "Euro area long-term unemployment as % of total unemployed, age 15-74, total sex, SA. Quarterly. Structural damage indicator — sits in deterioration block. Eurostat une_ltu_q.",
+    "sa_status": "sa",
+    "api_version": "v3",
+    "dataset": "une_ltu_q",
+    "sdmx_key": "*.*.*.*.*.*.*",
+    "backfill": {
+      "start": "2009-01"
+    },
+    "filters": {
+      "freq": "Q",
+      "indic_em": "LTU",
+      "age": "Y15-74",
+      "unit": "PC_UNE",
+      "s_adj": "SA",
+      "sex": "T",
+      "geo": "EA20"
+    }
+  },
+  {
+    "id": "eur_ulc_nonfarm",
+    "provider": "eurostat",
+    "currency": "EUR",
+    "indicator": "labour",
+    "required": true,
+    "description": "Euro area nominal unit labour costs based on hours worked, % change vs same quarter previous year. Eurostat namq_10_lp_ulc, NULC_HW, PCH_SM, NSA, EA20. Quarterly from 1980. Published natively as YoY% — no derived computation needed. Used in inflation persistence tier.",
+    "api_version": "v3",
+    "dataset": "namq_10_lp_ulc",
+    "sdmx_key": "*.*.*.*.*",
+    "backfill": {
+      "start": "1995-01"
+    },
+    "filters": {
+      "freq": "Q",
+      "na_item": "NULC_HW",
+      "unit": "PCH_SM",
+      "s_adj": "NSA",
+      "geo": "EA20"
+    },
+    "fred_pit_id": "ULQECU01EZQ661S",
+    "fred_pit_note": "OECD ULC compensation. SA. Quarterly."
+  },
+  {
+    "id": "eur_labour_hoarding",
+    "provider": "ecbcs",
+    "currency": "EUR",
+    "indicator": "labour",
+    "required": true,
+    "description": "Euro area Labour Hoarding Indicator, SA. Share of firms retaining surplus staff. Rising = firms absorbing slack rather than hiring; leads labour market deterioration. EC DG ECFIN BCS.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bcs_zip": "labourhoarding_total_sa_nace2",
+    "bcs_series_key": "EA.LH",
+    "bcs_sheet": "AGGREGATE",
+    "backfill": {
+      "start": "2020-01"
+    }
+  },
+  {
+    "id": "eur_ecb_dfr",
+    "provider": "ecb",
+    "currency": "EUR",
+    "indicator": "yield",
+    "required": true,
+    "description": "ECB Deposit Facility Rate, daily. Used to compute (eur_yield_2y - eur_ecb_dfr) policy path spread for inflation pipeline tier.",
+    "freq": "D",
+    "ecb_dataset": "FM",
+    "data_key": "D.U2.EUR.4F.KR.DFR.LEV",
+    "backfill": {
+      "start": "1999-01"
+    }
+  },
+  {
+    "id": "eur_real_yield_10y",
+    "provider": "ecb",
+    "currency": "EUR",
+    "indicator": "yield",
+    "required": true,
+    "description": "Euro area real yield 10Y from inflation-linked bonds, monthly. ECB FM dataset. EUR 10Y breakeven = eur_yield_10y (monthly avg) - eur_real_yield_10y, computed in derived layer.",
+    "freq": "M",
+    "ecb_dataset": "FM",
+    "data_key": "M.U2.EUR.4F.BB.R_U2_10Y.YLDA",
+    "backfill": {
+      "start": "2004-01"
+    }
+  },
+  {
+    "id": "eur_hy_spread_oas",
+    "provider": "fred",
+    "currency": "EUR",
+    "indicator": "yield",
+    "required": true,
+    "description": "ICE BofA EUR High Yield Index Option-Adjusted Spread, percent. Daily. EUR credit stress indicator — widening = financial conditions tightening.",
+    "freq": "D",
+    "fred_series_id": "BAMLHE00EHYIOAS",
+    "backfill": {
+      "start": "1998-01"
+    }
+  }
+]

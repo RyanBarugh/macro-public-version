@@ -1,0 +1,892 @@
+[
+  {
+    "_comment": "═══ INFLATION ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "us_cpi_all_items_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "cpi",
+    "required": true,
+    "description": "US CPI-U All Items, seasonally adjusted (1982-84=100). BLS series CUSR0000SA0. Used to deflate nominal Census MARTS retail data and for inflation pillar.",
+    "sa_status": "sa",
+    "bls_series_id": "CUSR0000SA0",
+    "backfill": {
+      "start": "1947-01"
+    },
+    "fred_pit_id": "CPIAUCSL",
+    "fred_pit_note": "BLS CPI release. SA index."
+  },
+  {
+    "id": "us_cpi_core_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "cpi",
+    "required": true,
+    "description": "US CPI-U All Items Less Food and Energy (core), seasonally adjusted (1982-84=100). BLS series CUSR0000SA0L1E.",
+    "sa_status": "sa",
+    "bls_series_id": "CUSR0000SA0L1E",
+    "backfill": {
+      "start": "1957-01"
+    },
+    "fred_pit_id": "CPILFESL",
+    "fred_pit_note": "BLS CPI release. SA index."
+  },
+  {
+    "id": "us_cpi_services_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "cpi",
+    "required": true,
+    "description": "US CPI-U Services, seasonally adjusted (1982-84=100). BLS series CUSR0000SAS. Key sticky inflation component.",
+    "sa_status": "sa",
+    "bls_series_id": "CUSR0000SAS",
+    "backfill": {
+      "start": "1947-01"
+    },
+    "fred_pit_id": "CUSR0000SAS",
+    "fred_pit_note": "BLS CPI release. SA index."
+  },
+  {
+    "id": "usd_pce_headline_bea_sa",
+    "provider": "bea",
+    "currency": "USD",
+    "indicator": "pce",
+    "required": true,
+    "description": "US PCE Price Index, all items, seasonally adjusted. BEA NIPA Table 2.8.4. Monthly. Fisher Price Index 2017=100.",
+    "sa_status": "sa",
+    "freq": "M",
+    "table_name": "T20804",
+    "line_number": "1",
+    "series_code": "DPCERG",
+    "backfill": {
+      "start": "1959-01"
+    },
+    "fred_pit_id": "PCEPI",
+    "fred_pit_note": "BEA Personal Income release. SA index."
+  },
+  {
+    "id": "usd_pce_core_bea_sa",
+    "provider": "bea",
+    "currency": "USD",
+    "indicator": "pce",
+    "required": true,
+    "description": "US PCE Price Index excluding food and energy (core), seasonally adjusted. BEA NIPA Table 2.8.4. Monthly. Fisher Price Index 2017=100.",
+    "sa_status": "sa",
+    "freq": "M",
+    "table_name": "T20804",
+    "line_number": "25",
+    "series_code": "DPCCRG",
+    "backfill": {
+      "start": "1959-01"
+    },
+    "fred_pit_id": "PCEPILFE",
+    "fred_pit_note": "BEA Personal Income release. SA index."
+  },
+  {
+    "id": "usd_ppi_final_demand_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "ppi",
+    "required": true,
+    "description": "US PPI Final Demand, all commodities, seasonally adjusted (2018=100). BLS WPS series. Monthly. Replaced Finished Goods index in 2014.",
+    "sa_status": "sa",
+    "bls_series_id": "WPSFD4",
+    "backfill": {
+      "start": "2009-11"
+    },
+    "fred_pit_id": "PPIFIS",
+    "fred_pit_note": "BLS PPI release. SA."
+  },
+  {
+    "id": "usd_ppi_core_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "ppi",
+    "required": true,
+    "description": "US PPI Final Demand less foods and energy (core), seasonally adjusted (2018=100). BLS WPS series. Monthly.",
+    "sa_status": "sa",
+    "bls_series_id": "WPSFD49104",
+    "backfill": {
+      "start": "2009-11"
+    },
+    "fred_pit_id": "PPIFES",
+    "fred_pit_note": "BLS PPI release. SA. Less foods and energy."
+  },
+  {
+    "id": "usd_breakeven_10y",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "inflation",
+    "required": true,
+    "description": "US 10-Year Breakeven Inflation Rate, daily. Derived from 10-Year Treasury Constant Maturity minus 10-Year TIPS. Federal Reserve.",
+    "freq": "D",
+    "fred_series_id": "T10YIE",
+    "backfill": {
+      "start": "2003-01"
+    }
+  },
+  {
+    "id": "usd_breakeven_5y",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "inflation",
+    "required": true,
+    "description": "US 5-Year Breakeven Inflation Rate, daily. Derived from 5-Year Treasury Constant Maturity minus 5-Year TIPS. Federal Reserve.",
+    "freq": "D",
+    "fred_series_id": "T5YIE",
+    "backfill": {
+      "start": "2003-01"
+    }
+  },
+  {
+    "id": "usd_breakeven_5y5y_fwd",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "inflation",
+    "required": true,
+    "description": "US 5-Year, 5-Year Forward Inflation Expectation Rate, daily. Federal Reserve measure of long-term inflation anchor.",
+    "freq": "D",
+    "fred_series_id": "T5YIFR",
+    "backfill": {
+      "start": "2003-01"
+    }
+  },
+  {
+    "id": "us_cpi_food_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "cpi",
+    "required": false,
+    "description": "US CPI-U Food, seasonally adjusted (1982-84=100). BLS series CUSR0000SAF1.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bls_series_id": "CUSR0000SAF1",
+    "backfill": {
+      "start": "1947-01"
+    },
+    "fred_pit_id": "CPIUFDSL",
+    "fred_pit_note": "BLS CPI release. SA index."
+  },
+  {
+    "id": "us_cpi_shelter_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "cpi",
+    "required": false,
+    "description": "US CPI-U Shelter, seasonally adjusted (1982-84=100). BLS series CUSR0000SAH1. ~33% of CPI weight.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bls_series_id": "CUSR0000SAH1",
+    "backfill": {
+      "start": "1947-01"
+    },
+    "fred_pit_id": "CPIAUCSL",
+    "fred_pit_note": "Same CPI release as headline."
+  },
+  {
+    "id": "us_cpi_apparel_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "cpi",
+    "required": false,
+    "description": "US CPI-U Apparel, seasonally adjusted (1982-84=100). BLS series CUSR0000SAA.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bls_series_id": "CUSR0000SAA",
+    "backfill": {
+      "start": "1947-01"
+    },
+    "fred_pit_id": "CPIAUCSL",
+    "fred_pit_note": "Same CPI release as headline."
+  },
+  {
+    "id": "us_cpi_transportation_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "cpi",
+    "required": false,
+    "description": "US CPI-U Transportation, seasonally adjusted (1982-84=100). BLS series CUSR0000SAT.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bls_series_id": "CUSR0000SAT",
+    "backfill": {
+      "start": "1947-01"
+    },
+    "fred_pit_id": "CPIAUCSL",
+    "fred_pit_note": "Same CPI release as headline."
+  },
+  {
+    "id": "us_cpi_medical_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "cpi",
+    "required": false,
+    "description": "US CPI-U Medical Care, seasonally adjusted (1982-84=100). BLS series CUSR0000SAM.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bls_series_id": "CUSR0000SAM",
+    "backfill": {
+      "start": "1947-01"
+    },
+    "fred_pit_id": "CPIAUCSL",
+    "fred_pit_note": "Same CPI release as headline."
+  },
+  {
+    "id": "us_cpi_recreation_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "cpi",
+    "required": false,
+    "description": "US CPI-U Recreation, seasonally adjusted (1982-84=100). BLS series CUSR0000SAR.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bls_series_id": "CUSR0000SAR",
+    "backfill": {
+      "start": "1993-01"
+    },
+    "fred_pit_id": "CPIAUCSL",
+    "fred_pit_note": "Same CPI release as headline."
+  },
+  {
+    "id": "us_cpi_education_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "cpi",
+    "required": false,
+    "description": "US CPI-U Education and Communication, seasonally adjusted (1982-84=100). BLS series CUSR0000SAE.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bls_series_id": "CUSR0000SAE",
+    "backfill": {
+      "start": "1993-01"
+    },
+    "fred_pit_id": "CPIAUCSL",
+    "fred_pit_note": "Same CPI release as headline."
+  },
+  {
+    "id": "us_cpi_other_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "cpi",
+    "required": false,
+    "description": "US CPI-U Other Goods and Services, seasonally adjusted (1982-84=100). BLS series CUSR0000SAG.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bls_series_id": "CUSR0000SAG",
+    "backfill": {
+      "start": "1947-01"
+    },
+    "fred_pit_id": "CPIAUCSL",
+    "fred_pit_note": "Same CPI release as headline."
+  },
+  {
+    "id": "us_cpi_energy_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "cpi",
+    "required": false,
+    "description": "US CPI-U Energy, seasonally adjusted (1982-84=100). BLS series CUSR0000SA0E.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bls_series_id": "CUSR0000SA0E",
+    "backfill": {
+      "start": "1957-01"
+    },
+    "fred_pit_id": "CPIAUCSL",
+    "fred_pit_note": "Same CPI release as headline."
+  },
+  {
+    "_comment": "═══ GROWTH ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "usd_ip_total_fred_sa",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "growth",
+    "required": true,
+    "description": "US Industrial Production: Total Index. SA, 2017=100. Federal Reserve G.17. Monthly from 1919-01-01.",
+    "sa_status": "sa",
+    "fred_series_id": "INDPRO",
+    "backfill": {
+      "start": "1919-01"
+    }
+  },
+  {
+    "id": "usd_ip_manufacturing_fred_sa",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "growth",
+    "required": true,
+    "description": "US Industrial Production: Manufacturing (NAICS). SA, 2017=100. Federal Reserve G.17. Monthly from 1972-01-01.",
+    "sa_status": "sa",
+    "fred_series_id": "IPMAN",
+    "backfill": {
+      "start": "1972-01"
+    }
+  },
+  {
+    "id": "us_retail_total_marts_sa_sm",
+    "provider": "census",
+    "currency": "USD",
+    "indicator": "growth",
+    "required": true,
+    "description": "Advance retail sales: total retail & food services (44X72), seasonally adjusted, monthly sales.",
+    "dataset": "https://api.census.gov/data/timeseries/eits/marts",
+    "get": [
+      "cell_value"
+    ],
+    "params": {
+      "for": "us:*",
+      "seasonally_adj": "yes",
+      "data_type_code": "SM",
+      "category_code": "44X72"
+    },
+    "backfill": {
+      "start": "1992-01"
+    },
+    "fred_pit_id": "RSAFS",
+    "fred_pit_note": "Census MARTS release. SA."
+  },
+  {
+    "id": "us_retail_autos_marts_sa_sm",
+    "provider": "census",
+    "currency": "USD",
+    "indicator": "growth",
+    "required": true,
+    "description": "Advance retail sales: motor vehicles & parts dealers (441).",
+    "dataset": "https://api.census.gov/data/timeseries/eits/marts",
+    "get": [
+      "cell_value"
+    ],
+    "params": {
+      "for": "us:*",
+      "seasonally_adj": "yes",
+      "data_type_code": "SM",
+      "category_code": "441"
+    },
+    "backfill": {
+      "start": "1992-01"
+    },
+    "fred_pit_id": "RSAFS",
+    "fred_pit_note": "Same retail release as headline."
+  },
+  {
+    "id": "us_retail_gas_marts_sa_sm",
+    "provider": "census",
+    "currency": "USD",
+    "indicator": "growth",
+    "required": true,
+    "description": "Advance retail sales: gasoline stations (447).",
+    "dataset": "https://api.census.gov/data/timeseries/eits/marts",
+    "get": [
+      "cell_value"
+    ],
+    "params": {
+      "for": "us:*",
+      "seasonally_adj": "yes",
+      "data_type_code": "SM",
+      "category_code": "447"
+    },
+    "backfill": {
+      "start": "1992-01"
+    },
+    "fred_pit_id": "RSAFS",
+    "fred_pit_note": "Same retail release as headline."
+  },
+  {
+    "id": "us_retail_building_marts_sa_sm",
+    "provider": "census",
+    "currency": "USD",
+    "indicator": "growth",
+    "required": true,
+    "description": "Advance retail sales: building materials & garden equipment (444).",
+    "dataset": "https://api.census.gov/data/timeseries/eits/marts",
+    "get": [
+      "cell_value"
+    ],
+    "params": {
+      "for": "us:*",
+      "seasonally_adj": "yes",
+      "data_type_code": "SM",
+      "category_code": "444"
+    },
+    "backfill": {
+      "start": "1992-01"
+    },
+    "fred_pit_id": "RSAFS",
+    "fred_pit_note": "Same retail release as headline."
+  },
+  {
+    "id": "us_retail_food_services_marts_sa_sm",
+    "provider": "census",
+    "currency": "USD",
+    "indicator": "growth",
+    "required": true,
+    "description": "Advance retail sales: food services & drinking places (722).",
+    "dataset": "https://api.census.gov/data/timeseries/eits/marts",
+    "get": [
+      "cell_value"
+    ],
+    "params": {
+      "for": "us:*",
+      "seasonally_adj": "yes",
+      "data_type_code": "SM",
+      "category_code": "722"
+    },
+    "backfill": {
+      "start": "1992-01"
+    },
+    "fred_pit_id": "RSAFS",
+    "fred_pit_note": "Same retail release as headline."
+  },
+  {
+    "id": "usd_gdp_real_bea_sa",
+    "provider": "bea",
+    "currency": "USD",
+    "indicator": "gdp",
+    "required": true,
+    "description": "US Real GDP, chained 2017 dollars, seasonally adjusted at annual rates. BEA NIPA Table 1.1.6, Line 1, SeriesCode A191RX. Quarterly from 1947-Q1.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "table_name": "T10106",
+    "line_number": "1",
+    "series_code": "A191RX",
+    "backfill": {
+      "start": "1947-01"
+    },
+    "fred_pit_id": "GDPC1",
+    "fred_pit_note": "BEA GDP release. SA. First vintage = advance estimate."
+  },
+  {
+    "id": "usd_gdp_nominal_bea_sa",
+    "provider": "bea",
+    "currency": "USD",
+    "indicator": "gdp",
+    "required": true,
+    "description": "US Nominal GDP, current dollars, seasonally adjusted at annual rates. BEA NIPA Table 1.1.5, Line 1. Deflator numerator (nominal/real × 100).",
+    "table_name": "T10105",
+    "line_number": "1",
+    "series_code": "A191RC",
+    "freq": "Q",
+    "backfill": {
+      "start": "1947-01"
+    },
+    "fred_pit_id": "GDP",
+    "fred_pit_note": "BEA GDP release. SA."
+  },
+  {
+    "id": "usd_umich_sentiment",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "growth",
+    "required": true,
+    "description": "US University of Michigan Consumer Sentiment Index. Leading indicator for consumer spending.",
+    "sa_status": "nsa",
+    "freq": "M",
+    "fred_series_id": "UMCSENT",
+    "backfill": {
+      "start": "1978-01"
+    }
+  },
+  {
+    "id": "usd_housing_starts_sa",
+    "provider": "census",
+    "currency": "USD",
+    "indicator": "growth",
+    "required": true,
+    "description": "New privately-owned housing units started, SA annual rate (thousands). Census/HUD NRC.",
+    "dataset": "https://api.census.gov/data/timeseries/eits/resconst",
+    "get": [
+      "cell_value",
+      "time_slot_id"
+    ],
+    "params": {
+      "for": "us:*",
+      "seasonally_adj": "yes",
+      "data_type_code": "TOTAL",
+      "category_code": "ASTARTS"
+    },
+    "backfill": {
+      "start": "1959-01"
+    },
+    "fred_pit_id": "HOUST",
+    "fred_pit_note": "Census NRC release. SA."
+  },
+  {
+    "id": "usd_building_permits_sa",
+    "provider": "census",
+    "currency": "USD",
+    "indicator": "growth",
+    "required": true,
+    "description": "New privately-owned housing units authorized (building permits), SA annual rate (thousands). Census/HUD NRC.",
+    "dataset": "https://api.census.gov/data/timeseries/eits/resconst",
+    "get": [
+      "cell_value",
+      "time_slot_id"
+    ],
+    "params": {
+      "for": "us:*",
+      "seasonally_adj": "yes",
+      "data_type_code": "TOTAL",
+      "category_code": "APERMITS"
+    },
+    "backfill": {
+      "start": "1960-01"
+    },
+    "fred_pit_id": "PERMIT",
+    "fred_pit_note": "Same housing release as starts."
+  },
+  {
+    "id": "usd_durable_goods_orders_sa",
+    "provider": "census",
+    "currency": "USD",
+    "indicator": "growth",
+    "required": true,
+    "description": "Manufacturers New Orders: Durable Goods, SA (Millions $). Census Advance M3 Report.",
+    "dataset": "https://api.census.gov/data/timeseries/eits/advm3",
+    "get": [
+      "cell_value",
+      "time_slot_id"
+    ],
+    "params": {
+      "for": "us:*",
+      "seasonally_adj": "yes",
+      "data_type_code": "NO",
+      "category_code": "DXD"
+    },
+    "backfill": {
+      "start": "1992-02"
+    },
+    "fred_pit_id": "DGORDER",
+    "fred_pit_note": "Census M3 Advance release. SA."
+  },
+  {
+    "id": "usd_core_capex_orders_sa",
+    "provider": "census",
+    "currency": "USD",
+    "indicator": "growth",
+    "required": true,
+    "description": "Nondefense Capital Goods Orders Excluding Aircraft, SA (Millions $). Census Advance M3. Best real-time proxy for business investment intentions.",
+    "dataset": "https://api.census.gov/data/timeseries/eits/advm3",
+    "get": [
+      "cell_value",
+      "time_slot_id"
+    ],
+    "params": {
+      "for": "us:*",
+      "seasonally_adj": "yes",
+      "data_type_code": "NO",
+      "category_code": "NXA"
+    },
+    "backfill": {
+      "start": "1992-02"
+    },
+    "fred_pit_id": "NEWORDER",
+    "fred_pit_note": "Same M3 release. Proxy — verify NEWORDER vs ANDENO on FRED."
+  },
+  {
+    "id": "usd_bank_loans_total_sa",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "growth",
+    "required": true,
+    "description": "Total Loans and Leases at Commercial Banks, SA (Billions $). Federal Reserve H.8 release. Credit creation leads GDP by 2-4 quarters.",
+    "freq": "M",
+    "fred_series_id": "TOTLL",
+    "backfill": {
+      "start": "1947-01"
+    }
+  },
+  {
+    "id": "usd_philly_fed_mfg_sa",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "growth",
+    "required": false,
+    "description": "Philadelphia Fed Manufacturing Business Outlook Survey: General Activity Diffusion Index. SA. Monthly from 1968.",
+    "sa_status": "sa",
+    "fred_series_id": "GACDFSA066MSFRBPHI",
+    "backfill": {
+      "start": "1968-01"
+    }
+  },
+  {
+    "id": "usd_empire_state_mfg_sa",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "growth",
+    "required": false,
+    "description": "Empire State Manufacturing Survey: General Business Conditions Diffusion Index. SA. Monthly from 2001.",
+    "sa_status": "sa",
+    "fred_series_id": "GACDISA066MSFRBNY",
+    "backfill": {
+      "start": "2001-07"
+    }
+  },
+  {
+    "id": "usd_nfci",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "growth",
+    "required": false,
+    "description": "Chicago Fed National Financial Conditions Index. Weekly. Negative = loose, positive = tight.",
+    "sa_status": "sa",
+    "fred_series_id": "NFCI",
+    "backfill": {
+      "start": "1971-01"
+    }
+  },
+  {
+    "id": "usd_bci_sa",
+    "provider": "oecd",
+    "currency": "USD",
+    "indicator": "growth",
+    "required": true,
+    "description": "US Business Confidence Indicator, amplitude adjusted, index, monthly. OECD STES BCI.",
+    "sa_status": "sa",
+    "dataflow": "OECD.SDD.STES,DSD_STES@DF_CLI,",
+    "data_key": "USA.M.BCICP...AA.IX..H",
+    "backfill": {
+      "start": "1950-01"
+    },
+    "fred_pit_id": "BSCICP03USM665S",
+    "fred_pit_note": "OECD BCI amplitude adjusted. ~2-3 week lag vs ISM."
+  },
+  {
+    "_comment": "═══ LABOUR ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "usd_nfp_level_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "labour",
+    "required": true,
+    "description": "US Total Nonfarm Payrolls (employment level, thousands), SA.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bls_series_id": "CES0000000001",
+    "backfill": {
+      "start": "1939-01"
+    },
+    "fred_pit_id": "PAYEMS",
+    "fred_pit_note": "BLS Employment Situation release. SA."
+  },
+  {
+    "id": "usd_wage_ahe_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "labour",
+    "required": true,
+    "description": "US Average Hourly Earnings, all private employees, SA. Wage inflation.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bls_series_id": "CES0500000003",
+    "backfill": {
+      "start": "2006-01"
+    },
+    "fred_pit_id": "CES0500000003",
+    "fred_pit_note": "Same employment release."
+  },
+  {
+    "id": "usd_unemployment_rate_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "labour",
+    "required": true,
+    "description": "US Unemployment Rate (U3), SA. Fed dual mandate.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bls_series_id": "LNS14000000",
+    "backfill": {
+      "start": "1948-01"
+    },
+    "fred_pit_id": "UNRATE",
+    "fred_pit_note": "Same employment release."
+  },
+  {
+    "id": "usd_participation_rate_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "labour",
+    "required": true,
+    "description": "US Labour Force Participation Rate, SA. Structural labour supply.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bls_series_id": "LNS11300000",
+    "backfill": {
+      "start": "1948-01"
+    },
+    "fred_pit_id": "CIVPART",
+    "fred_pit_note": "Same employment release."
+  },
+  {
+    "id": "usd_jolts_openings_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "labour",
+    "required": false,
+    "description": "US JOLTS Total Nonfarm Job Openings, SA (thousands). Labour market tightness. 60-day lag.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bls_series_id": "JTS000000000000000JOL",
+    "backfill": {
+      "start": "2000-12"
+    },
+    "fred_pit_id": "JTSJOL",
+    "fred_pit_note": "BLS JOLTS release. ~60 day lag."
+  },
+  {
+    "id": "usd_ulc_nonfarm",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "labour",
+    "required": true,
+    "description": "US Unit Labour Costs, Nonfarm Business, Index 2017=100. BLS Major Sector Productivity and Costs (PRS85006113). Quarterly. YoY% computed in derived layer via pct_change(4). Used in inflation persistence tier — wage cost pass-through net of productivity.",
+    "freq": "Q",
+    "bls_series_id": "PRS85006113",
+    "backfill": {
+      "start": "1947-01"
+    },
+    "fred_pit_id": "ULCNFB",
+    "fred_pit_note": "BLS Productivity & Costs release. Quarterly."
+  },
+  {
+    "id": "usd_claims_initial_sa",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "labour",
+    "required": true,
+    "description": "US Initial Jobless Claims (weekly), SA. Leading recession indicator.",
+    "sa_status": "sa",
+    "freq": "W",
+    "fred_series_id": "ICSA",
+    "backfill": {
+      "start": "1967-01"
+    }
+  },
+  {
+    "id": "usd_claims_continuing_sa",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "labour",
+    "required": true,
+    "description": "US Continuing Jobless Claims (insured unemployment), SA. Weekly.",
+    "sa_status": "sa",
+    "freq": "W",
+    "fred_series_id": "CCSA",
+    "backfill": {
+      "start": "1967-01"
+    }
+  },
+  {
+    "id": "usd_labour_force_level",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "labour",
+    "required": true,
+    "description": "US Civilian Labor Force Level, thousands, SA. Employed + Unemployed persons aged 16+. Current Population Survey.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bls_series_id": "LNS11000000",
+    "backfill": {
+      "start": "1948-01"
+    },
+    "fred_pit_id": "CLF16OV",
+    "fred_pit_note": "Same employment release."
+  },
+  {
+    "id": "usd_unemployed_level",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "labour",
+    "required": true,
+    "description": "US Unemployed Persons, thousands, SA. Persons aged 16+ actively seeking work. Current Population Survey.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bls_series_id": "LNS13000000",
+    "backfill": {
+      "start": "1948-01"
+    },
+    "fred_pit_id": "UNEMPLOY",
+    "fred_pit_note": "Same employment release."
+  },
+  {
+    "id": "usd_avg_weekly_hours_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "labour",
+    "required": true,
+    "description": "US Average Weekly Hours of All Private Employees, SA. BLS CES series. Monthly from 2006-03. Leading deterioration indicator — firms cut hours before cutting headcount.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bls_series_id": "CES0500000007",
+    "backfill": {
+      "start": "2006-03"
+    },
+    "fred_pit_id": "AWHAETP",
+    "fred_pit_note": "Same employment release."
+  },
+  {
+    "id": "usd_jolts_quits_rate_sa",
+    "provider": "bls",
+    "currency": "USD",
+    "indicator": "labour",
+    "required": false,
+    "description": "US JOLTS Quits Rate, Total Nonfarm, SA. Confidence indicator — high = workers confident, low = workers scared. 60-day lag.",
+    "sa_status": "sa",
+    "freq": "M",
+    "bls_series_id": "JTS000000000000000QUR",
+    "backfill": {
+      "start": "2000-12"
+    },
+    "fred_pit_id": "JTSQUR",
+    "fred_pit_note": "Same JOLTS release."
+  },
+  {
+    "id": "usd_fed_funds_rate",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "yield",
+    "required": true,
+    "description": "US Federal Funds Effective Rate, daily. Used to compute (usd_yield_2y - usd_fed_funds_rate) policy path spread for inflation pipeline tier.",
+    "freq": "D",
+    "fred_series_id": "DFF",
+    "backfill": {
+      "start": "1954-07"
+    }
+  },
+  {
+    "id": "usd_spread_10y2y",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "yield",
+    "required": true,
+    "description": "US 10-Year minus 2-Year Treasury Constant Maturity Spread, daily. Recession indicator (inverts before recessions).",
+    "freq": "D",
+    "fred_series_id": "T10Y2Y",
+    "backfill": {
+      "start": "1976-06"
+    }
+  },
+  {
+    "id": "usd_hy_spread_oas",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "yield",
+    "required": true,
+    "description": "ICE BofA US High Yield Index Option-Adjusted Spread, percent. Daily. Widening = stress, tightening = risk appetite expanding.",
+    "freq": "D",
+    "fred_series_id": "BAMLH0A0HYM2",
+    "backfill": {
+      "start": "1996-12"
+    }
+  },
+  {
+    "id": "usd_ig_spread_oas",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "yield",
+    "required": true,
+    "description": "ICE BofA US Corporate Index (Investment Grade) Option-Adjusted Spread, percent. Daily. Used alongside HY OAS to distinguish default risk vs systemic/liquidity risk.",
+    "freq": "D",
+    "fred_series_id": "BAMLC0A0CM",
+    "backfill": {
+      "start": "1996-12"
+    }
+  }
+]

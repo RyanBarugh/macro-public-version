@@ -1,0 +1,327 @@
+[
+  {
+    "_comment": "═══ FINANCIAL CONDITIONS — RATES ═══════════════════════════════",
+    "id": "fc_real_yield_5y",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "financial_conditions",
+    "required": true,
+    "description": "US 5-Year TIPS Real Yield (DFII5), daily. Front-end real yield cross-check. Used in curve momentum decomposition.",
+    "freq": "D",
+    "fred_series_id": "DFII5",
+    "backfill": { "start": "2003-01" }
+  },
+
+  {
+    "_comment": "═══ FINANCIAL CONDITIONS — LIQUIDITY ═══════════════════════════",
+    "id": "fc_fed_total_assets",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "financial_conditions",
+    "required": true,
+    "description": "Federal Reserve Total Assets (WALCL), weekly Wednesday. H.4.1 balance sheet release. FC liquidity bucket (20%).",
+    "freq": "W",
+    "fred_series_id": "WALCL",
+    "backfill": { "start": "2002-12" }
+  },
+  {
+    "id": "fc_on_rrp",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "financial_conditions",
+    "required": true,
+    "description": "Overnight Reverse Repurchase Agreements (RRPONTSYD), daily. NY Fed. FC liquidity bucket (20%).",
+    "freq": "D",
+    "fred_series_id": "RRPONTSYD",
+    "backfill": { "start": "2003-01" }
+  },
+  {
+    "id": "fc_tga_balance",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "financial_conditions",
+    "required": true,
+    "description": "Treasury General Account balance at Federal Reserve (WTREGEN), weekly Wednesday. TGA drawdown = liquidity injection; buildup = drain.",
+    "freq": "W",
+    "fred_series_id": "WTREGEN",
+    "backfill": { "start": "2015-07" }
+  },
+
+  {
+    "_comment": "═══ FINANCIAL CONDITIONS — CREDIT ══════════════════════════════",
+    "id": "usd_bbb_spread_oas",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "financial_conditions",
+    "required": true,
+    "description": "ICE BofA BBB US Corporate Index Option-Adjusted Spread (BAMLC0A4CBBB), percent. Daily. FC credit bucket (30%).",
+    "freq": "D",
+    "fred_series_id": "BAMLC0A4CBBB",
+    "backfill": { "start": "1996-12" }
+  },
+
+  {
+    "_comment": "═══ FINANCIAL CONDITIONS — LEVERAGE ════════════════════════════",
+    "id": "usd_nfci_leverage",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "financial_conditions",
+    "required": true,
+    "description": "Chicago Fed NFCI Nonfinancial Leverage Subindex (NFCINONFINLEVERAGE). Weekly. FC leverage bucket (15%).",
+    "freq": "W",
+    "fred_series_id": "NFCINONFINLEVERAGE",
+    "backfill": { "start": "1973-01" }
+  },
+
+  {
+    "_comment": "═══ FINANCIAL CONDITIONS — FUNDING ═════════════════════════════",
+    "id": "fc_sofr",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "financial_conditions",
+    "required": true,
+    "description": "Secured Overnight Financing Rate (SOFR), daily. NY Fed. SOFR-FFR spread for stress-origin classifier.",
+    "freq": "D",
+    "fred_series_id": "SOFR",
+    "backfill": { "start": "2018-04" }
+  },
+  {
+    "id": "fc_fed_swap_lines",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "financial_conditions",
+    "required": true,
+    "description": "Fed Central Bank Liquidity Swaps (SWPT), weekly Wednesday. Binary flag: >$5bn = acute USD funding stress.",
+    "freq": "W",
+    "fred_series_id": "SWPT",
+    "backfill": { "start": "2007-12" }
+  },
+  {
+    "id": "usd_cp_3m_rate",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "financial_conditions",
+    "required": true,
+    "description": "90-Day AA Financial Commercial Paper Rate (RIFSPPFAAD90NB). Daily. CP-Treasury spread (modern TED spread). FC funding bucket (10%).",
+    "freq": "D",
+    "fred_series_id": "RIFSPPFAAD90NB",
+    "backfill": { "start": "1997-01" }
+  },
+  {
+    "id": "usd_tbill_3m",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "financial_conditions",
+    "required": true,
+    "description": "3-Month Treasury Bill Secondary Market Rate (DTB3). Daily. Risk-free leg of CP-Treasury spread. FC funding bucket (10%).",
+    "freq": "D",
+    "fred_series_id": "DTB3",
+    "backfill": { "start": "1954-01" }
+  },
+
+  {
+    "_comment": "═══ RORO — VOLATILITY ══════════════════════════════════════════",
+    "id": "roro_vix_daily",
+    "provider": "eodhd",
+    "currency": "USD",
+    "indicator": "roro",
+    "required": true,
+    "description": "CBOE VIX daily close. EODHD INDX exchange.",
+    "freq": "D",
+    "eodhd_ticker": "VIX",
+    "eodhd_exchange": "INDX",
+    "backfill": { "start": "1990-01" }
+  },
+  {
+    "id": "roro_vix3m_daily",
+    "provider": "eodhd",
+    "currency": "USD",
+    "indicator": "roro",
+    "required": true,
+    "description": "CBOE 3-Month VIX (VIX3M), daily. EODHD INDX exchange.",
+    "freq": "D",
+    "eodhd_ticker": "VIX3M",
+    "eodhd_exchange": "INDX",
+    "backfill": { "start": "2008-01" }
+  },
+  {
+    "id": "roro_move_daily",
+    "provider": "eodhd",
+    "currency": "USD",
+    "indicator": "roro",
+    "required": true,
+    "description": "ICE BofA MOVE Index (rates vol), daily. EODHD INDX exchange.",
+    "freq": "D",
+    "eodhd_ticker": "MOVE",
+    "eodhd_exchange": "INDX",
+    "backfill": { "start": "2002-01" }
+  },
+
+  {
+    "_comment": "═══ RORO — EQUITY ══════════════════════════════════════════════",
+    "id": "roro_spx_daily",
+    "provider": "eodhd",
+    "currency": "USD",
+    "indicator": "roro",
+    "required": true,
+    "description": "S&P 500 index daily close. EODHD INDX exchange.",
+    "freq": "D",
+    "eodhd_ticker": "GSPC",
+    "eodhd_exchange": "INDX",
+    "backfill": { "start": "1990-01" }
+  },
+
+  {
+    "_comment": "═══ RORO — CREDIT ══════════════════════════════════════════════",
+    "id": "roro_hyg_daily",
+    "provider": "eodhd",
+    "currency": "USD",
+    "indicator": "roro",
+    "required": true,
+    "description": "iShares iBoxx HY Corporate Bond ETF (HYG). Daily close. HY credit spread proxy.",
+    "freq": "D",
+    "eodhd_ticker": "HYG",
+    "eodhd_exchange": "US",
+    "backfill": { "start": "2007-04" }
+  },
+  {
+    "id": "roro_lqd_daily",
+    "provider": "eodhd",
+    "currency": "USD",
+    "indicator": "roro",
+    "required": true,
+    "description": "iShares iBoxx IG Corporate Bond ETF (LQD). Daily close. IG credit spread proxy.",
+    "freq": "D",
+    "eodhd_ticker": "LQD",
+    "eodhd_exchange": "US",
+    "backfill": { "start": "2002-07" }
+  },
+
+  {
+    "_comment": "═══ RORO — DOLLAR OVERLAY ══════════════════════════════════════",
+    "id": "roro_dxy_daily",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "roro",
+    "required": true,
+    "description": "Trade Weighted US Dollar Index Broad (DTWEXBGS). Daily. Overlay display + dollar regime input.",
+    "freq": "D",
+    "fred_series_id": "DTWEXBGS",
+    "backfill": { "start": "2006-01" }
+  },
+
+  {
+    "_comment": "═══ RORO V2 — EM CREDIT ════════════════════════════════════════",
+    "id": "roro_em_corp_oas",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "roro",
+    "required": true,
+    "description": "ICE BofA EM Corporate Plus OAS (BAMLEMCBPIOAS). Daily. EM credit risk appetite.",
+    "freq": "D",
+    "fred_series_id": "BAMLEMCBPIOAS",
+    "backfill": { "start": "2000-01" }
+  },
+
+  {
+    "_comment": "═══ RORO V2 — CROSS-ASSET ═════════════════════════════════════",
+    "id": "roro_audjpy",
+    "provider": "eodhd",
+    "currency": "USD",
+    "indicator": "roro",
+    "required": true,
+    "description": "AUD/JPY cross rate. Daily. Purest FX risk barometer.",
+    "freq": "D",
+    "eodhd_ticker": "AUDJPY",
+    "eodhd_exchange": "FOREX",
+    "backfill": { "start": "2000-01" }
+  },
+  {
+    "id": "roro_eem",
+    "provider": "eodhd",
+    "currency": "USD",
+    "indicator": "roro",
+    "required": true,
+    "description": "iShares MSCI Emerging Markets ETF (EEM). Daily close. EM equity proxy.",
+    "freq": "D",
+    "eodhd_ticker": "EEM",
+    "eodhd_exchange": "US",
+    "backfill": { "start": "2003-04" }
+  },
+
+  {
+    "_comment": "═══ RORO V2 — SECTOR ROTATION: CYCLICALS ══════════════════════",
+    "id": "roro_xlk",
+    "provider": "eodhd",
+    "currency": "USD",
+    "indicator": "roro",
+    "required": true,
+    "description": "Technology Select Sector SPDR (XLK). Daily close. Cyclical basket.",
+    "freq": "D",
+    "eodhd_ticker": "XLK",
+    "eodhd_exchange": "US",
+    "backfill": { "start": "1998-12" }
+  },
+  {
+    "id": "roro_xly",
+    "provider": "eodhd",
+    "currency": "USD",
+    "indicator": "roro",
+    "required": true,
+    "description": "Consumer Discretionary Select Sector SPDR (XLY). Daily close. Cyclical basket.",
+    "freq": "D",
+    "eodhd_ticker": "XLY",
+    "eodhd_exchange": "US",
+    "backfill": { "start": "1998-12" }
+  },
+  {
+    "id": "roro_xli",
+    "provider": "eodhd",
+    "currency": "USD",
+    "indicator": "roro",
+    "required": true,
+    "description": "Industrial Select Sector SPDR (XLI). Daily close. Cyclical basket.",
+    "freq": "D",
+    "eodhd_ticker": "XLI",
+    "eodhd_exchange": "US",
+    "backfill": { "start": "1998-12" }
+  },
+
+  {
+    "_comment": "═══ RORO V2 — SECTOR ROTATION: DEFENSIVES ═════════════════════",
+    "id": "roro_xlu",
+    "provider": "eodhd",
+    "currency": "USD",
+    "indicator": "roro",
+    "required": true,
+    "description": "Utilities Select Sector SPDR (XLU). Daily close. Defensive basket.",
+    "freq": "D",
+    "eodhd_ticker": "XLU",
+    "eodhd_exchange": "US",
+    "backfill": { "start": "1998-12" }
+  },
+  {
+    "id": "roro_xlp",
+    "provider": "eodhd",
+    "currency": "USD",
+    "indicator": "roro",
+    "required": true,
+    "description": "Consumer Staples Select Sector SPDR (XLP). Daily close. Defensive basket.",
+    "freq": "D",
+    "eodhd_ticker": "XLP",
+    "eodhd_exchange": "US",
+    "backfill": { "start": "1998-12" }
+  },
+  {
+    "id": "roro_xlv",
+    "provider": "eodhd",
+    "currency": "USD",
+    "indicator": "roro",
+    "required": true,
+    "description": "Health Care Select Sector SPDR (XLV). Daily close. Defensive basket.",
+    "freq": "D",
+    "eodhd_ticker": "XLV",
+    "eodhd_exchange": "US",
+    "backfill": { "start": "1998-12" }
+  }
+]

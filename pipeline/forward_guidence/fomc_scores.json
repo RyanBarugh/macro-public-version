@@ -1,0 +1,740 @@
+[
+  {
+    "date": "2020-01-29",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": 0.2,
+    "rationale": "The guidance signals patience with a slight hawkish lean. The Committee judges current policy as 'appropriate' and expresses satisfaction with economic conditions, suggesting no urgency to change rates. However, the specific mention of monitoring 'global developments and muted inflation pressures' indicates ongoing watchfulness for dovish risks, preventing a more hawkish score.",
+    "key_changes": [
+      "Current stance judged as 'appropriate'",
+      "Monitoring muted inflation pressures as potential dovish risk"
+    ],
+    "scores": [
+      0.2
+    ]
+  },
+  {
+    "date": "2020-03-15",
+    "action": "Cut",
+    "dissents": "Voting against this action was Loretta J. Mester, who was fully supportive of all of the actions taken to promote the smooth functioning of markets and the flow of credit to households and businesses but preferred to reduce the target range for the federal funds rate to 1/2 to 3/4 percent at this meeting.",
+    "score": -1.8,
+    "rationale": "This guidance signals aggressive dovish positioning following an emergency cut to near-zero. The Committee explicitly commits to maintaining rates at 0-0.25% 'until it is confident that the economy has weathered recent events' - an open-ended, highly accommodative stance. The language 'prepared to use its full range of tools' and announcement of massive QE ($500B+ Treasury, $200B+ MBS purchases) demonstrates maximum dovish activism. The single dissent for a SMALLER cut (Mester preferring 0.5-0.75% vs 0-0.25%) confirms the majority chose the most aggressive easing option.",
+    "key_changes": [
+      "Emergency cut to zero with open-ended commitment",
+      "Massive QE program announcement",
+      "Dissent for smaller cut confirms aggressive dovish stance",
+      "Full range of tools language signals maximum accommodation"
+    ],
+    "scores": [
+      -1.8
+    ]
+  },
+  {
+    "date": "2020-04-29",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": -1.8,
+    "rationale": "The guidance maintains an extremely accommodative stance with open-ended QE commitments ('amounts needed to support smooth market functioning') and activist language ('will use its tools and act as appropriate'). While removing the previous meeting's explicit commitment to hold rates until confident the economy recovers, the overall tone remains highly dovish with no conditions for policy normalization and continued emphasis on supporting the economy through the crisis.",
+    "key_changes": [
+      "Removed explicit commitment to hold rates until economy recovers",
+      "Maintained open-ended QE purchases based on market functioning needs",
+      "Unanimous vote suggests dovish consensus solidified"
+    ],
+    "scores": [
+      -1.8
+    ]
+  },
+  {
+    "date": "2020-06-10",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": -1.4,
+    "rationale": "The guidance maintains a highly dovish stance with activist language ('will use its tools and act as appropriate to support the economy') and open-ended QE commitments ('at least at the current pace'). The shift from 'amounts needed' to 'at least at the current pace' provides more specific commitment to continued accommodation. While standard dual mandate language appears, there are no conditions for policy normalization and the focus remains entirely on supporting the economy through crisis conditions.",
+    "key_changes": [
+      "QE commitment becomes more specific with 'at least at the current pace'",
+      "Maintains activist 'act as appropriate to support' language",
+      "No conditions or thresholds for policy normalization mentioned"
+    ],
+    "scores": [
+      -1.4
+    ]
+  },
+  {
+    "date": "2020-07-29",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": -1.7,
+    "rationale": "Maintains highly dovish stance with activist language ('will use its tools and act as appropriate to support the economy') and open-ended QE commitment ('at least at the current pace'). The guidance provides no conditions for policy normalization and maintains crisis-era accommodation posture with unanimous support. Focus remains entirely on supporting the economy through ongoing pandemic conditions.",
+    "key_changes": [
+      "Maintained activist 'will use its tools and act as appropriate' language",
+      "Continued open-ended QE commitment 'at least at current pace'",
+      "No conditions specified for policy normalization"
+    ],
+    "scores": [
+      -1.7
+    ]
+  },
+  {
+    "date": "2020-09-16",
+    "action": "Hold",
+    "dissents": "Voting against the action were Robert S. Kaplan, who expects that it will be appropriate to maintain the current target range until the Committee is confident that the economy has weathered recent events and is on track to achieve its maximum employment and price stability goals as articulated in its new policy strategy statement, but prefers that the Committee retain greater policy rate flexibility beyond that point; and Neel Kashkari, who prefers that the Committee\u00a0indicate that it expects to maintain the current target range until core inflation has reached 2 percent on a sustained basis.",
+    "score": -1.8,
+    "rationale": "Extremely dovish guidance with explicit commitment to keep rates at zero until both maximum employment AND inflation above 2% for 'some time'. New average inflation targeting framework makes this even more accommodative. Open-ended QE at current pace. Two dissents wanting even MORE accommodation shows this satisfied most doves while being maximally dovish.",
+    "key_changes": [
+      "New average inflation targeting requiring above-2% inflation for some time",
+      "Dual employment and inflation conditions must both be met",
+      "Two dissents for even more dovish positions"
+    ],
+    "scores": [
+      -1.8
+    ]
+  },
+  {
+    "date": "2020-11-05",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": -1.9,
+    "rationale": "Extremely dovish guidance with explicit dual threshold commitment (maximum employment AND inflation moderately above 2% 'for some time'), new average inflation targeting framework making policy even more accommodative, open-ended QE continuation, and unanimous vote showing consensus around maximum accommodation",
+    "key_changes": [
+      "Unanimous vote after prior dissents for more accommodation suggests this level of dovishness satisfied all members"
+    ],
+    "scores": [
+      -1.9
+    ]
+  },
+  {
+    "date": "2020-12-16",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": -1.8,
+    "rationale": "Extremely dovish guidance maintaining maximum accommodation with explicit dual threshold commitment requiring both maximum employment AND inflation moderately above 2% 'for some time' before any tightening. Open-ended QE continuation at $120B monthly pace until 'substantial further progress' made. Unanimous vote confirms consensus around extended ultra-easy stance.",
+    "key_changes": [
+      "Maintained explicit dual threshold framework",
+      "Continued open-ended QE commitment",
+      "Unanimous consensus around maximum accommodation"
+    ],
+    "scores": [
+      -1.8
+    ]
+  },
+  {
+    "date": "2021-01-27",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": -1.9,
+    "rationale": "Extremely dovish guidance maintaining maximum accommodation with explicit dual threshold commitment requiring both maximum employment AND inflation moderately above 2% 'for some time' before any tightening. Open-ended QE continuation at $120B monthly pace until 'substantial further progress' made. Unanimous vote confirms consensus around extended ultra-easy stance.",
+    "key_changes": [
+      "No material changes from prior meeting - maintains identical dual threshold language",
+      "Continues open-ended QE at $120B monthly until substantial progress",
+      "Unanimous vote reinforces dovish consensus"
+    ],
+    "scores": [
+      -1.9
+    ]
+  },
+  {
+    "date": "2021-03-17",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": -1.8,
+    "rationale": "Extremely dovish guidance maintaining maximum accommodation with explicit dual threshold commitment requiring both maximum employment AND inflation moderately above 2% 'for some time' before any rate increases. Open-ended QE continues at $120B monthly until 'substantial further progress' made. Language signals extended period of ultra-easy policy with high bar for any tightening.",
+    "key_changes": [
+      "No changes from prior meeting - maintains identical extremely accommodative stance"
+    ],
+    "scores": [
+      -1.8
+    ]
+  },
+  {
+    "date": "2021-04-28",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": -2.0,
+    "rationale": "This represents extremely dovish guidance with explicit dual threshold commitment requiring both maximum employment AND inflation to not just reach 2% but moderately exceed it 'for some time' before any rate adjustments. The high bar for tapering QE ('substantial further progress') and the commitment to maintain rates at zero until these stringent conditions are met signals an extended period of maximum accommodation. No changes from prior meeting maintains this ultra-dovish stance.",
+    "key_changes": [
+      "No changes from prior extremely dovish guidance"
+    ],
+    "scores": [
+      -2.0
+    ]
+  },
+  {
+    "date": "2021-06-16",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": -1.8,
+    "rationale": "Maintains extremely dovish guidance with explicit dual threshold requiring both maximum employment AND inflation to moderately exceed 2% 'for some time' before any rate changes. The high bar for QE tapering ('substantial further progress') and commitment to zero rates until stringent conditions are met signals extended maximum accommodation. No changes from prior meeting maintains this ultra-dovish stance.",
+    "key_changes": [
+      "No substantive changes to forward guidance language",
+      "Maintains dual threshold commitment for rate liftoff",
+      "Continues 'substantial further progress' bar for QE tapering"
+    ],
+    "scores": [
+      -1.8
+    ]
+  },
+  {
+    "date": "2021-07-28",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": -1.8,
+    "rationale": "The guidance maintains extremely dovish language with dual thresholds requiring both maximum employment AND inflation to moderately exceed 2% 'for some time' before any rate changes. However, the key shift is acknowledging that 'the economy has made progress toward these goals' and the Committee 'will continue to assess progress in coming meetings' - this represents the first concrete acknowledgment of progress toward the high bar for QE tapering ('substantial further progress'). While still very dovish with no change to rate guidance, this progress assessment introduces the first hint that the ultra-accommodative stance may eventually evolve.",
+    "key_changes": [
+      "First acknowledgment that economy has made progress toward QE tapering goals",
+      "Committee will assess progress in coming meetings - suggesting potential policy evolution ahead"
+    ],
+    "scores": [
+      -1.8
+    ]
+  },
+  {
+    "date": "2021-09-22",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": -1.2,
+    "rationale": "This guidance maintains the extremely dovish dual employment-inflation thresholds for rate changes, but shows a meaningful hawkish shift on QE. The key change is moving from assessing progress ('will continue to assess progress in coming meetings') to stating progress has been made ('the economy has made progress toward these goals') and that QE tapering 'may soon be warranted.' This represents concrete movement toward reducing accommodation, though rates remain far from any changes with the high dual thresholds intact.",
+    "key_changes": [
+      "Progress acknowledged: 'the economy has made progress toward these goals'",
+      "QE tapering signaled: 'may soon be warranted'",
+      "Shift from assessing progress to stating progress achieved"
+    ],
+    "scores": [
+      -1.2
+    ]
+  },
+  {
+    "date": "2021-11-03",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": -0.3,
+    "rationale": "The guidance shows a subtle hawkish shift by beginning actual QE tapering ($15B monthly reduction) and removing 'may soon be warranted' language that was previously conditional. However, it remains dovish overall with extremely accommodative rate guidance requiring both maximum employment AND inflation moderately above 2% for 'some time' before any rate increases. The dovish rate thresholds dominate the modest hawkish QE action.",
+    "key_changes": [
+      "QE tapering actually begins with $15B monthly reduction",
+      "Removed conditional 'may soon be warranted' language about tapering",
+      "Maintained extremely high dual thresholds for any rate changes"
+    ],
+    "scores": [
+      -0.3
+    ]
+  },
+  {
+    "date": "2021-12-15",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": 0.4,
+    "rationale": "The guidance shows continued hawkish evolution from the prior meeting. The QE taper accelerates from $15B to $30B monthly reductions, and crucially drops the dovish dual threshold for rate increases - no longer requiring inflation to stay 'moderately above 2 percent for some time.' Now only maximum employment is needed as inflation 'having exceeded 2 percent for some time' is treated as satisfied. The projection of 'similar reductions...likely appropriate each month' signals steady taper progression. However, rate guidance remains accommodative with the 0-0.25% range maintained until maximum employment, and standard data-dependent language provides flexibility.",
+    "key_changes": [
+      "Accelerated QE taper to $30B monthly",
+      "Removed dovish dual inflation threshold for rate increases",
+      "Signaled steady monthly taper progression"
+    ],
+    "scores": [
+      0.4
+    ]
+  },
+  {
+    "date": "2022-01-26",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": 1.2,
+    "rationale": "Clear hawkish shift from prior meeting's guidance. The Committee explicitly signals rate increases are imminent with 'expects it will soon be appropriate to raise the target range,' marking a definitive departure from accommodative stance. The dual threshold for rate increases has been effectively abandoned - inflation criteria is now treated as satisfied rather than requiring it to stay 'moderately above 2 percent for some time.' The QE taper acceleration to end purchases in early March reinforces the hawkish pivot. While maintaining standard flexibility language, the directional signal is unmistakably toward tightening.",
+    "key_changes": [
+      "Explicit signal that rate increases will 'soon be appropriate'",
+      "Abandonment of dual threshold - inflation criteria now satisfied",
+      "QE taper accelerated to conclude in early March"
+    ],
+    "scores": [
+      1.2
+    ]
+  },
+  {
+    "date": "2022-03-16",
+    "action": "Hike",
+    "dissents": "Voting against this action was James Bullard, who preferred at this meeting to raise the target range for the federal funds rate by 0.5 percentage point to 1/2 to 3/4 percent. Patrick Harker voted as an alternate member at this meeting.",
+    "score": 1.6,
+    "rationale": "Very hawkish guidance with explicit commitment to ongoing rate increases and QT initiation. The phrase 'anticipates that ongoing increases in the target range will be appropriate' clearly signals a multi-hike cycle ahead, while announcing QT plans adds further restrictive momentum. The single dissent for a LARGER hike (Bullard wanting 50bp vs 25bp delivered) indicates the majority was already quite hawkish but drew the line at the pace, not the direction.",
+    "key_changes": [
+      "Explicit signal of ongoing rate increases ahead",
+      "Announcement of QT beginning at coming meeting",
+      "Dissent for larger hike shows hawkish consensus"
+    ],
+    "scores": [
+      1.6
+    ]
+  },
+  {
+    "date": "2022-05-04",
+    "action": "Hike",
+    "dissents": "Unanimous.",
+    "score": 1.7,
+    "rationale": "Maintains very hawkish stance with explicit commitment to 'ongoing increases' in rates plus QT initiation in June. The guidance clearly signals multiple hikes ahead and adds balance sheet reduction as additional tightening. Unanimous vote eliminates the prior dissent for a larger hike, suggesting the committee has found its hawkish consensus.",
+    "key_changes": [
+      "Unanimous vote after prior dissent for bigger hike",
+      "QT initiation date set for June 1",
+      "Maintains 'ongoing increases' commitment"
+    ],
+    "scores": [
+      1.7
+    ]
+  },
+  {
+    "date": "2022-06-15",
+    "action": "Hike",
+    "dissents": "Voting against this action was Esther L. George, who preferred at this meeting to raise the target range for the federal funds rate by 0.5 percentage point to 1-1/4 percent to 1-1/2 percent. Patrick Harker voted as an alternate member at this meeting.",
+    "score": 1.8,
+    "rationale": "Extremely hawkish guidance with explicit commitment to 'ongoing increases' plus aggressive balance sheet reduction. The statement signals clear intention for multiple rate hikes ahead and adds quantitative tightening. However, one dissent for a smaller hike (George wanted 50bp vs the delivered 75bp) suggests some members may be approaching their hawkish limit, preventing a perfect 2.0 score.",
+    "key_changes": [
+      "Explicit 'ongoing increases' commitment",
+      "QT continuation confirmed",
+      "Strong inflation commitment reinforced",
+      "Dissent for smaller hike suggests potential hawkish peak"
+    ],
+    "scores": [
+      1.8
+    ]
+  },
+  {
+    "date": "2022-07-27",
+    "action": "Hike",
+    "dissents": "Unanimous.",
+    "score": 1.8,
+    "rationale": "Very hawkish guidance maintaining explicit commitment to 'ongoing increases in the target range will be appropriate' while reaching unanimous consensus. The Fed signals clear intention for continued aggressive tightening with balance sheet reduction proceeding as planned. The unanimous vote represents hawkish consolidation after the prior meeting's dissent for a smaller hike, suggesting the Committee has coalesced around the aggressive path.",
+    "key_changes": [
+      "Unanimous consensus after prior dissent for smaller hike",
+      "Reaffirmed commitment to ongoing rate increases",
+      "Continued aggressive balance sheet reduction"
+    ],
+    "scores": [
+      1.8
+    ]
+  },
+  {
+    "date": "2022-09-21",
+    "action": "Hike",
+    "dissents": "Unanimous.",
+    "score": 1.7,
+    "rationale": "Maintains explicit commitment to 'ongoing increases in the target range will be appropriate' signaling continued tightening ahead. The unanimous consensus after prior dissent for smaller hike shows Committee consolidation around aggressive path. Balance sheet reduction continues as planned. Strong commitment to 2% inflation target reinforces restrictive stance. Language remains hawkish but lacks the most aggressive signaling of immediate large moves.",
+    "key_changes": [
+      "Unanimous vote after prior dissent shows hawkish consolidation",
+      "Maintains explicit 'ongoing increases' commitment",
+      "Balance sheet reduction continues unchanged"
+    ],
+    "scores": [
+      1.7
+    ]
+  },
+  {
+    "date": "2022-11-02",
+    "action": "Hike",
+    "dissents": "Unanimous.",
+    "score": 1.8,
+    "rationale": "Very hawkish guidance with explicit commitment to 'ongoing increases in the target range will be appropriate' signaling continued tightening ahead. The unanimous consensus after prior dissent for smaller hike shows Committee consolidation around aggressive path. Balance sheet reduction continues as planned. Strong commitment to 2% inflation target reinforces restrictive stance. Language remains hawkish but lacks the most aggressive signaling of immediate large moves.",
+    "key_changes": [
+      "Explicit commitment to ongoing rate increases",
+      "Unanimous consensus after prior dissent",
+      "Strong inflation commitment reinforces restrictive stance"
+    ],
+    "scores": [
+      1.8
+    ]
+  },
+  {
+    "date": "2022-12-14",
+    "action": "Hike",
+    "dissents": "Unanimous.",
+    "score": 1.7,
+    "rationale": "The guidance maintains explicit commitment to 'ongoing increases' in rates ahead, signaling continued tightening. However, the addition of language about 'taking into account the cumulative tightening' and 'lags with which monetary policy affects' represents a subtle hawkish moderation from pure aggression. The Committee is clearly signaling more hikes but acknowledging they may proceed more carefully given cumulative effects.",
+    "key_changes": [
+      "Added consideration of 'cumulative tightening' and policy lags",
+      "Maintains 'ongoing increases' commitment but with more nuanced pacing language"
+    ],
+    "scores": [
+      1.7
+    ]
+  },
+  {
+    "date": "2023-02-01",
+    "action": "Hike",
+    "dissents": "Unanimous.",
+    "score": 1.3,
+    "rationale": "The guidance explicitly states 'ongoing increases in the target range will be appropriate' which is clearly hawkish signaling of continued tightening ahead. However, the language about 'taking into account the cumulative tightening' and 'lags with which monetary policy affects' indicates the Committee is beginning to acknowledge constraints on their hiking cycle, suggesting a more measured approach rather than aggressive tightening. The unanimous vote and strong commitment to the 2% objective reinforce the hawkish stance, but the acknowledgment of cumulative effects prevents this from being maximally hawkish.",
+    "key_changes": [
+      "Explicit commitment to 'ongoing increases' in rates",
+      "Acknowledgment of 'cumulative tightening' and policy lags as constraining factors",
+      "Unanimous support for continued restrictive policy"
+    ],
+    "scores": [
+      1.3
+    ]
+  },
+  {
+    "date": "2023-03-22",
+    "action": "Hike",
+    "dissents": "Unanimous.",
+    "score": 0.7,
+    "rationale": "The guidance shows a notable softening from the prior meeting's 'ongoing increases will be appropriate' to 'some additional policy firming may be appropriate' - a shift from certainty to possibility that suggests less conviction about continued tightening. The emphasis on monitoring cumulative tightening effects and policy lags indicates growing caution. However, the hawkish elements remain: 'additional firming may be appropriate', 'sufficiently restrictive stance', and strong commitment to 2% inflation. This represents a patient but still slightly hawkish lean.",
+    "key_changes": [
+      "Softened from 'ongoing increases will be appropriate' to 'some additional firming may be appropriate'",
+      "Increased emphasis on cumulative tightening and policy lags suggesting more caution"
+    ],
+    "scores": [
+      0.7
+    ]
+  },
+  {
+    "date": "2023-05-03",
+    "action": "Hike",
+    "dissents": "Unanimous.",
+    "score": 0.7,
+    "rationale": "This guidance shows meaningful softening from prior hawkish certainty. The shift from 'ongoing increases will be appropriate' to 'additional policy firming may be appropriate' moves from presumption to possibility. The emphasis on monitoring 'cumulative tightening', 'lags', and various economic developments signals growing caution and data-dependency. However, the Fed maintains optionality for more tightening with 'additional policy firming may be appropriate' and reaffirms strong commitment to 2% inflation, preventing a fully neutral stance.",
+    "key_changes": [
+      "Softened from certainty to possibility on future hikes",
+      "Added emphasis on cumulative tightening effects and policy lags",
+      "Maintained optionality for additional firming"
+    ],
+    "scores": [
+      0.7
+    ]
+  },
+  {
+    "date": "2023-06-14",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": 0.6,
+    "rationale": "The guidance maintains a hawkish lean with 'additional policy firming may be appropriate' keeping tightening on the table, while the pause allows time to 'assess additional information.' The emphasis on cumulative tightening and lags shows growing caution, but the strong commitment to 2% inflation and preparedness to adjust policy 'as appropriate' preserves optionality for more tightening if needed.",
+    "key_changes": [
+      "Pause to assess after tightening cycle",
+      "Firming remains possible but not presumed",
+      "Emphasis on cumulative effects and lags"
+    ],
+    "scores": [
+      0.6
+    ]
+  },
+  {
+    "date": "2023-07-26",
+    "action": "Hike",
+    "dissents": "Unanimous.",
+    "score": 1.2,
+    "rationale": "The guidance maintains a hawkish lean with 'additional policy firming that may be appropriate' explicitly keeping tightening on the table after a hike. While acknowledging cumulative tightening and lags shows some caution, the strong commitment to returning inflation to 2% and preparedness to adjust policy 'as appropriate' preserves clear optionality for further tightening. The unanimous decision reinforces the hawkish stance.",
+    "key_changes": [
+      "Explicit mention of 'additional policy firming that may be appropriate' keeps tightening door open",
+      "Strong commitment to 2% inflation objective maintains hawkish bias",
+      "Unanimous decision shows Committee unity on restrictive path"
+    ],
+    "scores": [
+      1.2
+    ]
+  },
+  {
+    "date": "2023-09-20",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": 1.2,
+    "rationale": "The guidance maintains explicit hawkish optionality with 'additional policy firming that may be appropriate' keeping tightening on the table after a hold. While acknowledging cumulative tightening and lags shows some increased caution compared to active hiking cycles, the language still leans hawkish by keeping firming as the primary directional risk. The unanimous decision and strong 2% inflation commitment reinforce this stance, though the hold itself and acknowledgment of lags prevent a more hawkish score.",
+    "key_changes": [
+      "Hold after hiking cycle while keeping 'additional policy firming' language",
+      "Acknowledgment of cumulative tightening and lags shows some caution"
+    ],
+    "scores": [
+      1.2
+    ]
+  },
+  {
+    "date": "2023-11-01",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": 1.1,
+    "rationale": "The guidance maintains hawkish optionality by keeping 'additional policy firming that may be appropriate' on the table while holding rates at restrictive levels. The language acknowledges cumulative tightening and lags, showing increased caution, but the primary directional bias remains toward potential tightening rather than easing. The strong inflation commitment and unanimous decision reinforce patience with restrictive policy.",
+    "key_changes": [
+      "Maintains explicit firming optionality",
+      "Acknowledges cumulative tightening effects",
+      "Strong inflation commitment with unanimous support"
+    ],
+    "scores": [
+      1.1
+    ]
+  },
+  {
+    "date": "2023-12-13",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": 0.8,
+    "rationale": "The guidance maintains a patient, restrictive stance with hawkish optionality. While keeping 'additional policy firming that may be appropriate' on the table, the emphasis on 'cumulative tightening' and 'lags' shows increased acknowledgment of policy transmission, suggesting less urgency to tighten further. The unanimous decision and strong inflation commitment reinforce a wait-and-see approach at restrictive levels rather than active easing consideration.",
+    "key_changes": [
+      "Maintains firming optionality but emphasizes cumulative tightening effects",
+      "Unanimous decision suggests committee alignment on current restrictive stance",
+      "No shift toward easing consideration despite holding pattern"
+    ],
+    "scores": [
+      0.8
+    ]
+  },
+  {
+    "date": "2024-01-31",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": 1.4,
+    "rationale": "Clear hawkish patience with explicit threshold for easing. The guidance removes any hint of further tightening from prior meetings while establishing a demanding condition ('greater confidence that inflation is moving sustainably toward 2 percent') before cuts would be appropriate. The emphasis on 'carefully assess' and 'highly attentive to inflation risks' reinforces a restrictive hold pattern with no urgency to ease.",
+    "key_changes": [
+      "Removed 'additional policy firming' language",
+      "Added explicit threshold requiring 'greater confidence' before rate cuts",
+      "Shifted to purely patient restrictive stance"
+    ],
+    "scores": [
+      1.4
+    ]
+  },
+  {
+    "date": "2024-03-20",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": 1.2,
+    "rationale": "The guidance maintains explicit hawkish patience with the demanding threshold language 'does not expect it will be appropriate to reduce the target range until it has gained greater confidence that inflation is moving sustainably toward 2 percent.' The phrase 'carefully assess' and 'highly attentive to inflation risks' reinforces no urgency to ease. While risks are 'moving into better balance' (slight softening), the core restrictive stance with high bar for cuts remains unchanged from prior meeting.",
+    "key_changes": [
+      "Risks described as 'moving into better balance' - slight softening from prior restrictive tone"
+    ],
+    "scores": [
+      1.2
+    ]
+  },
+  {
+    "date": "2024-05-01",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": 1.2,
+    "rationale": "Clear hawkish patience with demanding threshold requiring 'greater confidence that inflation is moving sustainably toward 2 percent' before any cuts. The 'carefully assess' language and 'highly attentive to inflation risks' emphasize no urgency to ease. While risks are 'moving toward better balance' provides slight softening, the core restrictive stance with high bar for cuts dominates the guidance.",
+    "key_changes": [
+      "Risks moved toward better balance (slight dovish softening)",
+      "Maintained high threshold for rate cuts",
+      "Emphasized careful assessment and inflation vigilance"
+    ],
+    "scores": [
+      1.2
+    ]
+  },
+  {
+    "date": "2024-06-12",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": 1.2,
+    "rationale": "This guidance maintains the same hawkish patience as before with the demanding threshold of 'greater confidence that inflation is moving sustainably toward 2 percent' before cuts. The 'carefully assess' language and 'highly attentive to inflation risks' continue to emphasize no urgency to ease. While risks have 'moved toward better balance' provides slight acknowledgment of progress, the core restrictive stance with high bar for cuts dominates. The unanimous decision reinforces this patient approach.",
+    "key_changes": [
+      "Risks assessment shifted from 'moving toward' to 'have moved toward' better balance - slight past tense suggests some progress made"
+    ],
+    "scores": [
+      1.2
+    ]
+  },
+  {
+    "date": "2024-07-31",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": 1.2,
+    "rationale": "The guidance maintains a patient, hawkish stance with the demanding threshold of 'greater confidence that inflation is moving sustainably toward 2 percent' before cuts. The 'carefully assess' language emphasizes no urgency to ease. While 'risks continue to move into better balance' acknowledges some progress, the high bar for cuts and unanimous decision reinforce the restrictive stance with no urgency to ease.",
+    "key_changes": [
+      "Risks 'continue to move into better balance' shows ongoing progress",
+      "Unanimous decision maintains patient consensus",
+      "High threshold for cuts ('greater confidence') unchanged"
+    ],
+    "scores": [
+      1.2
+    ]
+  },
+  {
+    "date": "2024-09-18",
+    "action": "Cut 1/2 pp",
+    "dissents": "Voting against this action was Michelle W. Bowman, who preferred to lower the target range for the federal funds rate by 1/4 percentage point at this meeting.",
+    "score": -0.6,
+    "rationale": "This guidance represents a clear dovish shift from the prior hawkish stance. The Fed achieved their 'greater confidence' threshold and initiated cuts with a substantial 50bp move. However, the forward guidance shows restraint - 'carefully assess' suggests patience for future moves, 'roughly in balance' risks removes urgency, and the single dissent for a smaller cut indicates the majority drew the line against more aggressive easing. The language keeps the door open to further cuts but without strong commitment.",
+    "key_changes": [
+      "Threshold met: 'gained greater confidence' enables easing",
+      "Substantial 50bp cut but forward guidance emphasizes caution",
+      "Single dissent for smaller cut shows majority restraint",
+      "Risks now 'roughly in balance' removes urgency for aggressive action"
+    ],
+    "scores": [
+      -0.6
+    ]
+  },
+  {
+    "date": "2024-11-07",
+    "action": "Cut 1/4 pp",
+    "dissents": "Unanimous.",
+    "score": 0.4,
+    "rationale": "The guidance shows a clear hawkish shift from the previous dovish stance. Key changes include moving from 'greater confidence' language to 'carefully assess' which signals patience, risks now 'roughly in balance' removes urgency, and the shift from a dissent wanting a smaller cut to unanimous agreement suggests the dovish camp is now satisfied. While the door remains open to further cuts, the language emphasizes data-dependency over presumption of continued easing.",
+    "key_changes": [
+      "Shift from 'greater confidence' to 'carefully assess' signals patience",
+      "Risks now 'roughly in balance' removes urgency",
+      "Unanimous vote after prior dissent suggests doves now satisfied",
+      "Emphasis on data-dependency over presumption of further cuts"
+    ],
+    "scores": [
+      0.4
+    ]
+  },
+  {
+    "date": "2024-12-18",
+    "action": "Cut 1/4 pp",
+    "dissents": "Voting against the action was Beth M. Hammack, who preferred to maintain the target range for the federal funds rate at 4-1/2 to 4-3/4 percent.",
+    "score": 0.7,
+    "rationale": "The guidance shows clear hawkish evolution from prior dovish stance. Key hawkish signals include 'carefully assess' replacing presumptive easing language, risks now 'roughly in balance' removing urgency, and crucially the dissent flipping from wanting a smaller cut to wanting no cut at all - indicating the hawkish camp is gaining influence while doves were satisfied by this cut. The 'additional adjustments' language keeps the door open but without presumption.",
+    "key_changes": [
+      "Dissent flipped from wanting smaller cut to no cut",
+      "Risks now 'roughly in balance' vs previous urgency",
+      "'Carefully assess' signals patience over presumptive easing"
+    ],
+    "scores": [
+      0.7
+    ]
+  },
+  {
+    "date": "2025-01-29",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": 1.2,
+    "rationale": "This guidance represents a further hawkish evolution from the prior meeting. The Committee has moved from cutting rates to holding, with 'carefully assess' language emphasizing data-dependency and patience. The shift from a dissent wanting no cut to unanimous agreement on a hold suggests the hawkish faction has prevailed. 'Additional adjustments' remains but without any presumption or urgency, and risks being 'roughly in balance' removes dovish bias. The tone emphasizes careful evaluation rather than activist accommodation.",
+    "key_changes": [
+      "Shift from cutting to holding rates",
+      "Unanimous decision after prior hawkish dissent",
+      "Emphasis on 'carefully assess' showing patience",
+      "Balanced risk assessment removes dovish urgency"
+    ],
+    "scores": [
+      1.2
+    ]
+  },
+  {
+    "date": "2025-03-19",
+    "action": "Hold",
+    "dissents": "Voting against this action was Christopher J. Waller, who supported no change for the federal funds target range but preferred to continue the current pace of decline in securities holdings.",
+    "score": 1.3,
+    "rationale": "The guidance maintains a hawkish lean established from prior evolution, with 'carefully assess' and 'additional adjustments' language emphasizing patience and data-dependency without presumption. However, new elements add slight dovish pressure: 'uncertainty around the economic outlook has increased' suggests potential for policy response, and the single dissent from Waller wanting faster QT (not more restrictive rates) indicates the majority is less aggressive than the most hawkish members. The balance tips toward patience with some acknowledgment of evolving conditions.",
+    "key_changes": [
+      "Increased uncertainty acknowledged",
+      "Dissent on QT pace rather than rates",
+      "Maintained careful assessment stance"
+    ],
+    "scores": [
+      1.3
+    ]
+  },
+  {
+    "date": "2025-05-07",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": 0.7,
+    "rationale": "The guidance maintains a patient, hawkish-leaning stance with 'carefully assess' and 'additional adjustments' language emphasizing data-dependency without presumption. However, increased uncertainty and explicit acknowledgment that risks to both unemployment and inflation have risen introduces some dovish pressure. The unanimous decision (vs prior Waller dissent on QT) suggests the committee is unified around this cautious approach. The balance leans toward patience but with growing recognition of two-sided risks.",
+    "key_changes": [
+      "Uncertainty about economic outlook has increased further",
+      "Risks to both unemployment and inflation have risen",
+      "Unanimous decision vs prior QT dissent"
+    ],
+    "scores": [
+      0.7
+    ]
+  },
+  {
+    "date": "2025-06-18",
+    "action": "Hold",
+    "dissents": "Unanimous.",
+    "score": 0.8,
+    "rationale": "The guidance maintains a patient, hawkish-leaning stance with 'carefully assess' language and no presumption of rate direction. While uncertainty remains elevated, it has 'diminished' compared to the prior meeting, reducing dovish pressure. The 'additional adjustments' phrasing continues to avoid pre-commitment. The unanimous decision removes the prior hawkish dissent on QT, but this represents committee unity around the current patient approach rather than a dovish shift.",
+    "key_changes": [
+      "Uncertainty has 'diminished but remains elevated'",
+      "Unanimous decision vs prior dissent",
+      "Maintains 'carefully assess' patience language"
+    ],
+    "scores": [
+      0.8
+    ]
+  },
+  {
+    "date": "2025-07-30",
+    "action": "Hold",
+    "dissents": "Voting against this action were Michelle W. Bowman and Christopher J. Waller, who preferred to lower the target range for the federal funds rate by 1/4 percentage point at this meeting. Absent and not voting was Adriana D. Kugler.",
+    "score": 0.3,
+    "rationale": "The guidance maintains patient, data-dependent language with 'carefully assess' and no directional lean. However, two dissents for a 25bp cut signal meaningful dovish pressure within the committee, creating some uncertainty about the path ahead. The 'additional adjustments' language remains non-committal, while elevated uncertainty and dual mandate risks keep options open. The dissents prevent a more hawkish score despite the patient tone.",
+    "key_changes": [
+      "Two dissents for easing vs prior unanimous decision",
+      "Uncertainty remains 'elevated' vs prior 'diminished'"
+    ],
+    "scores": [
+      0.3
+    ]
+  },
+  {
+    "date": "2025-09-17",
+    "action": "Cut 1/4 pp",
+    "dissents": "Voting against this action was Stephen I. Miran, who preferred to lower the target range for the federal funds rate by 1/2 percentage point at this meeting.",
+    "score": -0.3,
+    "rationale": "The guidance shows a modest dovish lean through explicit acknowledgment of 'downside risks to employment have risen' and the shift in balance of risks justifying the cut. However, the dovish tilt is tempered by patient 'carefully assess' language for future moves and only one dissent for a larger cut (vs. two dovish dissents previously), suggesting the committee has drawn a line. The non-committal 'additional adjustments' phrasing keeps options open without presuming further easing.",
+    "key_changes": [
+      "Single dissent for bigger cut vs. two previously - majority consensus firming",
+      "Explicit acknowledgment of 'downside risks to employment have risen'",
+      "Patient 'carefully assess' language for future decisions"
+    ],
+    "scores": [
+      -0.3
+    ]
+  },
+  {
+    "date": "2025-10-29",
+    "action": "Cut 1/4 pp",
+    "dissents": "Voting against this action were Stephen I. Miran, who preferred to lower the target range for the federal funds rate by 1/2 percentage point at this meeting, and Jeffrey R. Schmid, who preferred no change to the target range for the federal funds rate at this meeting.",
+    "score": -0.2,
+    "rationale": "The guidance shows subtle dovish elements with 'downside risks to employment rose' and 'shift in balance of risks' justifying action, but these are offset by notably hawkish signals. Two dissents pulling in opposite directions (one for bigger cut, one for no cut) suggests the committee found a middle ground rather than broad dovish consensus. The 'carefully assess' language emphasizes patience over urgency, while 'additional adjustments' remains non-committal. The shift from previous meeting where multiple doves wanted bigger cuts to now having only one dissenter for larger easing indicates the committee has drawn boundaries around further accommodation.",
+    "key_changes": [
+      "Split dissents (one for bigger cut, one for no cut) vs. previously unified dovish dissents",
+      "Patient 'carefully assess' language for future moves",
+      "Non-committal 'additional adjustments' without directional presumption"
+    ],
+    "scores": [
+      -0.2
+    ]
+  },
+  {
+    "date": "2025-12-10",
+    "action": "Cut 1/4 pp",
+    "dissents": "Voting against this action were Stephen I. Miran, who preferred to lower the target range for the federal funds rate by 1/2 percentage point at this meeting; and Austan D. Goolsbee and Jeffrey R. Schmid, who preferred no change to the target range for the federal funds rate at this meeting.",
+    "score": 0.3,
+    "rationale": "Mixed signals with slight hawkish lean. While 'downside risks to employment rose' and 'shift in balance of risks' provide dovish justification for the cut, the forward guidance emphasizes patience with 'carefully assess' and non-committal 'additional adjustments.' Most significantly, the dissent pattern shows the committee drawing boundaries - only one member wants a bigger cut (down from multiple doves previously) while two prefer no action, suggesting the 25bp cut satisfied most dovish members and the majority is less inclined toward further aggressive easing.",
+    "key_changes": [
+      "Dissent pattern shift - fewer members wanting bigger cuts",
+      "Emphasis on 'carefully assess' suggests patience",
+      "Non-committal 'additional adjustments' language"
+    ],
+    "scores": [
+      0.3
+    ]
+  },
+  {
+    "date": "2026-01-28",
+    "action": "Hold",
+    "dissents": "Voting against this action were Stephen I. Miran and Christopher J. Waller, who preferred to lower the target range for the federal funds rate by 1/4 percentage point at this meeting.",
+    "score": -0.6,
+    "rationale": "The guidance shifts more dovish from the previous meeting's slight hawkish lean. While maintaining 'carefully assess' language suggesting patience, the key change is two dissents favoring a cut versus previous dissents wanting no action. This flip in dissent direction signals the committee majority is now more restrictive than some members prefer, and the elevated uncertainty language with 'risks to both sides' keeps the door open to policy adjustments in either direction. The dovish dissents indicate there's meaningful support for further easing within the committee.",
+    "key_changes": [
+      "Dissent pattern reversed - two members wanted to cut vs previous dissents wanting to hold",
+      "Elevated uncertainty mentioned with risks to both sides of dual mandate",
+      "Committee positioned as middle ground between more dovish members"
+    ],
+    "scores": [
+      -0.6
+    ]
+  },
+  {
+    "date": "2026-03-18",
+    "action": "Hold",
+    "dissents": "Voting against this action was Stephen I. Miran, who preferred to lower the target range for the federal funds rate by 1/4 percentage point at this meeting.",
+    "score": -0.6,
+    "rationale": "The guidance maintains 'carefully assess' language suggesting patience, but the key dovish signal is the flip in dissent direction - now we have a dissent for a cut versus previous dissents against action. This indicates the majority has drawn a more restrictive line than some members prefer. The 'risks to both sides' and elevated uncertainty language keeps the door open to adjustments in either direction, but the dovish dissent suggests meaningful committee support for further easing exists.",
+    "key_changes": [
+      "Dissent flipped from wanting no action to wanting a cut",
+      "Elevated uncertainty with risks to both sides maintains policy optionality"
+    ],
+    "scores": [
+      -0.6
+    ]
+  }
+]

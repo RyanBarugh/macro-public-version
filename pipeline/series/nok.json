@@ -1,0 +1,296 @@
+[
+  {
+    "_comment": "=== NORWAY (NOK) — SSB Retail Trade Index ===",
+    "id": "nok_retail_total_ssb_sa",
+    "provider": "ssb",
+    "required": true,
+    "description": "Norway retail trade volume index, total excl. motor vehicles (NACE 47), seasonally adjusted (2021=100). SSB table 07129.",
+    "table_id": "07129",
+    "query": [
+      {
+        "code": "NACE",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "47"
+          ]
+        }
+      },
+      {
+        "code": "ContentsCode",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "VolumSesong"
+          ]
+        }
+      }
+    ],
+    "backfill": {
+      "start": "2000-01"
+    },
+    "fred_backfill": {
+      "fred_series_id": "NORSLRTTO02IXOBSAM",
+      "start": "1960-01",
+      "end": "1999-12",
+      "note": "OECD MEI via FRED. Retail trade volume excl. motor vehicles, SA, Index 2015=100. Monthly."
+    }
+  },
+  {
+    "id": "nok_cpi_headline_nsa",
+    "provider": "ssb",
+    "required": true,
+    "description": "Norway CPI total, index (2025=100). NSA. SSB table 14710. Coverage 1920M03 onwards.",
+    "sa_status": "nsa",
+    "table_id": "14710",
+    "query": [
+      {
+        "code": "ContentsCode",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "KpiIndMnd"
+          ]
+        }
+      }
+    ],
+    "backfill": {
+      "start": "1920-03"
+    }
+  },
+  {
+    "id": "nok_cpi_core_nsa",
+    "provider": "ssb",
+    "required": true,
+    "description": "Norway CPI-ATE (adjusted for tax changes, excl. energy). Index (2025=100). NSA. Norges Bank core measure. SSB table 14706. Coverage 1995M01 onwards.",
+    "sa_status": "nsa",
+    "table_id": "14706",
+    "query": [
+      {
+        "code": "KPIavledetSerie",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "KPI-JAE"
+          ]
+        }
+      },
+      {
+        "code": "ContentsCode",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "KPIJustIndMnd"
+          ]
+        }
+      }
+    ],
+    "backfill": {
+      "start": "2002-12"
+    }
+  },
+  {
+    "_comment": "=== NORWAY (NOK) — SSB Industrial Production: Total (SA) ===",
+    "id": "nok_ip_total_ssb_sa",
+    "provider": "ssb",
+    "required": true,
+    "description": "Norway Index of Production, total (extraction, mining, manufacturing and electricity, SIC2007 B-D equivalent), seasonally adjusted, 2021=100. SSB table 07095. Monthly from 1990M01.",
+    "sa_status": "sa",
+    "table_id": "07095",
+    "query": [
+      {
+        "code": "ContentsCode",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "Sesongjustert"
+          ]
+        }
+      },
+      {
+        "code": "PKoder",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "P101"
+          ]
+        }
+      }
+    ],
+    "backfill": {
+      "start": "1990-01"
+    }
+  },
+  {
+    "_comment": "=== NORWAY (NOK) — SSB Industrial Production: Manufacturing (SA) ===",
+    "id": "nok_ip_manufacturing_ssb_sa",
+    "provider": "ssb",
+    "required": true,
+    "description": "Norway Index of Production, manufacturing (SIC2007 C), seasonally adjusted, 2021=100. SSB table 07095. Monthly from 1990M01.",
+    "sa_status": "sa",
+    "table_id": "07095",
+    "query": [
+      {
+        "code": "ContentsCode",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "Sesongjustert"
+          ]
+        }
+      },
+      {
+        "code": "PKoder",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "P105"
+          ]
+        }
+      }
+    ],
+    "backfill": {
+      "start": "1990-01"
+    }
+  },
+  {
+    "id": "nok_gdp_real",
+    "provider": "ssb",
+    "currency": "NOK",
+    "indicator": "gdp",
+    "required": true,
+    "frequency": "Q",
+    "table_id": "09190",
+    "query": [
+      {
+        "code": "Makrost",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "bnpb.nr23_9"
+          ]
+        }
+      },
+      {
+        "code": "ContentsCode",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "Faste"
+          ]
+        }
+      }
+    ],
+    "backfill": {
+      "start": "1978-Q1"
+    }
+  },
+  {
+    "id": "eur_labour_force_level_nsa",
+    "provider": "eurostat",
+    "currency": "EUR",
+    "indicator": "labour",
+    "required": false,
+    "description": "Euro Area (EA21) Labour Force, 15-64, Total, NSA, Quarterly, Thousand Persons. Eurostat LFS (lfsq_agan). For workforce growth anchor in labour_derived_v2.",
+    "sa_status": "nsa",
+    "api_version": "v3",
+    "dataset": "lfsq_agan",
+    "sdmx_key": "*.*.*.*.*.*",
+    "backfill": {
+      "start": "2004-01"
+    },
+    "filters": {
+      "freq": "Q",
+      "unit": "THS_PER",
+      "sex": "T",
+      "age": "Y15-64",
+      "citizen": "TOTAL",
+      "geo": "EA21"
+    }
+  },
+
+  {
+    "id": "gbp_labour_force_level_sa",
+    "provider": "fred",
+    "currency": "GBP",
+    "indicator": "labour",
+    "required": false,
+    "description": "UK Labour Force, 15-64, Total, SA, Quarterly, Persons. OECD via FRED. For workforce growth anchor in labour_derived_v2.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "fred_series_id": "LFAC64TTGBQ647S",
+    "backfill": {
+      "start": "1971-01"
+    }
+  },
+  {
+    "id": "jpy_labour_force_level_sa",
+    "provider": "fred",
+    "currency": "JPY",
+    "indicator": "labour",
+    "required": false,
+    "description": "Japan Labour Force, 15-64, Total, SA, Monthly, Persons. OECD via FRED. For workforce growth anchor in labour_derived_v2.",
+    "sa_status": "sa",
+    "freq": "M",
+    "fred_series_id": "LFAC64TTJPM647S",
+    "backfill": {
+      "start": "1970-01"
+    }
+  },
+  {
+    "id": "cad_labour_force_level_sa",
+    "provider": "fred",
+    "currency": "CAD",
+    "indicator": "labour",
+    "required": false,
+    "description": "Canada Labour Force, 15-64, Total, SA, Monthly, Persons. OECD via FRED. For workforce growth anchor in labour_derived_v2.",
+    "sa_status": "sa",
+    "freq": "M",
+    "fred_series_id": "LFAC64TTCAM647S",
+    "backfill": {
+      "start": "1976-01"
+    }
+  },
+  {
+    "id": "aud_labour_force_level_sa",
+    "provider": "fred",
+    "currency": "AUD",
+    "indicator": "labour",
+    "required": false,
+    "description": "Australia Labour Force, 15-64, Total, SA, Monthly, Persons. OECD via FRED. For workforce growth anchor in labour_derived_v2.",
+    "sa_status": "sa",
+    "freq": "M",
+    "fred_series_id": "LFAC64TTAUM647S",
+    "backfill": {
+      "start": "1978-01"
+    }
+  },
+  {
+    "id": "nzd_labour_force_level_sa",
+    "provider": "fred",
+    "currency": "NZD",
+    "indicator": "labour",
+    "required": false,
+    "description": "New Zealand Labour Force, 15-64, Total, SA, Quarterly, Persons. OECD via FRED. For workforce growth anchor in labour_derived_v2. Quarterly — ffill to monthly.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "fred_series_id": "LFAC64TTNZQ647S",
+    "backfill": {
+      "start": "1986-01"
+    }
+  },
+  {
+    "id": "chf_labour_force_level_sa",
+    "provider": "fred",
+    "currency": "CHF",
+    "indicator": "labour",
+    "required": false,
+    "description": "Switzerland Labour Force, 15-64, Total, SA, Quarterly, Persons. OECD via FRED. For workforce growth anchor in labour_derived_v2. Quarterly — ffill to monthly.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "fred_series_id": "LFAC64TTCHQ647S",
+    "backfill": {
+      "start": "1991-01"
+    }
+  }
+]

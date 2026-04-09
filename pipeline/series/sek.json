@@ -1,0 +1,270 @@
+[
+  {
+    "_comment": "=== SWEDEN (SEK) — SCB Retail Trade Index ===",
+    "id": "sek_retail_total_scb_sa",
+    "provider": "scb",
+    "required": true,
+    "description": "Sweden retail trade volume index, total (NACE 47), seasonally and working-day adjusted, constant prices (2021=100). SCB table DetOms07N.",
+    "_comment2": "DetOms07N table rebased to 2021=100. ContentsCode 000006VX (volume, SA+WD adj) only has data from ~mid-2023 onward. Historical backfill via FRED SWESARTMISMEI (2015=100).",
+    "table_path": "START/HA/HA0101/HA0101B/DetOms07N",
+    "query": [
+      {
+        "code": "SNI2007",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "47"
+          ]
+        }
+      },
+      {
+        "code": "ContentsCode",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "000006VX"
+          ]
+        }
+      }
+    ],
+    "backfill": {
+      "start": "2023-01"
+    },
+    "fred_backfill": {
+      "fred_series_id": "SWESLRTTO02IXOBSAM",
+      "start": "1960-01",
+      "end": "2022-12",
+      "note": "OECD MEI via FRED. Retail trade volume excl. motor vehicles, SA, Index 2015=100. Monthly."
+    }
+  },
+  {
+    "id": "sek_cpi_headline_nsa",
+    "provider": "scb",
+    "required": true,
+    "description": "Sweden CPI total, fixed index numbers rebased to 2020=100. NSA. SCB KPI2020M1980. Coverage 1980M01 onwards.",
+    "sa_status": "nsa",
+    "table_path": "START/PR/PR0101/PR0101A/KPI2020M1980",
+    "query": [
+      {
+        "code": "ContentsCode",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "000007T9"
+          ]
+        }
+      }
+    ],
+    "backfill": {
+      "start": "1980-01"
+    }
+  },
+  {
+    "_comment": "=== SWEDEN (SEK) — SCB CPIF (core) ===",
+    "id": "sek_cpi_core_nsa",
+    "provider": "scb",
+    "required": true,
+    "description": "Sweden CPIF (CPI with fixed interest rate), index (2020=100). NSA. Riksbank's target measure. SCB table KPIF2020. Coverage 1987M01 onwards.",
+    "sa_status": "nsa",
+    "table_path": "PR/PR0101/PR0101G/KPIF2020",
+    "query": [
+      {
+        "code": "ContentsCode",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "000007ZN"
+          ]
+        }
+      }
+    ],
+    "backfill": {
+      "start": "1987-01"
+    }
+  },
+  {
+    "_comment": "=== SWEDEN (SEK) — SCB Industrial Production: Total (B-D, SA+CA) ===",
+    "id": "sek_ip_total_scb_sa",
+    "provider": "scb",
+    "required": true,
+    "description": "Sweden Industrial Production Index, total industry (NACE B-D: mining, manufacturing, energy), calendar and seasonally adjusted, chain index 2021=100. SCB IPI2010KedjM. Monthly from 2000M01.",
+    "sa_status": "sa",
+    "table_path": "START/NV/NV0402/NV0402A/IPI2010KedjM",
+    "query": [
+      {
+        "code": "ContentsCode",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "NV0402AL"
+          ]
+        }
+      },
+      {
+        "code": "SNI2007",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "B-D"
+          ]
+        }
+      }
+    ],
+    "backfill": {
+      "start": "2000-01"
+    }
+  },
+  {
+    "_comment": "=== SWEDEN (SEK) — SCB Industrial Production: Manufacturing (C, SA+CA) ===",
+    "id": "sek_ip_manufacturing_scb_sa",
+    "provider": "scb",
+    "required": true,
+    "description": "Sweden Industrial Production Index, manufacturing (NACE C), calendar and seasonally adjusted, chain index 2021=100. SCB IPI2010KedjM. Monthly from 2000M01.",
+    "sa_status": "sa",
+    "table_path": "START/NV/NV0402/NV0402A/IPI2010KedjM",
+    "query": [
+      {
+        "code": "ContentsCode",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "NV0402AL"
+          ]
+        }
+      },
+      {
+        "code": "SNI2007",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "C"
+          ]
+        }
+      }
+    ],
+    "backfill": {
+      "start": "2000-01"
+    }
+  },
+  {
+    "id": "sek_gdp_real",
+    "provider": "scb",
+    "currency": "SEK",
+    "indicator": "gdp",
+    "required": true,
+    "frequency": "Q",
+    "table_path": "NR/NR0103/NR0103B/NR0103ENS2010T10SKv",
+    "query": [
+      {
+        "code": "Anvandningstyp",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "BNPM"
+          ]
+        }
+      },
+      {
+        "code": "ContentsCode",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "NR0103CE"
+          ]
+        }
+      }
+    ],
+    "backfill": {
+      "start": "1981-Q1"
+    }
+  },
+  {
+    "_comment": "=== YIELD / RATE SERIES (Pete Howe FRED mapping) ===",
+    "id": "usd_yield_fred",
+    "provider": "fred",
+    "required": true,
+    "description": "US 2-Year Treasury Constant Maturity Rate. Daily.",
+    "fred_series_id": "DGS2",
+    "frequency": "D",
+    "backfill": {
+      "start": "2000-01"
+    }
+  },
+  {
+    "id": "eur_yield_fred",
+    "provider": "fred",
+    "required": true,
+    "description": "Germany long-term government bond yield (10Y benchmark). Monthly. OECD MEI via FRED.",
+    "fred_series_id": "IRLTLT01DEM156N",
+    "frequency": "M",
+    "backfill": {
+      "start": "2000-01"
+    }
+  },
+  {
+    "id": "gbp_yield_fred",
+    "provider": "fred",
+    "required": true,
+    "description": "UK long-term government bond yield (10Y benchmark). Monthly. OECD MEI via FRED.",
+    "fred_series_id": "IRLTLT01GBM156N",
+    "frequency": "M",
+    "backfill": {
+      "start": "2000-01"
+    }
+  },
+  {
+    "id": "aud_yield_fred",
+    "provider": "fred",
+    "required": true,
+    "description": "Australia 3-month interbank rate. Monthly. OECD MEI via FRED. Tracks RBA cash rate closely.",
+    "fred_series_id": "IR3TIB01AUM156N",
+    "frequency": "M",
+    "backfill": {
+      "start": "2000-01"
+    }
+  },
+  {
+    "id": "nzd_yield_fred",
+    "provider": "fred",
+    "required": true,
+    "description": "New Zealand 3-month interbank rate. Monthly. OECD MEI via FRED. Tracks RBNZ OCR closely.",
+    "fred_series_id": "IR3TIB01NZM156N",
+    "frequency": "M",
+    "backfill": {
+      "start": "2000-01"
+    }
+  },
+  {
+    "id": "chf_yield_fred",
+    "provider": "fred",
+    "required": true,
+    "description": "Switzerland 3-month interbank rate. Monthly. OECD MEI via FRED. Tracks SNB policy rate closely.",
+    "fred_series_id": "IR3TIB01CHM156N",
+    "frequency": "M",
+    "backfill": {
+      "start": "2000-01"
+    }
+  },
+  {
+    "id": "jpy_yield_fred",
+    "provider": "fred",
+    "required": true,
+    "description": "Japan long-term government bond yield (10Y benchmark). Monthly. OECD MEI via FRED.",
+    "fred_series_id": "IRLTLT01JPM156N",
+    "frequency": "M",
+    "backfill": {
+      "start": "2000-01"
+    }
+  },
+  {
+    "id": "cad_yield_fred",
+    "provider": "fred",
+    "required": true,
+    "description": "Canada long-term government bond yield (10Y benchmark). Monthly. OECD MEI via FRED.",
+    "fred_series_id": "IRLTLT01CAM156N",
+    "frequency": "M",
+    "backfill": {
+      "start": "2000-01"
+    }
+  }
+]

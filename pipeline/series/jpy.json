@@ -1,0 +1,330 @@
+[
+  {
+    "_comment": "═══ INFLATION ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "jpy_cpi_headline_sa",
+    "provider": "estat",
+    "currency": "JPY",
+    "indicator": "cpi",
+    "required": true,
+    "description": "Japan CPI All Items, seasonally adjusted (2020=100). Statistics Bureau. e-Stat statsDataId 0003427113, cdCat01 0901.",
+    "sa_status": "sa",
+    "stats_data_id": "0003427113",
+    "cd_cat01": "0901",
+    "cd_area": "00000",
+    "cd_tab": "1",
+    "backfill": {
+      "start": "1970-01"
+    },
+    "fred_pit_id": "JPNCPIALLMINMEI",
+    "fred_pit_note": "OECD MEI CPI total. NSA on FRED. 1-3 week lag vs e-Stat."
+  },
+  {
+    "id": "jpy_cpi_core_sa",
+    "provider": "estat",
+    "currency": "JPY",
+    "indicator": "cpi",
+    "required": true,
+    "description": "Japan CPI All Items Less Fresh Food, seasonally adjusted (2020=100). BoJ target measure. e-Stat cdCat01 0902.",
+    "sa_status": "sa",
+    "stats_data_id": "0003427113",
+    "cd_cat01": "0902",
+    "cd_area": "00000",
+    "cd_tab": "1",
+    "backfill": {
+      "start": "1970-01"
+    },
+    "fred_pit_id": "JPNCPICORMINMEI",
+    "fred_pit_note": "OECD core (ex food+energy). Note: differs from BOJ core (ex fresh food only)."
+  },
+  {
+    "id": "jpy_cpi_services_sa",
+    "provider": "estat",
+    "currency": "JPY",
+    "indicator": "cpi",
+    "required": true,
+    "description": "Japan CPI Services, seasonally adjusted (2020=100). e-Stat cdCat01 0924.",
+    "sa_status": "sa",
+    "stats_data_id": "0003427113",
+    "cd_cat01": "0924",
+    "cd_area": "00000",
+    "cd_tab": "1",
+    "backfill": {
+      "start": "1970-01"
+    },
+    "fred_pit_id": "JPNCPIALLMINMEI",
+    "fred_pit_note": "Same CPI release. Services not separately confirmed on FRED."
+  },
+  {
+    "id": "jpy_cpi_supercore_sa",
+    "provider": "estat",
+    "currency": "JPY",
+    "indicator": "cpi",
+    "required": false,
+    "description": "Japan CPI All Items Less Fresh Food and Energy (super-core), seasonally adjusted (2020=100). e-Stat cdCat01 0906.",
+    "sa_status": "sa",
+    "stats_data_id": "0003427113",
+    "cd_cat01": "0906",
+    "cd_area": "00000",
+    "cd_tab": "1",
+    "backfill": {
+      "start": "1970-01"
+    },
+    "fred_pit_id": "JPNCPIALLMINMEI",
+    "fred_pit_note": "Same CPI release."
+  },
+  {
+    "id": "jpy_ppi_headline_nsa",
+    "provider": "boj",
+    "currency": "JPY",
+    "indicator": "ppi",
+    "required": true,
+    "description": "Japan PPI (Corporate Goods Price Index), all commodities, index (2020=100), NSA, monthly. BoJ CGPI PR01.",
+    "sa_status": "nsa",
+    "boj_db": "PR01",
+    "boj_code": "PRCG20_2200000000",
+    "backfill": {
+      "start": "1960-01"
+    },
+    "fred_pit_id": "JPNPPDMMINMEI",
+    "fred_pit_note": "OECD MEI PPI domestic manufacturing. NSA."
+  },
+  {
+    "_comment": "═══ GROWTH ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "jpy_gdp_real",
+    "provider": "fred",
+    "currency": "JPY",
+    "indicator": "gdp",
+    "required": true,
+    "description": "Japan Real GDP, SA, quarterly. FRED JPNRGDPEXP. Growth Factor 1 + deflator denominator.",
+    "fred_series_id": "JPNRGDPEXP",
+    "backfill": {
+      "start": "1994-01"
+    }
+  },
+  {
+    "id": "jpy_gdp_nominal",
+    "provider": "fred",
+    "currency": "JPY",
+    "indicator": "gdp",
+    "required": true,
+    "description": "Japan Nominal GDP, SA, quarterly. FRED JPNNGDP. Deflator numerator (nominal/real × 100).",
+    "fred_series_id": "JPNNGDP",
+    "backfill": {
+      "start": "1994-01"
+    }
+  },
+  {
+    "_comment": "=== JAPAN (JPY) — METI Retail Sales SA Index (preliminary) ===",
+    "id": "jpy_retail_total_cdts_sa",
+    "provider": "meti",
+    "currency": "JPY",
+    "indicator": "growth",
+    "required": false,
+    "insert_only": true,
+    "description": "Japan retail sales SA index (2020=100), total retail (小売業計). METI preliminary monthly XLS. insert_only — never overwrites existing rows.",
+    "backfill": {
+      "start": "2024-11"
+    },
+    "fred_backfill": {
+      "fred_series_id": "JPNSLRTTO02IXOBSAM",
+      "start": "1990-01",
+      "end": "2023-10",
+      "note": "OECD via FRED. Total retail trade value, SA, Index 2015=100. Monthly. Spliced at 2023-10/2023-11 boundary."
+    },
+    "fred_pit_id": "JPNSARTMISMEI",
+    "fred_pit_note": "OECD MEI retail volume. SA."
+  },
+  {
+    "_comment": "=== JAPAN (JPY) — e-Stat annual revision for retail ===",
+    "id": "jpy_retail_total_cdts_sa_estat",
+    "provider": "estat",
+    "currency": "JPY",
+    "indicator": "growth",
+    "required": false,
+    "db_series_id": "jpy_retail_total_cdts_sa",
+    "description": "Annual correction revision for jpn_retail_total_cdts_sa. Overwrites preliminary METI values. Run reconcile ~March each year.",
+    "stats_code": "00550030",
+    "catalog_keyword": "業種別商業販売額指数",
+    "cd_cat01": "0102000",
+    "cd_cat02": "01080300",
+    "backfill": {
+      "start": "2023-11"
+    },
+    "fred_pit_id": "JPNSARTMISMEI",
+    "fred_pit_note": "Same retail release. Annual revision."
+  },
+  {
+    "_comment": "=== JAPAN (JPY) — e-Stat IP: Total ===",
+    "id": "jpy_ip_total_iip_sa",
+    "provider": "estat",
+    "currency": "JPY",
+    "indicator": "growth",
+    "required": true,
+    "description": "Japan IP Index, total mining & manufacturing (鉱工業), SA, value-added (2020=100). e-Stat 0004015800, cdCat01 0001000.",
+    "sa_status": "sa",
+    "stats_data_id": "0004015800",
+    "cd_cat01": "0001000",
+    "backfill": {
+      "start": "2018-01"
+    },
+    "fred_pit_id": "JPNPROINDMISMEI",
+    "fred_pit_note": "OECD MEI IP total. SA. Maps to e-Stat primary."
+  },
+  {
+    "id": "jpy_ip_manufacturing_iip_sa",
+    "provider": "estat",
+    "currency": "JPY",
+    "indicator": "growth",
+    "required": true,
+    "description": "Japan IP Index, manufacturing (製造工業), SA, value-added (2020=100). e-Stat 0004015800, cdCat01 0002000.",
+    "sa_status": "sa",
+    "stats_data_id": "0004015800",
+    "cd_cat01": "0002000",
+    "backfill": {
+      "start": "2018-01"
+    },
+    "fred_pit_id": "JPNPROMANMISMEI",
+    "fred_pit_note": "OECD MEI IP manufacturing. SA."
+  },
+  {
+    "_comment": "═══ LABOUR ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "jpy_unemployment_rate_nsa",
+    "provider": "estat",
+    "currency": "JPY",
+    "indicator": "labour",
+    "required": true,
+    "description": "Japan Unemployment Rate, NSA, both sexes, all ages, %. Monthly. e-Stat 0003005865, cdCat02 08.",
+    "sa_status": "nsa",
+    "stats_data_id": "0003005865",
+    "cd_cat01": "000",
+    "cd_cat02": "08",
+    "cd_cat03": "0",
+    "cd_area": "00000",
+    "backfill": {
+      "start": "1953-01"
+    },
+    "fred_pit_id": "LRUNTTTTJPM156S",
+    "fred_pit_note": "OECD unemployment. SA on FRED."
+  },
+  {
+    "id": "jpy_employment_rate_nsa",
+    "provider": "estat",
+    "currency": "JPY",
+    "indicator": "labour",
+    "required": true,
+    "description": "Japan Employment Rate, NSA, both sexes, all ages, %. Monthly. e-Stat 0003005865, cdCat02 13.",
+    "sa_status": "nsa",
+    "stats_data_id": "0003005865",
+    "cd_cat01": "000",
+    "cd_cat02": "13",
+    "cd_cat03": "0",
+    "cd_area": "00000",
+    "backfill": {
+      "start": "1953-01"
+    },
+    "fred_pit_id": "LFEMTTTTJPM647S",
+    "fred_pit_note": "OECD employment total. SA. Same MIAC release."
+  },
+  {
+    "id": "jpy_participation_rate_nsa",
+    "provider": "estat",
+    "currency": "JPY",
+    "indicator": "labour",
+    "required": false,
+    "description": "Japan Labour Force Participation Rate, NSA, both sexes, all ages, %. Monthly. e-Stat 0003005865, cdCat02 01.",
+    "sa_status": "nsa",
+    "stats_data_id": "0003005865",
+    "cd_cat01": "000",
+    "cd_cat02": "01",
+    "cd_cat03": "0",
+    "cd_area": "00000",
+    "backfill": {
+      "start": "1953-01"
+    },
+    "fred_pit_id": "LRUNTTTTJPM156S",
+    "fred_pit_note": "Same MIAC release."
+  },
+  {
+    "id": "jpy_employment_level_nsa",
+    "provider": "estat",
+    "currency": "JPY",
+    "indicator": "labour",
+    "required": true,
+    "description": "Japan Employment Level, NSA, both sexes, 10,000 persons. Monthly. e-Stat 0003006297, cdCat03 02.",
+    "sa_status": "nsa",
+    "stats_data_id": "0003006297",
+    "cd_cat01": "000",
+    "cd_cat02": "0",
+    "cd_cat03": "02",
+    "cd_cat04": "00",
+    "backfill": {
+      "start": "1953-01"
+    },
+    "fred_pit_id": "LFEMTTTTJPM647S",
+    "fred_pit_note": "Same labour force release."
+  },
+  {
+    "id": "jpy_unemployment_level_nsa",
+    "provider": "estat",
+    "currency": "JPY",
+    "indicator": "labour",
+    "required": false,
+    "description": "Japan Unemployment Level, NSA, both sexes, 10,000 persons. Monthly. e-Stat 0003006297, cdCat03 08.",
+    "sa_status": "nsa",
+    "stats_data_id": "0003006297",
+    "cd_cat01": "000",
+    "cd_cat02": "0",
+    "cd_cat03": "08",
+    "cd_cat04": "00",
+    "backfill": {
+      "start": "1953-01"
+    },
+    "fred_pit_id": "LRUNTTTTJPM156S",
+    "fred_pit_note": "Same MIAC release."
+  },
+  {
+    "id": "jpy_wages_manufacturing_sa",
+    "provider": "fred",
+    "currency": "JPY",
+    "indicator": "labour",
+    "required": true,
+    "description": "Japan earnings, manufacturing, total economy, SA, index. FRED LCEAMN01JPM661S.",
+    "fred_series_id": "LCEAMN01JPM661S",
+    "backfill": {
+      "start": "1970-01"
+    }
+  },
+  {
+    "id": "jpy_labour_productivity_sa",
+    "provider": "oecd",
+    "currency": "JPY",
+    "indicator": "labour",
+    "required": true,
+    "description": "Japan real labour productivity (GDP per employed person), SA, index. Quarterly. OECD PDB ULC.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "dataflow": "OECD.SDD.TPS,DSD_PDB@DF_PDB_ULC_Q,1.0",
+    "data_key": "JPN.Q.GDPEMP..IX.Q..S.",
+    "backfill": {
+      "start": "1980-01"
+    },
+    "fred_pit_id": "ULQELP01JPQ659S",
+    "fred_pit_note": "OECD ULC labour productivity. SA. Quarterly."
+  },
+  {
+    "id": "jpy_bci_sa",
+    "provider": "oecd",
+    "currency": "JPY",
+    "indicator": "growth",
+    "required": true,
+    "description": "Japan Business Confidence Indicator, amplitude adjusted, index, monthly. OECD STES BCI.",
+    "sa_status": "sa",
+    "dataflow": "OECD.SDD.STES,DSD_STES@DF_CLI,",
+    "data_key": "JPN.M.BCICP...AA.IX..H",
+    "backfill": {
+      "start": "1960-01"
+    },
+    "fred_pit_id": "BSCICP03JPM665S",
+    "fred_pit_note": "OECD BCI amplitude adjusted."
+  }
+]

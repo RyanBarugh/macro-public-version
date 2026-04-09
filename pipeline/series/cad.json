@@ -1,0 +1,246 @@
+[
+  {
+    "_comment": "═══ INFLATION ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "cad_cpi_headline_sa",
+    "provider": "statcan",
+    "currency": "CAD",
+    "indicator": "cpi",
+    "required": true,
+    "description": "Canada CPI, all-items, seasonally adjusted (2002=100). Table 18-10-0006-01. Vector v41690914.",
+    "sa_status": "sa",
+    "vector_id": 41690914,
+    "backfill": {
+      "start": "1992-01"
+    },
+    "fred_pit_id": "CANCPIALLMINMEI",
+    "fred_pit_note": "OECD MEI CPI total. NSA. 1-3 week lag vs StatCan."
+  },
+  {
+    "id": "cad_cpi_core_sa",
+    "provider": "statcan",
+    "currency": "CAD",
+    "indicator": "cpi",
+    "required": true,
+    "description": "Canada CPI, all-items excluding food and energy, seasonally adjusted (2002=100). Table 18-10-0006-01. Vector v41690924.",
+    "sa_status": "sa",
+    "vector_id": 41690924,
+    "backfill": {
+      "start": "1992-01"
+    },
+    "fred_pit_id": "CANCPICORMINMEI",
+    "fred_pit_note": "OECD MEI CPI core. NSA."
+  },
+  {
+    "id": "cad_cpi_services_nsa",
+    "provider": "statcan",
+    "currency": "CAD",
+    "indicator": "cpi",
+    "required": true,
+    "description": "Canada CPI Services, NSA. Table 18-10-0004-01. Vector v41691230.",
+    "sa_status": "nsa",
+    "vector_id": 41691230,
+    "backfill": {
+      "start": "1992-01"
+    },
+    "fred_pit_id": "CANCPIALLMINMEI",
+    "fred_pit_note": "Same CPI release. Services not confirmed separately."
+  },
+  {
+    "id": "cad_ppi_total_nsa",
+    "provider": "statcan",
+    "currency": "CAD",
+    "indicator": "ppi",
+    "required": true,
+    "description": "Canada Industrial Product Price Index (IPPI), total, NSA. Table 18-10-0265-01. Vector v1230995983.",
+    "sa_status": "nsa",
+    "vector_id": 1230995983,
+    "backfill": {
+      "start": "1981-01"
+    },
+    "fred_pit_id": "CANPPDMMINMEI",
+    "fred_pit_note": "OECD MEI PPI manufacturing domestic. NSA. May lag."
+  },
+  {
+    "_comment": "═══ GROWTH ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "cad_gdp_real",
+    "provider": "statcan",
+    "currency": "CAD",
+    "indicator": "gdp",
+    "required": true,
+    "description": "Canada Real GDP, chained 2017 CAD, SA, quarterly. Table 36-10-0104-01. Vector v62305752. Growth Factor 1 + deflator denominator.",
+    "sa_status": "sa",
+    "vector_id": 62305752,
+    "backfill": {
+      "start": "1961-01"
+    },
+    "fred_pit_id": "NGDPRSAXDCCAQ",
+    "fred_pit_note": "IMF IFS real GDP. SA. CAD millions."
+  },
+  {
+    "id": "cad_gdp_nominal",
+    "provider": "statcan",
+    "currency": "CAD",
+    "indicator": "gdp",
+    "required": true,
+    "description": "Canada Nominal GDP, current prices CAD, SA, quarterly. Table 36-10-0104-01. Vector v62305783. Deflator numerator (nominal/real × 100).",
+    "sa_status": "sa",
+    "vector_id": 62305783,
+    "backfill": {
+      "start": "1961-01"
+    },
+    "fred_pit_id": "NGDPSAXDCCAQ",
+    "fred_pit_note": "IMF IFS nominal GDP. SA. CAD millions."
+  },
+  {
+    "id": "cad_ip_total_sa",
+    "provider": "statcan",
+    "currency": "CAD",
+    "indicator": "growth",
+    "required": true,
+    "description": "Canada Industrial Production proxy, total industry GVA, SA, monthly. Table 36-10-0434-02. Vector v65201210.",
+    "sa_status": "sa",
+    "vector_id": 65201210,
+    "backfill": {
+      "start": "1997-01"
+    },
+    "fred_pit_id": "CANPROINDMISMEI",
+    "fred_pit_note": "OECD MEI IP total. SA index. Monthly."
+  },
+  {
+    "id": "cad_ip_manufacturing_sa",
+    "provider": "statcan",
+    "currency": "CAD",
+    "indicator": "growth",
+    "required": true,
+    "description": "Canada Industrial Production proxy, manufacturing GVA, SA, monthly. Table 36-10-0434-02. Vector v65201263.",
+    "sa_status": "sa",
+    "vector_id": 65201263,
+    "backfill": {
+      "start": "1997-01"
+    },
+    "fred_pit_id": "CANPROMANMISMEI",
+    "fred_pit_note": "OECD MEI IP manufacturing. SA index. Monthly."
+  },
+  {
+    "id": "cad_retail_total_sa",
+    "provider": "statcan",
+    "currency": "CAD",
+    "indicator": "growth",
+    "required": true,
+    "description": "Canada retail trade, total, Chained Fisher volume index (2017=100), SA, monthly. Table 20-10-0067-01. Vector v1446870181.",
+    "sa_status": "sa",
+    "vector_id": 1446870181,
+    "backfill": {
+      "start": "2017-01"
+    },
+    "fred_pit_id": "CANSARTMISMEI",
+    "fred_pit_note": "OECD MEI retail volume. SA index. Monthly."
+  },
+  {
+    "id": "cad_bci_sa",
+    "provider": "oecd",
+    "currency": "CAD",
+    "indicator": "growth",
+    "required": true,
+    "description": "Canada Business Confidence Indicator, amplitude adjusted, index, monthly. OECD STES BCI.",
+    "sa_status": "sa",
+    "dataflow": "OECD.SDD.STES,DSD_STES@DF_CLI,",
+    "data_key": "CAN.M.BCICP...AA.IX..H",
+    "backfill": {
+      "start": "1960-01"
+    },
+    "fred_pit_id": "BSCICP03CAM665S",
+    "fred_pit_note": "OECD BCI amplitude adjusted. Pattern-inferred — verify. CLI alt: CANLOLITOAASTSAM."
+  },
+  {
+    "_comment": "═══ LABOUR ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "cad_unemployment_rate",
+    "provider": "statcan",
+    "currency": "CAD",
+    "indicator": "labour",
+    "required": true,
+    "description": "Canada unemployment rate, SA. Table 14-10-0287-03. Vector v2062815.",
+    "sa_status": "sa",
+    "vector_id": 2062815,
+    "backfill": {
+      "start": "1976-01"
+    },
+    "fred_pit_id": "LRHUTTTTCAM156S",
+    "fred_pit_note": "OECD harmonised unemployment. SA. Monthly."
+  },
+  {
+    "id": "cad_employment_level",
+    "provider": "statcan",
+    "currency": "CAD",
+    "indicator": "labour",
+    "required": true,
+    "description": "Canada employment level, SA. Table 14-10-0287-03. Vector v2062811.",
+    "sa_status": "sa",
+    "vector_id": 2062811,
+    "backfill": {
+      "start": "1976-01"
+    },
+    "fred_pit_id": "LFEMTTTTCAM647S",
+    "fred_pit_note": "OECD employment total. SA. Monthly."
+  },
+  {
+    "id": "cad_participation_rate",
+    "provider": "statcan",
+    "currency": "CAD",
+    "indicator": "labour",
+    "required": false,
+    "description": "Canada participation rate, SA. Table 14-10-0287-03. Vector v2062816.",
+    "sa_status": "sa",
+    "vector_id": 2062816,
+    "backfill": {
+      "start": "1976-01"
+    },
+    "fred_pit_id": "LRHUTTTTCAM156S",
+    "fred_pit_note": "Same StatCan LFS release."
+  },
+  {
+    "id": "cad_avg_hourly_wage",
+    "provider": "statcan",
+    "currency": "CAD",
+    "indicator": "labour",
+    "required": true,
+    "description": "Canada average hourly wage rate, all industries, SA. Table 14-10-0063-01. Vector v2132579.",
+    "sa_status": "sa",
+    "vector_id": 2132579,
+    "backfill": {
+      "start": "1997-01"
+    },
+    "fred_pit_id": "LCEAMN01CAM657S",
+    "fred_pit_note": "OECD earnings manufacturing hourly. SA. Monthly. Note: manufacturing only, not all-industry."
+  },
+  {
+    "id": "cad_labour_productivity",
+    "provider": "statcan",
+    "currency": "CAD",
+    "indicator": "labour",
+    "required": true,
+    "description": "Canada labour productivity, SA, quarterly. Table 36-10-0206-01. Vector v1409153.",
+    "sa_status": "sa",
+    "vector_id": 1409153,
+    "backfill": {
+      "start": "1976-01"
+    },
+    "fred_pit_id": "ULQELP01CAQ661S",
+    "fred_pit_note": "OECD ULC labour productivity. SA. Quarterly."
+  },
+  {
+    "id": "cad_avg_hours_worked",
+    "provider": "statcan",
+    "currency": "CAD",
+    "indicator": "labour",
+    "required": false,
+    "description": "Canada average hours worked, SA, quarterly. Table 36-10-0206-01. Vector v1409156.",
+    "sa_status": "sa",
+    "vector_id": 1409156,
+    "backfill": {
+      "start": "1976-01"
+    },
+    "fred_pit_id": "ULQELP01CAQ661S",
+    "fred_pit_note": "Proxy — same productivity release."
+  }
+]

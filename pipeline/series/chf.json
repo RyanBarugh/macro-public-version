@@ -1,0 +1,273 @@
+[
+  {
+    "_comment": "═══ INFLATION ════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "chf_cpi_headline_nsa",
+    "provider": "snb",
+    "currency": "CHF",
+    "indicator": "cpi",
+    "required": true,
+    "description": "Switzerland CPI national index, all items, NSA, monthly. Base: Dec 2020=100. SNB cube plkopr.",
+    "sa_status": "nsa",
+    "cube": "plkopr",
+    "dim_sel": "D0(LD2010100)",
+    "backfill": {
+      "start": "1982-01"
+    },
+    "fred_pit_id": "CHECPIALLMINMEI",
+    "fred_pit_note": "OECD MEI CPI total. NSA."
+  },
+  {
+    "id": "chf_cpi_core_sa",
+    "provider": "snb",
+    "currency": "CHF",
+    "indicator": "cpi",
+    "required": true,
+    "description": "Switzerland CPI core inflation 1 (ex fresh/seasonal products and energy), SA, monthly. SNB cube plkoprinfla.",
+    "sa_status": "sa",
+    "cube": "plkoprinfla",
+    "dim_sel": "D0(K1)",
+    "backfill": {
+      "start": "2002-01"
+    },
+    "fred_pit_id": "CHECPICORMINMEI",
+    "fred_pit_note": "OECD MEI CPI core. NSA. Pattern-inferred — verify."
+  },
+  {
+    "id": "chf_ppi_headline_nsa",
+    "provider": "snb",
+    "currency": "CHF",
+    "indicator": "ppi",
+    "required": true,
+    "description": "Switzerland PPI, total (producer prices), index, NSA, monthly. SNB cube plproimpr.",
+    "sa_status": "nsa",
+    "cube": "plproimpr",
+    "dim_sel": "D0(P),D1(I2)",
+    "backfill": {
+      "start": "1963-01"
+    },
+    "fred_pit_note": "GAP: No total PPI index on FRED for Switzerland."
+  },
+  {
+    "id": "chf_ppi_core_nsa",
+    "provider": "snb",
+    "currency": "CHF",
+    "indicator": "ppi",
+    "required": true,
+    "description": "Switzerland PPI core (ex volatile items), index, NSA, monthly. SNB cube plproimpr.",
+    "sa_status": "nsa",
+    "cube": "plproimpr",
+    "dim_sel": "D0(P),D1(KVVP)",
+    "backfill": {
+      "start": "1995-01"
+    },
+    "fred_pit_note": "GAP: No core PPI index on FRED for Switzerland."
+  },
+  {
+    "_comment": "═══ GROWTH ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "chf_gdp_nominal",
+    "provider": "snb",
+    "currency": "CHF",
+    "indicator": "gdp",
+    "required": true,
+    "description": "Switzerland Nominal GDP, SA, quarterly. SNB cube gdpap. Deflator numerator (nominal/real × 100).",
+    "sa_status": "sa",
+    "cube": "gdpap",
+    "dim_sel": "D0(WMF),D1(BBIP)",
+    "backfill": {
+      "start": "1980-Q3"
+    },
+    "fred_pit_id": "CHEGDPNQDSMEI",
+    "fred_pit_note": "OECD MEI nominal GDP. SA. CHF levels."
+  },
+  {
+    "id": "chf_gdp_real",
+    "provider": "snb",
+    "currency": "CHF",
+    "indicator": "gdp",
+    "required": true,
+    "description": "Switzerland Real GDP, SA, quarterly. SNB cube gdprpq. Growth Factor 1 + deflator denominator.",
+    "sa_status": "sa",
+    "cube": "gdprpq",
+    "dim_sel": "D0(WMF),D1(BBIP)",
+    "backfill": {
+      "start": "1980-Q3"
+    },
+    "fred_pit_id": "NAEXKP01CHQ652S",
+    "fred_pit_note": "OECD MEI real GDP. SA. CHF levels."
+  },
+  {
+    "id": "chf_ip_total_fso_sa",
+    "provider": "fso_csv",
+    "currency": "CHF",
+    "indicator": "growth",
+    "required": true,
+    "description": "Switzerland IP total industry (B-E), SA, quarterly index 2021=100. FSO INDPAU.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "asset_id": 36453169,
+    "format": "xlsx",
+    "sheet": "Indices",
+    "row_code": "B-E",
+    "backfill": { "start": "1999-Q1" }
+  },
+  {
+    "id": "chf_ip_manufacturing_fso_sa",
+    "provider": "fso_csv",
+    "currency": "CHF",
+    "indicator": "growth",
+    "required": true,
+    "description": "Switzerland IP manufacturing (C), SA, quarterly index 2021=100. FSO INDPAU.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "asset_id": 36453169,
+    "sheet": "Indices",
+    "format": "xlsx",
+    "row_code": "C",
+    "backfill": { "start": "1999-Q1" }
+  },
+  {
+    "id": "chf_retail_total_sa",
+    "provider": "snb",
+    "currency": "CHF",
+    "indicator": "growth",
+    "required": true,
+    "description": "Switzerland retail trade turnover, real (deflated), SA, monthly index. SNB cube conretail.",
+    "sa_status": "sa",
+    "cube": "conretail",
+    "dim_sel": "D0(I3)",
+    "backfill": {
+      "start": "2002-12"
+    },
+    "fred_pit_id": "CHESLRTTO01IXOBM",
+    "fred_pit_note": "OECD MEI retail volume. Monthly NSA. Possibly discontinued (last Jun 2022)."
+  },
+  {
+    "id": "chf_bci_sa",
+    "provider": "oecd",
+    "currency": "CHF",
+    "indicator": "growth",
+    "required": true,
+    "description": "Switzerland Business Confidence Indicator, amplitude adjusted, index, monthly. OECD STES BCI.",
+    "sa_status": "sa",
+    "dataflow": "OECD.SDD.STES,DSD_STES@DF_CLI,",
+    "data_key": "CHE.M.BCICP...AA.IX..H",
+    "backfill": {
+      "start": "1972-01"
+    },
+    "fred_pit_id": "BSCICP03CHM665S",
+    "fred_pit_note": "OECD BCI amplitude adjusted. Pattern-inferred — verify. Quarterly alt confirmed: LOCOCIORCHQ460S."
+  },
+  {
+    "id": "chf_gdp_nominal_eurostat",
+    "provider": "fred",
+    "currency": "CHF",
+    "indicator": "gdp",
+    "required": true,
+    "description": "Switzerland Nominal GDP, current prices, SA, quarterly. Eurostat via FRED. Millions of Euros. Deflator numerator.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "fred_series_id": "CPMEURSCAB1GQCH",
+    "backfill": {
+      "start": "1995-01"
+    }
+  },
+  {
+    "id": "chf_gdp_real_eurostat",
+    "provider": "fred",
+    "currency": "CHF",
+    "indicator": "gdp",
+    "required": true,
+    "description": "Switzerland Real GDP, chained volume, SA, quarterly. Eurostat via FRED. Millions of chained Euros. Deflator denominator + growth factor.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "fred_series_id": "CLVMEURSAB1GQCH",
+    "backfill": {
+      "start": "1995-01"
+    }
+  },
+  {
+    "_comment": "═══ LABOUR ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "chf_unemployment_rate_nsa",
+    "provider": "snb",
+    "currency": "CHF",
+    "indicator": "labour",
+    "required": true,
+    "description": "Switzerland registered unemployment rate, NSA, monthly. SNB cube amarbma.",
+    "sa_status": "nsa",
+    "cube": "amarbma",
+    "dim_sel": "D0(S1)",
+    "backfill": {
+      "start": "1990-01"
+    },
+    "fred_pit_id": "LMUNRRTTCHM156S",
+    "fred_pit_note": "OECD registered unemployment. Monthly. NSA. Not ILO survey-based."
+  },
+  {
+    "id": "chf_job_vacancies_nsa",
+    "provider": "snb",
+    "currency": "CHF",
+    "indicator": "labour",
+    "required": false,
+    "description": "Switzerland notified job vacancies, NSA, monthly. SNB cube amarbma.",
+    "sa_status": "nsa",
+    "cube": "amarbma",
+    "dim_sel": "D0(S2)",
+    "backfill": {
+      "start": "1990-01"
+    },
+    "fred_pit_note": "GAP: Not on FRED."
+  },
+  {
+    "id": "chf_employment_level_sa",
+    "provider": "fso_csv",
+    "currency": "CHF",
+    "indicator": "labour",
+    "required": true,
+    "description": "Switzerland employed persons (domestic concept), SA, quarterly, thousands. FSO Employment Statistics (SLFS) via DAM API.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "asset_id": 36346762,
+    "format": "xlsx",
+    "sheet": "Quarterly",
+    "row_code": "Total, seasonally adjusted values",
+    "backfill": { "start": "2010-Q1" }
+  },
+  {
+    "id": "chf_labour_productivity_sa",
+    "provider": "eurostat",
+    "currency": "CHF",
+    "indicator": "labour",
+    "required": true,
+    "description": "Switzerland real labour productivity per person, SCA, index 2020=100. Quarterly. Eurostat namq_10_lp_ulc.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "dataset": "namq_10_lp_ulc",
+    "params": {
+      "freq": "Q",
+      "unit": "I20",
+      "s_adj": "SCA",
+      "na_item": "RLPR_PER",
+      "geo": "CH"
+    },
+    "backfill": {
+      "start": "1995-Q1"
+    },
+    "fred_pit_id": "ULQELP01CHQ661S",
+    "fred_pit_note": "OECD ULC labour productivity. Quarterly SA. Pattern-inferred."
+  },
+  {
+    "id": "chf_wages_nominal_yoy",
+    "provider": "fso_csv",
+    "currency": "CHF",
+    "indicator": "labour",
+    "required": true,
+    "description": "Switzerland quarterly estimate of nominal wage development, YoY %, quarterly. BFS Swiss Wage Index. Asset 36210011.",
+    "sa_status": "nsa",
+    "freq": "Q",
+    "asset_id": 36210011,
+    "backfill": {
+      "start": "1991-Q1"
+    },
+    "fred_pit_note": "GAP: No wages series on FRED for Switzerland. ULC compensation proxy: ULQECU01CHQ661N."
+  }
+]

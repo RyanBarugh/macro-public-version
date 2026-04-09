@@ -1,0 +1,768 @@
+[
+  {
+    "date": "2020-01-23",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -0.8,
+    "rationale": "The guidance maintains a dovish stance with explicit easing bias through 'present or lower levels' language for rates and ongoing asset purchases at \u20ac20 billion monthly. The commitment to continue purchases 'for as long as necessary' and extended reinvestment shows accommodative intent, though the framework is conditional on inflation convergence rather than pre-committed to further cuts.",
+    "key_changes": [
+      "Rate guidance includes 'or lower levels' keeping easing door open",
+      "Asset purchases continuing at steady \u20ac20bn pace with open-ended commitment",
+      "Strategy review launch suggests potential policy recalibration ahead"
+    ],
+    "scores": [
+      -0.8
+    ]
+  },
+  {
+    "date": "2020-03-12",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -1.8,
+    "rationale": "Extremely dovish emergency package in response to COVID-19 crisis. The ECB delivered massive stimulus including \u20ac120 billion additional asset purchases, enhanced TLTRO III terms with rates as low as 25bp below deposit facility, and new emergency LTROs. The guidance maintains 'present or lower levels' language for rates and commits to purchases 'for as long as necessary.' This represents aggressive easing with clear signaling of more accommodation if needed.",
+    "key_changes": [
+      "\u20ac120 billion emergency asset purchase envelope",
+      "TLTRO III rates potentially 25bp below deposit facility",
+      "New emergency LTRO operations",
+      "Maintained 'present or lower levels' rate guidance"
+    ],
+    "scores": [
+      -1.8
+    ]
+  },
+  {
+    "date": "2020-04-30",
+    "action": "Cut 50bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -1.7,
+    "rationale": "Extremely dovish guidance with multiple aggressive easing measures and explicit commitment to do more. The ECB enhanced TLTRO III terms (making rates 50bp below deposit facility for qualifying banks), maintained the \u20ac750bn PEPP with flexible implementation, and crucially stated they are 'fully prepared to increase the size of the PEPP and adjust its composition, by as much as necessary and for as long as needed.' The 'stands ready to adjust all instruments' reinforces maximum accommodation stance during the COVID crisis.",
+    "key_changes": [
+      "Enhanced TLTRO III with rates 50bp below deposit facility",
+      "Explicit commitment to increase PEPP 'by as much as necessary'",
+      "Maintained 'present or lower levels' rate guidance",
+      "Full readiness to adjust all instruments"
+    ],
+    "scores": [
+      -1.7
+    ]
+  },
+  {
+    "date": "2020-06-04",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -1.8,
+    "rationale": "Extremely dovish guidance with massive \u20ac600bn PEPP expansion, extended timeline to June 2021, and crucially 'will conduct purchases until it judges the coronavirus crisis phase is over' - an open-ended commitment. The 'stands ready to adjust all instruments' maintains maximum activist stance. Only slightly less dovish than prior meeting because the actual expansion partially fulfills previous promises.",
+    "key_changes": [
+      "Delivered on promise with \u20ac600bn PEPP expansion",
+      "Extended PEPP horizon to at least June 2021",
+      "Open-ended crisis commitment maintained"
+    ],
+    "scores": [
+      -1.8
+    ]
+  },
+  {
+    "date": "2020-07-16",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -1.7,
+    "rationale": "Extremely dovish guidance maintaining aggressive easing stance. Key signals include: 'expects rates to remain at present or lower levels' explicitly keeping door open to further cuts, massive \u20ac1,350bn PEPP program continuing until 'coronavirus crisis phase is over' (open-ended commitment), and 'stands ready to adjust all instruments' maintaining maximum activist stance. The guidance shows no retreat from accommodation and keeps all easing options on the table.",
+    "key_changes": [
+      "Maintained 'present or lower levels' language for rates",
+      "Continued open-ended PEPP commitment until crisis over",
+      "Preserved activist 'stands ready to adjust all instruments' stance"
+    ],
+    "scores": [
+      -1.7
+    ]
+  },
+  {
+    "date": "2020-09-10",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -1.2,
+    "rationale": "This guidance maintains a strongly dovish stance with explicit easing bias. The ECB keeps the door open to further rate cuts with 'present or lower levels' language, continues massive asset purchase programs (\u20ac1,350bn PEPP plus \u20ac20bn monthly APP), and maintains its activist 'stands ready to adjust all instruments' commitment. While the tone is similar to prior meetings, the concrete continuation of aggressive accommodation programs and explicit openness to further cuts signals clear dovish lean.",
+    "key_changes": [
+      "Maintains 'present or lower levels' rate guidance keeping cut option open",
+      "Continues massive PEPP purchases until crisis phase over",
+      "Reaffirms 'stands ready to adjust all instruments' activist stance"
+    ],
+    "scores": [
+      -1.2
+    ]
+  },
+  {
+    "date": "2020-10-29",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -1.2,
+    "rationale": "This guidance maintains a strongly dovish stance with explicit commitments to future easing. The ECB signals it 'will recalibrate its instruments, as appropriate' and maintains rates at 'present or lower levels', keeping the door open to further cuts. The massive asset purchase programs continue with clear extensions (PEPP until at least June 2021, APP ongoing). However, the guidance shows slightly less immediacy than pure activist dovishness by framing December projections as the key decision point for recalibration.",
+    "key_changes": [
+      "December projections as key assessment point",
+      "Maintained easing bias with recalibration promise",
+      "Extended PEPP timeline signals continued accommodation"
+    ],
+    "scores": [
+      -1.2
+    ]
+  },
+  {
+    "date": "2020-12-10",
+    "action": "Hike",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -1.8,
+    "rationale": "This is an extremely dovish recalibration with massive stimulus expansion. The ECB increased PEPP by \u20ac500 billion, extended purchases to March 2022, enhanced TLTRO conditions, and added multiple new lending facilities. The guidance maintains 'present or lower levels' for rates and explicitly states readiness to 'adjust all instruments' to ensure inflation moves toward target. While not the maximum -2.0 due to some conditionality around pandemic dynamics, this represents aggressive monetary accommodation with clear signaling of continued activist easing stance.",
+    "key_changes": [
+      "Massive \u20ac500bn PEPP increase with extended timeline",
+      "Enhanced TLTRO conditions and additional operations",
+      "Maintains 'present or lower levels' rate guidance",
+      "Explicit readiness to adjust all instruments as appropriate"
+    ],
+    "scores": [
+      -1.8
+    ]
+  },
+  {
+    "date": "2021-01-21",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -1.6,
+    "rationale": "This guidance maintains the highly dovish stance from the prior meeting's massive stimulus expansion. The ECB reaffirms 'present or lower levels' for rates until inflation robustly converges to target, continues the massive \u20ac1.85 trillion PEPP with flexible recalibration options, and explicitly states readiness to 'adjust all instruments' to ensure inflation moves toward target. The combination of conditional further rate cuts, massive ongoing asset purchases with upward flexibility, and activist 'stands ready' language signals continued aggressive accommodation.",
+    "key_changes": [
+      "Reconfirmation of very accommodative stance with no changes",
+      "Maintains 'present or lower levels' rate guidance",
+      "Preserves PEPP envelope flexibility for recalibration upward",
+      "Continues 'stands ready to adjust all instruments' activist language"
+    ],
+    "scores": [
+      -1.6
+    ]
+  },
+  {
+    "date": "2021-03-11",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -1.2,
+    "rationale": "The guidance maintains an aggressively dovish stance with several key accommodative signals: rates held at 'present or lower levels' until robust inflation convergence, PEPP purchases to be conducted at 'significantly higher pace' next quarter, explicit readiness to 'recalibrate' the envelope upward if needed, and 'stands ready to adjust all instruments' language. The decision to accelerate PEPP purchases represents an active easing move despite holding rates steady.",
+    "key_changes": [
+      "PEPP purchases to accelerate to 'significantly higher pace' next quarter",
+      "Envelope can be 'recalibrated if required' to maintain favorable conditions",
+      "Maintains 'present or lower levels' rate guidance"
+    ],
+    "scores": [
+      -1.2
+    ]
+  },
+  {
+    "date": "2021-04-22",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -1.2,
+    "rationale": "The guidance maintains a highly accommodative stance with strong dovish signals. Key dovish elements include rates at 'present or lower levels' until robust inflation convergence, PEPP purchases continuing at 'significantly higher pace', flexibility to recalibrate the envelope upward if needed, and 'stands ready to adjust all instruments' language. However, this represents continuation rather than escalation of accommodation compared to the prior meeting's decision to accelerate purchases.",
+    "key_changes": [
+      "Confirmed significantly higher PEPP purchase pace for current quarter",
+      "Maintained flexible envelope recalibration language",
+      "Reaffirmed 'stands ready to adjust all instruments' commitment"
+    ],
+    "scores": [
+      -1.2
+    ]
+  },
+  {
+    "date": "2021-06-10",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -1.2,
+    "rationale": "The guidance maintains highly accommodative language with multiple dovish signals: rates at 'present or lower levels' until robust inflation convergence, PEPP purchases continuing at 'significantly higher pace', flexibility to recalibrate envelope upward if needed, and 'stands ready to adjust all instruments'. However, this represents continuation of existing accommodation rather than escalation, preventing a more dovish score.",
+    "key_changes": [
+      "Confirmation of significantly higher PEPP pace",
+      "Maintained flexibility to expand envelope",
+      "Continued very accommodative stance"
+    ],
+    "scores": [
+      -1.2
+    ]
+  },
+  {
+    "date": "2021-07-22",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -1.2,
+    "rationale": "This guidance represents a significant dovish shift through revised forward guidance on rates and explicit allowance for inflation overshooting. The new rate guidance sets a much higher bar for rate increases (inflation at 2% 'well ahead' of projection horizon AND 'durably' AND underlying progress 'sufficiently advanced'), while explicitly stating this 'may also imply a transitory period in which inflation is moderately above target' - a clear dovish recalibration. PEPP purchases continue at 'significantly higher pace' with flexible envelope that can be increased if needed, and the 'stands ready to adjust all instruments' phrase maintains activist easing bias.",
+    "key_changes": [
+      "Revised forward guidance setting higher bar for rate increases",
+      "Explicit tolerance for transitory inflation overshooting",
+      "Maintained high pace PEPP purchases with upward flexibility"
+    ],
+    "scores": [
+      -1.2
+    ]
+  },
+  {
+    "date": "2021-09-09",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 0.4,
+    "rationale": "This guidance represents a modest hawkish shift from the prior meeting's dovish stance. While the ECB maintains its accommodative framework and 'stands ready to adjust all instruments' language, the key change is reducing PEPP purchases to a 'moderately lower pace' from the previous 'significantly higher pace.' This tapering signal, combined with maintaining all other accommodative measures unchanged, suggests a cautious step toward less accommodation while keeping the door open for policy adjustments in either direction based on conditions.",
+    "key_changes": [
+      "PEPP purchases reduced to 'moderately lower pace' from 'significantly higher pace'"
+    ],
+    "scores": [
+      0.4
+    ]
+  },
+  {
+    "date": "2021-10-28",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -0.3,
+    "rationale": "The guidance maintains a dovish lean through comprehensive accommodation commitments and activist 'stands ready to adjust all instruments' language, but shows a modest hawkish shift with PEPP tapering to 'moderately lower pace' from previous 'significantly higher' levels. The extensive forward guidance keeps rates anchored at current/lower levels with high inflation thresholds, while maintaining full reinvestment and flexible purchase options. The tapering represents normalization rather than tightening intent.",
+    "key_changes": [
+      "PEPP purchases reduced to 'moderately lower pace' from higher levels",
+      "Maintained comprehensive accommodation framework with activist adjustment stance"
+    ],
+    "scores": [
+      -0.3
+    ]
+  },
+  {
+    "date": "2021-12-16",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -0.3,
+    "rationale": "The guidance shows a modest hawkish shift from prior dovish stance as the ECB accelerates its tapering timeline - ending PEPP purchases entirely by March 2022 and reducing APP purchases in a step-by-step manner to \u20ac20bn monthly by October. However, it maintains dovish elements through extensive accommodation commitments, extended reinvestment horizons until at least 2024, flexible restart options if needed, and 'stands ready to adjust all instruments' language. The rate guidance remains highly dovish with rates at 'present or lower levels' until inflation reaches 2% well ahead of projection horizon and durably thereafter. The net effect is a modest hawkish recalibration within an overall accommodative framework.",
+    "key_changes": [
+      "PEPP ending March 2022 vs previous indefinite timeline",
+      "Step-by-step APP reduction to \u20ac20bn monthly",
+      "Extended PEPP reinvestment horizon to 2024",
+      "Maintained flexibility to restart purchases if needed"
+    ],
+    "scores": [
+      -0.3
+    ]
+  },
+  {
+    "date": "2022-02-03",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 0.4,
+    "rationale": "The guidance shows a moderate hawkish shift from the prior dovish stance. Key hawkish elements include accelerated tapering timeline (PEPP ending March 2022, APP reducing to \u20ac20bn by October), clear sequencing that rate hikes will come 'shortly before' purchases end, and removal of the most dovish rate language ('present or lower levels' now just to 'present levels'). However, substantial dovish elements remain: extended reinvestment commitments until at least 2024, flexible restart options for purchases if needed, 'stands ready to adjust all instruments' language, and still-stringent conditions for rate hikes requiring inflation at 2% 'well ahead' and 'durably' at projection horizon. This represents a hawkish recalibration within an overall accommodative framework.",
+    "key_changes": [
+      "PEPP purchases ending March 2022",
+      "APP tapering to \u20ac20bn by October",
+      "Rate hikes expected 'shortly before' purchases end",
+      "Removal of 'or lower' from rate guidance"
+    ],
+    "scores": [
+      0.4
+    ]
+  },
+  {
+    "date": "2022-03-10",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 0.7,
+    "rationale": "This guidance shows a clear hawkish shift from prior dovish positioning. Key hawkish elements include: accelerated tapering of APP purchases (ending in Q3 vs. Q4), removing the most dovish language from rate guidance (no more 'present or lower levels'), and the clear sequencing that rate hikes come 'some time after' purchases end rather than 'shortly before'. However, hawkishness is tempered by: conditional APP ending ('if incoming data support'), extended reinvestment commitments, flexible restart options for purchases, and stringent conditions still required for rate hikes ('inflation reaching 2% well ahead' and 'durably'). The 'stands ready to adjust all instruments' maintains optionality. Overall this represents patience with a slight hawkish lean rather than urgency to tighten.",
+    "key_changes": [
+      "Accelerated APP tapering timeline",
+      "Removed 'present or lower levels' rate language",
+      "Rate hikes 'some time after' vs 'shortly before' purchases end",
+      "Conditional rather than definitive APP ending"
+    ],
+    "scores": [
+      0.7
+    ]
+  },
+  {
+    "date": "2022-04-14",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 0.7,
+    "rationale": "This guidance shows patience with a hawkish lean. The ECB is accelerating asset purchase tapering (ending Q3) and has sequenced rate hikes to come 'some time after' purchases end, but maintains stringent conditions for rate hikes requiring inflation to reach 2% 'well ahead' of projection horizon and 'durably'. The 'stands ready to adjust all instruments' preserves optionality while the extended reinvestment commitments and flexible restart options for purchases temper the hawkishness.",
+    "key_changes": [
+      "Accelerated tapering timeline to Q3",
+      "Clear sequencing of rate hikes after purchases end",
+      "Maintained stringent inflation conditions for rate hikes"
+    ],
+    "scores": [
+      0.7
+    ]
+  },
+  {
+    "date": "2022-06-09",
+    "action": "Unknown",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 1.2,
+    "rationale": "The ECB has moved from pre-conditions for rate hikes to actual implementation, announcing a 25bp July increase and expecting another September hike with size dependent on inflation outlook. This represents a clear hawkish shift from the prior meeting's conditional stance. However, the commitment to 'gradual but sustained' increases with data-dependent pacing and flexible instrument adjustment prevents this from being more hawkish.",
+    "key_changes": [
+      "Forward guidance conditions now satisfied, July rate hike announced",
+      "September hike expected with size conditional on inflation outlook",
+      "Shift from conditional 'some time after' to concrete implementation timeline",
+      "'Gradual but sustained path of further increases' signals extended tightening cycle"
+    ],
+    "scores": [
+      1.2
+    ]
+  },
+  {
+    "date": "2022-07-21",
+    "action": "Hike 50bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 1.3,
+    "rationale": "The ECB delivers a larger 50bp hike than previously signaled while stating 'further normalisation of interest rates will be appropriate' at upcoming meetings. This clear commitment to continued tightening is hawkish. However, the transition to a 'meeting-by-meeting approach' and emphasis on data-dependency prevents a more hawkish score. The TPI introduction provides additional policy flexibility but doesn't alter the tightening trajectory.",
+    "key_changes": [
+      "Frontloaded larger hike than signaled",
+      "Clear commitment to further rate normalisation",
+      "Transition to meeting-by-meeting approach from pre-commitment",
+      "TPI tool introduction for transmission protection"
+    ],
+    "scores": [
+      1.3
+    ]
+  },
+  {
+    "date": "2022-09-08",
+    "action": "Hike 75bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 1.4,
+    "rationale": "Strong hawkish guidance with clear commitment to continued rate hikes 'over the next several meetings' to combat 9.1% inflation. The 'frontloading' language and expectation to raise rates 'further to dampen demand' shows aggressive tightening intent. However, the meeting-by-meeting, data-dependent approach and lack of specific terminal rate guidance prevents a maximum hawkish score.",
+    "key_changes": [
+      "Explicit expectation of further rate hikes over next several meetings",
+      "Frontloading language signals aggressive pace",
+      "Inflation projections significantly revised upward",
+      "Clear commitment to dampen demand through higher rates"
+    ],
+    "scores": [
+      1.4
+    ]
+  },
+  {
+    "date": "2022-10-27",
+    "action": "Hike 75bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 1.4,
+    "rationale": "Clear hawkish guidance with 'expects to raise interest rates further' maintaining tightening bias, but notable softening from prior meeting's more aggressive 'frontloading' and 'over the next several meetings' language. The shift to purely meeting-by-meeting approach without specific timeframe suggests less urgency while still maintaining directional commitment to further hikes given 9.9% inflation.",
+    "key_changes": [
+      "Removal of 'frontloading' language",
+      "No specific timeframe for future hikes",
+      "Shift from 'over the next several meetings' to generic 'expects to raise further'"
+    ],
+    "scores": [
+      1.4
+    ]
+  },
+  {
+    "date": "2022-12-15",
+    "action": "Hike 50bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 1.7,
+    "rationale": "Very hawkish guidance with explicit commitment to 'raise them further' and 'significantly at a steady pace' to reach 'sufficiently restrictive' levels. The substantial upward revision to inflation projections (now 6.3% in 2023 vs previous lower forecasts) provides strong rationale for continued aggressive tightening. The addition of balance sheet runoff starting March 2023 adds another hawkish dimension. While maintaining meeting-by-meeting approach, the directional commitment is unambiguous and the pace ('steady') suggests sustained tightening ahead.",
+    "key_changes": [
+      "Substantial upward revision to inflation outlook",
+      "Explicit expectation to raise rates 'significantly further'",
+      "Introduction of balance sheet runoff from March 2023",
+      "Emphasis on reaching 'sufficiently restrictive' levels"
+    ],
+    "scores": [
+      1.7
+    ]
+  },
+  {
+    "date": "2023-02-02",
+    "action": "Hike 50bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 1.8,
+    "rationale": "Very hawkish guidance with explicit forward commitment. States 'expects to raise them further' and specifically 'intends to raise interest rates by another 50 basis points at its next monetary policy meeting in March'. The language about keeping rates 'at restrictive levels' and raising them 'significantly at a steady pace' signals sustained tightening ahead. Balance sheet runoff adds hawkish dimension. Despite 'meeting-by-meeting' caveat, the directional commitment and specific March guidance are unambiguously hawkish.",
+    "key_changes": [
+      "Explicit 50bp hike guidance for March meeting",
+      "Commitment to keep rates at restrictive levels",
+      "Balance sheet runoff beginning March 2023"
+    ],
+    "scores": [
+      1.8
+    ]
+  },
+  {
+    "date": "2023-03-16",
+    "action": "Hike 50bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 0.7,
+    "rationale": "Significant hawkish shift from prior explicit forward commitment. Removed specific guidance about raising rates further and shifted to pure data-dependency with 'will be determined by assessment of incoming data.' However, maintains hawkish elements: inflation 'too high for too long' justifying continued action, 'stands ready to adjust all instruments' suggests activist stance, and overall tone implies more tightening likely needed despite banking sector tensions.",
+    "key_changes": [
+      "Removed explicit forward rate guidance",
+      "Shifted to data-dependent approach",
+      "Added financial stability concerns",
+      "Maintained inflation urgency rhetoric"
+    ],
+    "scores": [
+      0.7
+    ]
+  },
+  {
+    "date": "2023-05-04",
+    "action": "Hike 25bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 1.2,
+    "rationale": "The guidance signals continued hawkish intent but with growing uncertainty about transmission. While maintaining that rates need to reach 'sufficiently restrictive' levels, the emphasis on uncertain 'lags and strength of transmission' and purely data-dependent approach suggests less urgency than explicit forward commitment. The phrase about keeping rates restrictive 'for as long as necessary' adds a hawkish duration element, but overall tone is more patient than aggressive.",
+    "key_changes": [
+      "Acknowledges 'uncertain' transmission lags tempering hawkish stance",
+      "Maintains restrictive bias but with data-dependent conditionality",
+      "Duration guidance added - rates to stay restrictive 'as long as necessary'"
+    ],
+    "scores": [
+      1.2
+    ]
+  },
+  {
+    "date": "2023-06-15",
+    "action": "Hike 25bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 1.2,
+    "rationale": "The guidance maintains hawkish intent with 'sufficiently restrictive' levels and duration commitment, but shows less urgency than prior meetings. The emphasis on 'data-dependent approach' and acknowledgment that past hikes are 'being transmitted forcefully' suggests more patience. Inflation projections remain elevated through 2025, supporting continued restriction, but the tone is more measured than aggressively hawkish.",
+    "key_changes": [
+      "Emphasis on forceful transmission of past hikes",
+      "Data-dependent approach with no preset path",
+      "Measured tone despite elevated inflation projections"
+    ],
+    "scores": [
+      1.2
+    ]
+  },
+  {
+    "date": "2023-07-27",
+    "action": "Hike 25bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 1.3,
+    "rationale": "The guidance maintains a hawkish stance with commitment to 'sufficiently restrictive levels for as long as necessary' and emphasizes that inflation 'will stay above target for an extended period.' However, it shows more patience than aggressive hawkishness, with heavy emphasis on data-dependency and acknowledgment that past hikes are transmitting 'forcefully' and 'increasingly dampening demand.' The tone suggests the ECB is closer to the end of its hiking cycle rather than signaling aggressive further tightening.",
+    "key_changes": [
+      "Acknowledgment that past hikes are transmitting forcefully and dampening demand",
+      "Heavy emphasis on data-dependent approach suggests more patience",
+      "Less urgency in tone while maintaining restrictive commitment"
+    ],
+    "scores": [
+      1.3
+    ]
+  },
+  {
+    "date": "2023-09-14",
+    "action": "Hike 25bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 0.8,
+    "rationale": "The guidance shows a measured hawkish stance with the key signal being 'the key ECB interest rates have reached levels that, maintained for a sufficiently long duration, will make a substantial contribution to the timely return of inflation to the target.' This suggests the ECB believes it may be at or near peak rates. While maintaining commitment to restrictive policy 'for as long as necessary,' the emphasis on data-dependency and acknowledgment that past hikes are transmitting 'forcefully' and 'increasingly dampening demand' suggests patience rather than aggressive further tightening. Growth projections were lowered significantly, reducing urgency for more hikes.",
+    "key_changes": [
+      "Rates may have reached appropriate levels for sustained period",
+      "Significant downward revision to growth projections",
+      "Forceful transmission dampening demand"
+    ],
+    "scores": [
+      0.8
+    ]
+  },
+  {
+    "date": "2023-10-26",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 0.9,
+    "rationale": "The guidance maintains a patient hawkish stance with key language indicating the ECB considers current rates at appropriate levels. The phrase 'key ECB interest rates are at levels that, maintained for a sufficiently long duration, will make a substantial contribution to this goal' suggests they believe they're at or near peak rates. While acknowledging inflation dropped markedly in September and underlying measures are easing, they emphasize inflation is 'still expected to stay too high for too long' and domestic pressures remain strong. The commitment to keep rates 'sufficiently restrictive for as long as necessary' combined with data-dependency suggests patience rather than urgency to tighten further.",
+    "key_changes": [
+      "Current rates seen as appropriate level if maintained",
+      "Acknowledgment of marked inflation drop in September",
+      "Underlying inflation measures continuing to ease",
+      "Past rate hikes transmitting forcefully and dampening demand"
+    ],
+    "scores": [
+      0.9
+    ]
+  },
+  {
+    "date": "2023-12-14",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 1.2,
+    "rationale": "The guidance signals a patient hawkish stance with the ECB believing rates are at appropriate levels ('at levels that, maintained for a sufficiently long duration, will make a substantial contribution'). Key hawkish elements include maintaining rates at 'sufficiently restrictive levels for as long as necessary' and accelerating balance sheet normalization by ending PEPP reinvestments in 2024. However, the downward revision of inflation forecasts for 2024 and the standard 'stands ready to adjust all instruments' language prevent a higher hawkish score.",
+    "key_changes": [
+      "Accelerated balance sheet normalization with PEPP reinvestments ending in 2024",
+      "Downward revision of inflation forecasts especially for 2024",
+      "Maintained restrictive stance language despite improving inflation outlook"
+    ],
+    "scores": [
+      1.2
+    ]
+  },
+  {
+    "date": "2024-01-25",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 1.2,
+    "rationale": "The guidance maintains a patient hawkish stance with key restrictive language intact: rates 'maintained for a sufficiently long duration' and 'sufficiently restrictive levels for as long as necessary.' The ECB expresses satisfaction with current policy effectiveness ('past interest rate increases keep being transmitted forcefully') and sees progress toward the 2% target ('declining trend in underlying inflation has continued'). The data-dependent approach emphasizes no urgency for change, while the balance sheet normalization continues as planned. The 'stands ready to adjust' clause remains standard central bank language.",
+    "key_changes": [
+      "Confirmation of previous assessment",
+      "Progress on underlying inflation decline",
+      "Continued forceful transmission of past rate hikes"
+    ],
+    "scores": [
+      1.2
+    ]
+  },
+  {
+    "date": "2024-03-07",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 0.7,
+    "rationale": "The guidance maintains patience with restrictive policy amid significant downward revisions to inflation projections. While inflation forecasts were revised down materially (2024: 2.3% vs likely higher previously, with 2025-2026 at/below target), the ECB keeps restrictive language intact about maintaining rates 'for sufficiently long duration' and 'as long as necessary.' The emphasis on domestic price pressures remaining high and strong wage growth provides justification for continued patience. Growth projections were also revised down to just 0.6% for 2024, but this doesn't prompt urgency for easing. The data-dependent stance with no directional lean suggests the ECB is comfortable waiting to see more progress before considering changes.",
+    "key_changes": [
+      "Inflation projections revised down significantly, especially for 2024",
+      "Growth forecast cut to 0.6% for 2024",
+      "Maintained restrictive stance language despite softer projections"
+    ],
+    "scores": [
+      0.7
+    ]
+  },
+  {
+    "date": "2024-04-11",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -0.3,
+    "rationale": "The guidance shows a slight dovish shift from prior hawkish patience. While maintaining restrictive language, the ECB introduces a clearer pathway to cuts with 'it would be appropriate to reduce the current level of monetary policy restriction' if confidence increases. This represents a more explicit conditional easing signal than typical data-dependent language. However, the dovish lean is modest given the emphasis on domestic price pressures keeping services inflation high and rates needing to stay 'sufficiently restrictive for as long as necessary.'",
+    "key_changes": [
+      "Introduction of explicit conditional easing language - 'appropriate to reduce restriction' if confidence increases",
+      "Acknowledgment of ongoing disinflation progress while maintaining restrictive stance",
+      "Data-dependent approach with no pre-commitment keeps door open to cuts"
+    ],
+    "scores": [
+      -0.3
+    ]
+  },
+  {
+    "date": "2024-06-06",
+    "action": "Cut 25bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -0.7,
+    "rationale": "The ECB delivered on the dovish shift signaled at the prior meeting by cutting 25bp, but the guidance shows restraint about future moves. While 'not pre-committing to a particular rate path' keeps the door open to more cuts, the emphasis on keeping rates 'sufficiently restrictive for as long as necessary' and 'meeting-by-meeting' approach suggests patience rather than a predetermined easing cycle. The 'stands ready to adjust all instruments' language maintains an activist stance, but overall tone is more cautious than aggressive easing guidance.",
+    "key_changes": [
+      "Cut delivered as previously signaled",
+      "Door remains open with 'not pre-committing' language",
+      "Emphasis on restrictive stance continuing 'as long as necessary'"
+    ],
+    "scores": [
+      -0.7
+    ]
+  },
+  {
+    "date": "2024-07-18",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 0.7,
+    "rationale": "The guidance maintains a patient, restrictive stance with clear hawkish elements. The ECB emphasizes keeping policy rates 'sufficiently restrictive for as long as necessary' and notes that 'domestic price pressures are still high' with 'services inflation elevated' and 'headline inflation likely to remain above target well into next year.' While 'not pre-committing to a particular rate path' technically keeps options open, the overall tone emphasizes the need for continued restriction rather than signaling readiness to ease further. The data-dependent, meeting-by-meeting approach combined with restrictive language suggests patience rather than urgency to cut.",
+    "key_changes": [
+      "Emphasis on keeping rates sufficiently restrictive",
+      "Acknowledgment of persistent price pressures",
+      "Services inflation remains elevated",
+      "Inflation to stay above target into next year"
+    ],
+    "scores": [
+      0.7
+    ]
+  },
+  {
+    "date": "2024-09-12",
+    "action": "Cut 25bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -0.7,
+    "rationale": "The guidance shows a dovish lean through several key signals: the ECB explicitly states it is 'appropriate to take another step in moderating the degree of monetary policy restriction' and maintains 'not pre-committing to a particular rate path' after cutting, keeping the door open to further easing. However, the dovishness is tempered by continued emphasis on keeping rates 'sufficiently restrictive for as long as necessary' and slightly upward revisions to core inflation projections for 2024-2025, suggesting measured rather than aggressive easing ahead.",
+    "key_changes": [
+      "Explicit statement about 'moderating restriction' being appropriate",
+      "Maintains non-commitment to rate path after cutting",
+      "Core inflation projections revised slightly upward",
+      "Still emphasizes sufficiently restrictive stance"
+    ],
+    "scores": [
+      -0.7
+    ]
+  },
+  {
+    "date": "2024-10-17",
+    "action": "Cut 25bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -0.7,
+    "rationale": "The guidance shows a moderate dovish lean. While the ECB emphasizes keeping policy 'sufficiently restrictive for as long as necessary' and maintains a data-dependent approach, the key dovish signals include 'not pre-committing to a particular rate path' after cutting (keeping door open), citing 'downside surprises in economic activity' as justification, and confirming the 'disinflationary process is well on track.' The 'stands ready to adjust all instruments' language maintains an activist stance. However, the dovishness is measured rather than aggressive, with no explicit forward guidance toward further cuts.",
+    "key_changes": [
+      "Economic activity downside surprises cited as cut justification",
+      "Disinflationary process described as 'well on track'",
+      "Maintains 'not pre-committing' after easing cycle"
+    ],
+    "scores": [
+      -0.7
+    ]
+  },
+  {
+    "date": "2024-12-12",
+    "action": "Cut 25bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -0.6,
+    "rationale": "The guidance maintains a measured dovish lean similar to the prior meeting. Key dovish signals include 'not pre-committing to a particular rate path' after cutting (keeping door open to more cuts), 'stands ready to adjust all instruments' (activist stance), and acknowledgment that inflation is settling 'around' the 2% target sustainably. However, the dovishness is tempered by emphasis on data-dependency, meeting-by-meeting approach, and determination language around the inflation target. The guidance lacks explicit urgency for further easing while preserving optionality.",
+    "key_changes": [
+      "Inflation described as settling 'around' 2% target sustainably",
+      "Maintains 'not pre-committing' language after cut",
+      "Continues activist 'stands ready to adjust all instruments' stance"
+    ],
+    "scores": [
+      -0.6
+    ]
+  },
+  {
+    "date": "2025-01-30",
+    "action": "Cut 25bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -0.6,
+    "rationale": "The guidance maintains a measured dovish lean consistent with keeping the easing cycle alive. Key dovish signals include 'not pre-committing to a particular rate path' after cutting (preserving optionality for more cuts) and 'stands ready to adjust all instruments' (activist stance). However, the dovishness is tempered by strong data-dependency language, meeting-by-meeting approach, and the acknowledgment that inflation is 'set to return to target in the course of this year' with most measures suggesting it will 'settle at around the target on a sustained basis' - indicating the mission is largely accomplished but not urgent.",
+    "key_changes": [
+      "Inflation outlook improved - 'set to return to target in the course of this year'",
+      "Most measures suggest inflation will settle sustainably around target",
+      "Maintains optionality with 'not pre-committing' language",
+      "'Stands ready to adjust all instruments' preserves activist stance"
+    ],
+    "scores": [
+      -0.6
+    ]
+  },
+  {
+    "date": "2025-03-06",
+    "action": "Cut 25bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -0.7,
+    "rationale": "The guidance maintains a measured dovish lean, keeping the easing cycle alive through 'not pre-committing to a particular rate path' and 'stands ready to adjust all instruments' language. However, the dovishness is significantly tempered by the assessment that inflation is 'well on track' to target with most measures suggesting it will 'settle at around the 2% target on a sustained basis.' The projection of inflation averaging exactly 2.0% in 2027 suggests the mission is largely accomplished, reducing urgency for further easing while preserving optionality.",
+    "key_changes": [
+      "Disinflation described as 'well on track'",
+      "Inflation projections closely aligned with target by 2027",
+      "Mission largely accomplished tone reduces easing urgency"
+    ],
+    "scores": [
+      -0.7
+    ]
+  },
+  {
+    "date": "2025-04-17",
+    "action": "Cut 25bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -0.3,
+    "rationale": "The guidance maintains a measured dovish lean similar to the prior meeting but with subtle hawkish shifts. While 'not pre-committing to a particular rate path' and 'stands ready to adjust all instruments' preserve easing optionality, the assessment that inflation will 'stabilise sustainably at its 2% target' suggests mission near-completion. The new emphasis on 'exceptional uncertainty' from trade tensions and deteriorating growth outlook provides fresh dovish justification, but this is balanced by the confident assertion that inflation will 'settle at around the 2% target on a sustained basis.' The overall tone suggests continued but diminishing urgency for easing.",
+    "key_changes": [
+      "Growth outlook deteriorated due to trade tensions",
+      "Emphasis on 'exceptional uncertainty' as policy driver",
+      "Inflation assessment remains confident about reaching target sustainably"
+    ],
+    "scores": [
+      -0.3
+    ]
+  },
+  {
+    "date": "2025-06-05",
+    "action": "Cut 25bp",
+    "dissents": "ECB does not publish individual votes.",
+    "score": -0.3,
+    "rationale": "The guidance maintains a measured dovish lean but shows notable hawkish shifts from prior meeting. While 'not pre-committing to a particular rate path' and 'stands ready to adjust all instruments' preserve easing optionality, key changes signal reduced urgency: inflation is now 'currently at around' the 2% target (vs future-oriented language before), staff projections revised down by 0.3pp suggesting less inflation pressure, and concerns about trade tensions have 'eased.' The confident assertion that inflation will 'settle at around the 2% target on a sustained basis' suggests mission near-completion, reducing need for aggressive further action.",
+    "key_changes": [
+      "Inflation now 'currently at around' 2% target vs future projections",
+      "Staff projections revised down 0.3pp for 2025-2026",
+      "Trade tension concerns have 'eased'",
+      "High confidence inflation will 'settle at around 2% target on sustained basis'"
+    ],
+    "scores": [
+      -0.3
+    ]
+  },
+  {
+    "date": "2025-07-24",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 0.7,
+    "rationale": "The guidance shows a hawkish shift toward patience. Key signals include inflation now 'currently at the 2% medium-term target' (mission accomplished language), removal of urgency as the central bank achieves its mandate, and the economy proving 'resilient overall' despite challenges. While 'not pre-committing to a particular rate path' and 'stands ready to adjust all instruments' preserve optionality, the confident achievement of the inflation target reduces the need for further easing. The data-dependent, meeting-by-meeting approach without directional bias suggests patience rather than activist easing.",
+    "key_changes": [
+      "Inflation at target vs future-oriented language",
+      "Economy described as resilient",
+      "No urgency signals with target achieved"
+    ],
+    "scores": [
+      0.7
+    ]
+  },
+  {
+    "date": "2025-09-11",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 1.1,
+    "rationale": "The guidance signals patience with inflation at the 2% target and no urgency to ease further. Key hawkish signals include 'inflation is currently at around the 2% medium-term target' (mission accomplished), 'assessment of the inflation outlook is broadly unchanged' (no deterioration requiring action), and pure data-dependency without directional lean. While 'not pre-committing' and 'stands ready to adjust' preserve optionality, the confident tone about achieving the mandate reduces easing urgency.",
+    "key_changes": [
+      "Mission accomplished language with inflation at target",
+      "No change in inflation outlook assessment",
+      "Data-dependent stance without directional bias"
+    ],
+    "scores": [
+      1.1
+    ]
+  },
+  {
+    "date": "2025-10-30",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 0.7,
+    "rationale": "The guidance maintains a patient, data-dependent stance with no directional lean. Key hawkish signals include inflation remaining 'close to the 2% target' (mission accomplished), continued economic growth despite challenges, and pure data-dependency without urgency to act. While 'not pre-committing' and 'stands ready to adjust' preserve flexibility, the assessment suggests the ECB has achieved its goals and can afford to wait and see.",
+    "key_changes": [
+      "Inflation remains close to target with broadly unchanged outlook",
+      "Economy continues to grow despite global challenges",
+      "Pure data-dependency with no directional urgency"
+    ],
+    "scores": [
+      0.7
+    ]
+  },
+  {
+    "date": "2025-12-18",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 0.7,
+    "rationale": "The guidance shows a hawkish lean through several key signals: inflation assessment upgraded from 'close to the 2% target' to 'should stabilise at the 2% target in the medium term' suggests mission accomplished; the hold decision after recent easing cycles indicates the ECB has drawn a line; pure data-dependency with 'meeting-by-meeting approach' emphasizes patience over urgency. While 'not pre-committing' and 'stands ready to adjust' maintain flexibility, the overall tone suggests satisfaction with current policy stance and no immediate need for further action.",
+    "key_changes": [
+      "Inflation assessment upgraded to 'should stabilise at 2% target'",
+      "Hold decision after easing cycle suggests policy recalibration complete",
+      "Emphasis on meeting-by-meeting patience over urgency"
+    ],
+    "scores": [
+      0.7
+    ]
+  },
+  {
+    "date": "2026-02-05",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 0.8,
+    "rationale": "The guidance maintains a patient, hawkish lean with several key signals: inflation assessment confirms stabilization at target (mission accomplished), economy described as 'resilient' with multiple growth supports, and the hold decision after easing cycles suggests the ECB has reached an appropriate stance. The 'meeting-by-meeting approach' emphasizes patience over urgency. While standard flexibility language ('not pre-committing', 'stands ready to adjust') keeps options open, the overall tone suggests satisfaction with current policy and no immediate need for further easing.",
+    "key_changes": [
+      "Inflation now 'should stabilise at 2% target' - mission accomplished tone",
+      "Economy characterized as 'resilient' with multiple growth supports",
+      "Hold decision after easing cycles suggests appropriate stance reached",
+      "Meeting-by-meeting approach emphasizes patience over action urgency"
+    ],
+    "scores": [
+      0.8
+    ]
+  },
+  {
+    "date": "2026-03-19",
+    "action": "Hold",
+    "dissents": "ECB does not publish individual votes.",
+    "score": 0.8,
+    "rationale": "The guidance signals patience and satisfaction with current policy stance. Key hawkish elements include: inflation 'has been at around the 2% target' (mission accomplished), economy showing 'resilience', and the hold decision itself after an easing cycle suggests appropriate policy level reached. The war creates uncertainty but the ECB feels 'well positioned to navigate' it. The 'meeting-by-meeting approach' emphasizes patience over urgency. While standard flexibility language keeps doors open, the overall tone suggests no immediate need for policy changes.",
+    "key_changes": [
+      "War uncertainty acknowledged but ECB confident in position",
+      "Inflation at target with anchored expectations",
+      "Economy described as resilient",
+      "Hold decision after easing cycle suggests satisfaction with stance"
+    ],
+    "scores": [
+      0.8
+    ]
+  }
+]

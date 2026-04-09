@@ -1,0 +1,131 @@
+[
+  {
+    "_comment": "═══ USD ════════════════════════════════════════════════════════",
+    "id": "usd_policy_rate",
+    "provider": "bis",
+    "currency": "USD",
+    "indicator": "policy_rate",
+    "required": true,
+    "description": "US Federal Reserve — FFR target midpoint (or effective rate pre-2008). Daily.",
+    "freq": "D",
+    "bis_ref_area": "US",
+    "backfill": { "start": "2000-01" }
+  },
+
+  {
+    "_comment": "═══ EUR ════════════════════════════════════════════════════════",
+    "id": "eur_policy_rate",
+    "provider": "bis",
+    "currency": "EUR",
+    "indicator": "policy_rate",
+    "required": true,
+    "description": "ECB — main refinancing rate (pre-2022) / deposit facility rate (post-2022). Daily.",
+    "freq": "D",
+    "bis_ref_area": "XM",
+    "backfill": { "start": "2000-01" }
+  },
+
+  {
+    "_comment": "═══ GBP ════════════════════════════════════════════════════════",
+    "id": "gbp_policy_rate",
+    "provider": "bis",
+    "currency": "GBP",
+    "indicator": "policy_rate",
+    "required": true,
+    "description": "Bank of England — Bank Rate. Daily.",
+    "freq": "D",
+    "bis_ref_area": "GB",
+    "backfill": { "start": "2000-01" }
+  },
+
+  {
+    "_comment": "═══ JPY ════════════════════════════════════════════════════════",
+    "id": "jpy_policy_rate",
+    "provider": "bis",
+    "currency": "JPY",
+    "indicator": "policy_rate",
+    "required": true,
+    "description": "Bank of Japan — uncollateralised overnight call rate target. Daily.",
+    "freq": "D",
+    "bis_ref_area": "JP",
+    "backfill": { "start": "2000-01" }
+  },
+
+  {
+    "_comment": "═══ AUD ════════════════════════════════════════════════════════",
+    "id": "aud_policy_rate",
+    "provider": "bis",
+    "currency": "AUD",
+    "indicator": "policy_rate",
+    "required": true,
+    "description": "Reserve Bank of Australia — cash rate target. Daily.",
+    "freq": "D",
+    "bis_ref_area": "AU",
+    "backfill": { "start": "2000-01" }
+  },
+
+  {
+    "_comment": "═══ CAD ════════════════════════════════════════════════════════",
+    "id": "cad_policy_rate",
+    "provider": "bis",
+    "currency": "CAD",
+    "indicator": "policy_rate",
+    "required": true,
+    "description": "Bank of Canada — overnight rate target. Daily.",
+    "freq": "D",
+    "bis_ref_area": "CA",
+    "backfill": { "start": "2000-01" }
+  },
+
+  {
+    "_comment": "═══ CHF ════════════════════════════════════════════════════════",
+    "id": "chf_policy_rate",
+    "provider": "bis",
+    "currency": "CHF",
+    "indicator": "policy_rate",
+    "required": true,
+    "description": "Swiss National Bank — policy rate (SARON target). Daily.",
+    "freq": "D",
+    "bis_ref_area": "CH",
+    "backfill": { "start": "2000-01" }
+  },
+
+  {
+    "_comment": "═══ NOK ════════════════════════════════════════════════════════",
+    "id": "nok_policy_rate",
+    "provider": "bis",
+    "currency": "NOK",
+    "indicator": "policy_rate",
+    "required": true,
+    "description": "Norges Bank — sight deposit rate. Daily.",
+    "freq": "D",
+    "bis_ref_area": "NO",
+    "backfill": { "start": "2000-01" }
+  },
+
+  {
+    "_comment": "═══ SEK ════════════════════════════════════════════════════════",
+    "id": "sek_policy_rate",
+    "provider": "bis",
+    "currency": "SEK",
+    "indicator": "policy_rate",
+    "required": true,
+    "description": "Sveriges Riksbank — repo rate. Daily.",
+    "freq": "D",
+    "bis_ref_area": "SE",
+    "backfill": { "start": "2000-01" }
+  },
+
+  {
+    "_comment": "═══ NZD ════════════════════════════════════════════════════════",
+    "id": "nzd_policy_rate",
+    "provider": "bis",
+    "currency": "NZD",
+    "indicator": "policy_rate",
+    "required": true,
+    "description": "Reserve Bank of New Zealand — Official Cash Rate. Daily.",
+    "freq": "D",
+    "bis_ref_area": "NZ",
+    "backfill": { "start": "2000-01" }
+  }
+]

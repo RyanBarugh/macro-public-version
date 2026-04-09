@@ -1,0 +1,152 @@
+[
+  {
+    "_comment": "═══ TERMS OF TRADE — ENERGY (DAILY) ═══════════════════════════",
+    "id": "tot_brent_crude",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "tot",
+    "required": true,
+    "description": "Brent Crude Oil Price, daily, USD/barrel. ICE via FRED. EUR/GBP/JPY import baskets, NOK export basket.",
+    "freq": "D",
+    "fred_series_id": "DCOILBRENTEU",
+    "backfill": { "start": "1987-05" }
+  },
+  {
+    "id": "tot_wti_crude",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "tot",
+    "required": true,
+    "description": "WTI Crude Oil Price, daily, USD/barrel. NYMEX via FRED. CAD/USD export baskets.",
+    "freq": "D",
+    "fred_series_id": "DCOILWTICO",
+    "backfill": { "start": "1986-01" }
+  },
+  {
+    "id": "tot_henry_hub",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "tot",
+    "required": true,
+    "description": "Henry Hub Natural Gas Spot Price, daily, USD/MMBtu. NYMEX via FRED. USD/CAD/AUD export baskets (LNG proxy).",
+    "freq": "D",
+    "fred_series_id": "DHHNGSP",
+    "backfill": { "start": "1997-01" }
+  },
+
+  {
+    "_comment": "═══ TERMS OF TRADE — ENERGY (MONTHLY, WORLD BANK) ═════════════",
+    "id": "tot_ttf_gas_eu",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "tot",
+    "required": true,
+    "description": "Natural Gas Price, Europe (TTF), monthly, USD/MMBtu. World Bank Pink Sheet via FRED. EUR import basket (30%), NOK export basket (35%).",
+    "freq": "M",
+    "fred_series_id": "PNGASEUUSDM",
+    "backfill": { "start": "1991-01" }
+  },
+  {
+    "id": "tot_jkm_lng_jp",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "tot",
+    "required": true,
+    "description": "Natural Gas Price, Japan (LNG import), monthly, USD/MMBtu. World Bank Pink Sheet via FRED. JPY import basket (25%).",
+    "freq": "M",
+    "fred_series_id": "PNGASJPUSDM",
+    "backfill": { "start": "1960-01" }
+  },
+  {
+    "id": "tot_coal_au",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "tot",
+    "required": true,
+    "description": "Coal Price, Australia, monthly, USD/metric ton. World Bank Pink Sheet via FRED. AUD export basket (20%), JPY import basket (10%).",
+    "freq": "M",
+    "fred_series_id": "PCOALAUUSDM",
+    "backfill": { "start": "1970-01" }
+  },
+
+  {
+    "_comment": "═══ TERMS OF TRADE — METALS (MONTHLY) ═════════════════════════",
+    "id": "tot_iron_ore",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "tot",
+    "required": true,
+    "description": "Iron Ore 62% Fe CFR China, monthly, USD/dry metric ton. World Bank Pink Sheet via FRED. AUD export basket (35%). Primary data gap — monthly only.",
+    "freq": "M",
+    "fred_series_id": "PIORECRUSDM",
+    "backfill": { "start": "1960-01" }
+  },
+  {
+    "id": "tot_copper",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "tot",
+    "required": true,
+    "description": "Copper Price, LME, monthly, USD/metric ton. World Bank Pink Sheet via FRED. AUD export basket (5%).",
+    "freq": "M",
+    "fred_series_id": "PCOPPUSDM",
+    "backfill": { "start": "1960-01" }
+  },
+  {
+    "id": "tot_aluminium",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "tot",
+    "required": true,
+    "description": "Aluminium Price, LME, monthly, USD/metric ton. World Bank Pink Sheet via FRED. NZD export basket proxy.",
+    "freq": "M",
+    "fred_series_id": "PALUMUSDM",
+    "backfill": { "start": "1960-01" }
+  },
+
+  {
+    "_comment": "═══ TERMS OF TRADE — AGRICULTURE (MONTHLY) ════════════════════",
+    "id": "tot_wheat",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "tot",
+    "required": true,
+    "description": "Wheat Price, US HRW, monthly, USD/metric ton. World Bank Pink Sheet via FRED. CAD/USD export, EUR/JPY/GBP import (food proxy).",
+    "freq": "M",
+    "fred_series_id": "PWHEAMTUSDM",
+    "backfill": { "start": "1960-01" }
+  },
+  {
+    "id": "tot_soybeans",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "tot",
+    "required": true,
+    "description": "Soybean Price, monthly, USD/metric ton. World Bank Pink Sheet via FRED. USD export basket.",
+    "freq": "M",
+    "fred_series_id": "PSOYBUSDM",
+    "backfill": { "start": "1960-01" }
+  },
+  {
+    "id": "tot_corn",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "tot",
+    "required": true,
+    "description": "Corn/Maize Price, monthly, USD/metric ton. World Bank Pink Sheet via FRED. USD export basket.",
+    "freq": "M",
+    "fred_series_id": "PMAIZMTUSDM",
+    "backfill": { "start": "1960-01" }
+  },
+  {
+    "id": "tot_lumber",
+    "provider": "fred",
+    "currency": "USD",
+    "indicator": "tot",
+    "required": true,
+    "description": "PPI Lumber and Wood Products, monthly, index. BLS via FRED. CAD/NZD export baskets.",
+    "freq": "M",
+    "fred_series_id": "WPU0811",
+    "backfill": { "start": "1947-01" }
+  }
+]

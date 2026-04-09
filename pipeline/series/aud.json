@@ -1,0 +1,307 @@
+[
+  {
+    "_comment": "═══ INFLATION ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "aud_cpi_headline_m_nsa",
+    "provider": "abs",
+    "currency": "AUD",
+    "indicator": "cpi",
+    "required": true,
+    "description": "Australia CPI all groups, NSA, monthly. ABS CPI 2.0.0.",
+    "sa_status": "nsa",
+    "freq": "M",
+    "dataflow": "ABS,CPI,2.0.0",
+    "data_key": "1.10001.10.50.M",
+    "backfill": {
+      "start": "1948-01"
+    },
+    "fred_pit_id": "AUSCPIALLQINMEI",
+    "fred_pit_note": "OECD MEI CPI total. Quarterly NSA. Note: ABS CPI is quarterly."
+  },
+  {
+    "id": "aud_cpi_headline_q_nsa",
+    "provider": "abs",
+    "currency": "AUD",
+    "indicator": "cpi",
+    "required": true,
+    "description": "Australia CPI all groups, NSA, quarterly. ABS CPI 2.0.0.",
+    "sa_status": "nsa",
+    "freq": "Q",
+    "dataflow": "ABS,CPI,2.0.0",
+    "data_key": "1.10001..50.Q",
+    "backfill": {
+      "start": "1948-01"
+    },
+    "fred_pit_id": "AUSCPIALLQINMEI",
+    "fred_pit_note": "Same series. Quarterly."
+  },
+  {
+    "id": "aud_cpi_headline_m_sa",
+    "provider": "abs",
+    "currency": "AUD",
+    "indicator": "cpi",
+    "required": true,
+    "description": "Australia CPI all groups, SA, monthly. ABS CPI 2.0.0.",
+    "sa_status": "sa",
+    "freq": "M",
+    "dataflow": "ABS,CPI,2.0.0",
+    "data_key": "1.999901.20.50.M",
+    "backfill": {
+      "start": "1948-07"
+    },
+    "fred_pit_id": "AUSCPIALLQINMEI",
+    "fred_pit_note": "Same ABS CPI release. FRED version is NSA."
+  },
+  {
+    "id": "aud_cpi_services_m_sa",
+    "provider": "abs",
+    "currency": "AUD",
+    "indicator": "cpi",
+    "required": true,
+    "description": "Australia CPI services component, SA, monthly. ABS CPI 2.0.0.",
+    "sa_status": "sa",
+    "freq": "M",
+    "dataflow": "ABS,CPI,2.0.0",
+    "data_key": "1.104104.20.50.M",
+    "backfill": {
+      "start": "1948-01"
+    },
+    "fred_pit_id": "AUSCPIALLQINMEI",
+    "fred_pit_note": "Same ABS CPI release."
+  },
+  {
+    "id": "aud_cpi_trimmed_mean_m_sa",
+    "provider": "abs",
+    "currency": "AUD",
+    "indicator": "cpi",
+    "required": true,
+    "description": "Australia CPI trimmed mean, SA, monthly. ABS CPI 2.0.0. RBA preferred core measure.",
+    "sa_status": "sa",
+    "freq": "M",
+    "dataflow": "ABS,CPI,2.0.0",
+    "data_key": "1.999902.20.50.M",
+    "backfill": {
+      "start": "1948-07"
+    },
+    "fred_pit_id": "AUSCPIALLQINMEI",
+    "fred_pit_note": "Same ABS CPI release. Trimmed mean not separately on FRED."
+  },
+  {
+    "id": "aud_cpi_core_q_nsa",
+    "provider": "fred",
+    "currency": "AUD",
+    "indicator": "cpi",
+    "required": true,
+    "description": "Australia CPI All Items Non-Food Non-Energy, NSA, quarterly index (2015=100). OECD via FRED. Core proxy for quarterly fallback.",
+    "sa_status": "nsa",
+    "freq": "Q",
+    "fred_series_id": "AUSCPICORQINMEI",
+    "backfill": {
+      "start": "1971-04"
+    }
+  },
+  {
+    "id": "aud_ppi_headline_q",
+    "provider": "abs",
+    "currency": "AUD",
+    "indicator": "ppi",
+    "required": true,
+    "description": "Australia PPI final demand, total all industries, excl. exports, index, quarterly. ABS PPI_FD 1.1.0.",
+    "sa_status": "nsa",
+    "freq": "Q",
+    "dataflow": "ABS,PPI_FD,1.1.0",
+    "data_key": "1.TOT.TOT.TOTXE.Q",
+    "backfill": {
+      "start": "1998-07"
+    },
+    "fred_pit_id": "PIEAMP01AUQ661N",
+    "fred_pit_note": "OECD MEI PPI manufacturing. Quarterly NSA."
+  },
+  {
+    "_comment": "═══ GROWTH ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "aud_gdp_nominal",
+    "provider": "abs",
+    "currency": "AUD",
+    "indicator": "gdp",
+    "required": true,
+    "description": "Australia Nominal GDP, current prices, SA, quarterly. ABS ANA_EXP. Deflator numerator (nominal/real × 100).",
+    "sa_status": "sa",
+    "freq": "Q",
+    "dataflow": "ABS,ANA_EXP,1.0.0",
+    "data_key": "C.GPM.SSS.20..Q",
+    "backfill": {
+      "start": "1959-07"
+    },
+    "fred_pit_id": "NGDPSAXDCAUQ",
+    "fred_pit_note": "IMF IFS nominal GDP. SA. AUD millions."
+  },
+  {
+    "id": "aud_gdp_real",
+    "provider": "abs",
+    "currency": "AUD",
+    "indicator": "gdp",
+    "required": true,
+    "description": "Australia Real GDP, chain volume, SA, quarterly. ABS ANA_EXP. Growth Factor 1 + deflator denominator.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "dataflow": "ABS,ANA_EXP,1.0.0",
+    "data_key": "VCH.GPM.SSS.20..Q",
+    "backfill": {
+      "start": "1959-07"
+    },
+    "fred_pit_id": "NGDPRSAXDCAUQ",
+    "fred_pit_note": "IMF IFS real GDP. SA. AUD millions."
+  },
+  {
+    "id": "aud_ip_total_gva_sa",
+    "provider": "abs",
+    "currency": "AUD",
+    "indicator": "growth",
+    "required": true,
+    "description": "Australia Industry GVA, total, chain volume, SA, quarterly. ABS ANA_IND_GVA.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "dataflow": "ABS,ANA_IND_GVA,1.0.0",
+    "data_key": "VCH.GPP.SSS.20.TOTAL..Q",
+    "backfill": {
+      "start": "1981-01"
+    },
+    "fred_pit_id": "AUSPROINDQISMEI",
+    "fred_pit_note": "OECD MEI IP total. Quarterly SA."
+  },
+  {
+    "id": "aud_ip_manufacturing_gva_sa",
+    "provider": "abs",
+    "currency": "AUD",
+    "indicator": "growth",
+    "required": true,
+    "description": "Australia Manufacturing GVA, chain volume, SA, quarterly. ABS ANA_IND_GVA. NACE C.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "dataflow": "ABS,ANA_IND_GVA,1.0.0",
+    "data_key": "VCH.GPM.SSS.20.C..Q",
+    "backfill": {
+      "start": "1981-01"
+    },
+    "fred_pit_id": "PRMNTO01AUQ657S",
+    "fred_pit_note": "OECD MEI IP manufacturing. Quarterly SA."
+  },
+  {
+    "id": "aud_retail_total_rt_q_sa",
+    "provider": "abs",
+    "currency": "AUD",
+    "indicator": "growth",
+    "required": true,
+    "description": "Australia Retail Trade, chain volume, SA, quarterly. ABS RT 1.0.0.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "dataflow": "ABS,RT,1.0.0",
+    "data_key": "M3.20.20.AUS.Q",
+    "backfill": {
+      "start": "1983-01"
+    },
+    "fred_pit_id": "SLRTTO01AUQ189S",
+    "fred_pit_note": "OECD MEI retail volume. Quarterly SA."
+  },
+  {
+    "id": "aud_retail_total_hsi_sa",
+    "provider": "abs",
+    "currency": "AUD",
+    "indicator": "growth",
+    "required": false,
+    "description": "Australia Household Spending Indicator, total, SA, monthly. ABS HSI_M 1.6.0.",
+    "sa_status": "sa",
+    "freq": "M",
+    "dataflow": "ABS,HSI_M,1.6.0",
+    "data_key": "7.TOT..20.AUS.M",
+    "backfill": {
+      "start": "2012-07"
+    },
+    "fred_pit_id": "SLRTTO01AUQ189S",
+    "fred_pit_note": "Proxy — HSI monthly not on FRED. Use quarterly retail date."
+  },
+  {
+    "id": "aud_bci_sa",
+    "provider": "oecd",
+    "currency": "AUD",
+    "indicator": "growth",
+    "required": true,
+    "description": "Australia Business Confidence Indicator, amplitude adjusted, index, monthly. OECD STES BCI.",
+    "sa_status": "sa",
+    "dataflow": "OECD.SDD.STES,DSD_STES@DF_CLI,",
+    "data_key": "AUS.M.BCICP...AA.IX..H",
+    "backfill": {
+      "start": "1966-01"
+    },
+    "fred_pit_id": "BSCICP03AUM665S",
+    "fred_pit_note": "OECD BCI amplitude adjusted. Monthly."
+  },
+  {
+    "_comment": "═══ LABOUR ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════",
+    "id": "aud_unemployment_rate_sa",
+    "provider": "abs",
+    "currency": "AUD",
+    "indicator": "labour",
+    "required": true,
+    "description": "Australia Unemployment Rate, SA, monthly. ABS LF.",
+    "sa_status": "sa",
+    "freq": "M",
+    "dataflow": "ABS,LF,1.0.0",
+    "data_key": "M13.3.1599.20.AUS.M",
+    "backfill": {
+      "start": "1978-02"
+    },
+    "fred_pit_id": "LRHUTTTTAUM156S",
+    "fred_pit_note": "OECD harmonised unemployment. SA. Monthly."
+  },
+  {
+    "id": "aud_employment_level_sa",
+    "provider": "abs",
+    "currency": "AUD",
+    "indicator": "labour",
+    "required": true,
+    "description": "Australia Employment Level, SA, monthly, thousands. ABS LF.",
+    "sa_status": "sa",
+    "freq": "M",
+    "dataflow": "ABS,LF,1.0.0",
+    "data_key": "M3.3.1599.20.AUS.M",
+    "backfill": {
+      "start": "1978-02"
+    },
+    "fred_pit_id": "LFEMTTTTAUM647S",
+    "fred_pit_note": "OECD employment. SA. Monthly. Pattern-inferred — verify."
+  },
+  {
+    "id": "aud_participation_rate_sa",
+    "provider": "abs",
+    "currency": "AUD",
+    "indicator": "labour",
+    "required": false,
+    "description": "Australia Labour Force Participation Rate, SA, monthly. ABS LF.",
+    "sa_status": "sa",
+    "freq": "M",
+    "dataflow": "ABS,LF,1.0.0",
+    "data_key": "M12.3.1599.20.AUS.M",
+    "backfill": {
+      "start": "1978-02"
+    },
+    "fred_pit_id": "LRHUTTTTAUM156S",
+    "fred_pit_note": "Same ABS labour force release."
+  },
+  {
+    "id": "aud_wages_wpi_index_sa",
+    "provider": "abs",
+    "currency": "AUD",
+    "indicator": "labour",
+    "required": true,
+    "description": "Australia WPI, total hourly rates excl. bonuses, private and public, all industries, SA, index. Quarterly. ABS WPI.",
+    "sa_status": "sa",
+    "freq": "Q",
+    "dataflow": "ABS,WPI,1.2.0",
+    "data_key": "1.THRPEB.7.TOT.20.AUS.Q",
+    "backfill": {
+      "start": "1997-07"
+    },
+    "fred_pit_id": "LCWRTT01AUQ661N",
+    "fred_pit_note": "OECD wage rate. Quarterly NSA index."
+  }
+]
